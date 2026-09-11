@@ -1,13 +1,624 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>services-overview</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content
+  [fullscreen]="true"
+  [scrollEvents]="true"
+>
+  <div class="services-page">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">services-overview</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <section class="services-hero">
+      <app-header></app-header>
+
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container services-hero-grid">
+
+        <div class="hero-copy">
+
+          <span class="hero-eyebrow">
+            Services
+          </span>
+
+          <h1>
+            Digital systems
+            built around real
+            business problems.
+          </h1>
+
+          <p>
+            From applications and automation to transformation
+            and digital growth, we design connected systems that
+            help businesses move faster and operate better.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              routerLink="/contact"
+              class="btn-primary-light"
+            >
+              Start a Project
+            </a>
+
+            <a
+              routerLink="/process"
+              class="btn-link-light"
+            >
+              See Our Process
+
+              <ion-icon
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-capabilities">
+
+          <div class="capability-panel">
+
+            <span class="panel-label">
+              What we connect
+            </span>
+
+            <div class="capability-stack">
+
+              <div class="capability-item">
+                <span class="capability-icon">
+                  <ion-icon name="apps-outline"></ion-icon>
+                </span>
+
+                <div>
+                  <strong>Applications</strong>
+                  <span>Web and mobile products</span>
+                </div>
+              </div>
+
+              <div class="capability-connector"></div>
+
+              <div class="capability-item">
+                <span class="capability-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </span>
+
+                <div>
+                  <strong>Automation</strong>
+                  <span>Processes and workflows</span>
+                </div>
+              </div>
+
+              <div class="capability-connector"></div>
+
+              <div class="capability-item">
+                <span class="capability-icon">
+                  <ion-icon name="server-outline"></ion-icon>
+                </span>
+
+                <div>
+                  <strong>Business Systems</strong>
+                  <span>CRM, ERP and APIs</span>
+                </div>
+              </div>
+
+              <div class="capability-connector"></div>
+
+              <div class="capability-item">
+                <span class="capability-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </span>
+
+                <div>
+                  <strong>Growth</strong>
+                  <span>Data, SEO and performance</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-card-one">
+            <span>Build</span>
+            <strong>Products</strong>
+          </div>
+
+          <div class="floating-card floating-card-two">
+            <span>Automate</span>
+            <strong>Operations</strong>
+          </div>
+
+          <div class="floating-card floating-card-three">
+            <span>Scale</span>
+            <strong>Growth</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-wave">
+        <svg
+          viewBox="0 0 1440 180"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="
+              M0,112
+              C220,44 420,116 620,102
+              C820,88 980,38 1160,52
+              C1320,64 1390,94 1440,108
+              L1440,180
+              L0,180
+              Z
+            "
+          ></path>
+        </svg>
+      </div>
+
+    </section>
+
+    <main class="cream-main">
+
+      <section class="services-section">
+
+        <div class="container">
+
+          <div class="section-heading">
+
+            <span class="section-label">
+              What we do
+            </span>
+
+            <h2>
+              Services designed to work together.
+            </h2>
+
+            <p>
+              Each capability can solve a focused problem or combine
+              into a connected digital system for your business.
+            </p>
+
+          </div>
+
+          <div class="services-grid">
+
+            <a
+              routerLink="/services/app-development"
+              class="service-card"
+            >
+              <div class="service-top">
+                <span class="service-number">01</span>
+
+                <ion-icon
+                  name="phone-portrait-outline"
+                ></ion-icon>
+              </div>
+
+              <div class="service-content">
+                <h3>App Development</h3>
+
+                <p>
+                  Enterprise web and mobile applications designed
+                  around real workflows, users and operational needs.
+                </p>
+
+                <ul>
+                  <li>Web applications</li>
+                  <li>Mobile applications</li>
+                  <li>Internal business systems</li>
+                  <li>Product platforms</li>
+                </ul>
+              </div>
+
+              <span class="service-link">
+                Explore service
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </span>
+            </a>
+
+            <a
+              routerLink="/services/digital-transformation"
+              class="service-card featured"
+            >
+              <div class="service-top">
+                <span class="service-number">02</span>
+
+                <ion-icon
+                  name="layers-outline"
+                ></ion-icon>
+              </div>
+
+              <div class="service-content">
+                <h3>Digital Transformation</h3>
+
+                <p>
+                  Modernize disconnected operations and turn manual
+                  processes into scalable digital systems.
+                </p>
+
+                <ul>
+                  <li>Process modernization</li>
+                  <li>Legacy system transformation</li>
+                  <li>Digital operations</li>
+                  <li>System architecture</li>
+                </ul>
+              </div>
+
+              <span class="service-link">
+                Explore service
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </span>
+            </a>
+
+            <a
+              routerLink="/services/automation-integration"
+              class="service-card"
+            >
+              <div class="service-top">
+                <span class="service-number">03</span>
+
+                <ion-icon
+                  name="git-network-outline"
+                ></ion-icon>
+              </div>
+
+              <div class="service-content">
+                <h3>Automation & Integration</h3>
+
+                <p>
+                  Connect software, automate repetitive work and create
+                  reliable workflows across teams and systems.
+                </p>
+
+                <ul>
+                  <li>Workflow automation</li>
+                  <li>API integrations</li>
+                  <li>CRM / ERP integration</li>
+                  <li>Business process automation</li>
+                </ul>
+              </div>
+
+              <span class="service-link">
+                Explore service
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </span>
+            </a>
+
+            <a
+              routerLink="/services/web-development"
+              class="service-card"
+            >
+              <div class="service-top">
+                <span class="service-number">04</span>
+
+                <ion-icon
+                  name="code-slash-outline"
+                ></ion-icon>
+              </div>
+
+              <div class="service-content">
+                <h3>Web Development</h3>
+
+                <p>
+                  High-performance websites and digital platforms
+                  engineered for speed, usability and conversion.
+                </p>
+
+                <ul>
+                  <li>Corporate websites</li>
+                  <li>Landing experiences</li>
+                  <li>Web platforms</li>
+                  <li>Performance optimization</li>
+                </ul>
+              </div>
+
+              <span class="service-link">
+                Explore service
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </span>
+            </a>
+
+            <a
+              routerLink="/services/seo"
+              class="service-card"
+            >
+              <div class="service-top">
+                <span class="service-number">05</span>
+
+                <ion-icon
+                  name="search-outline"
+                ></ion-icon>
+              </div>
+
+              <div class="service-content">
+                <h3>SEO</h3>
+
+                <p>
+                  Technical and content-led search strategies focused
+                  on qualified traffic and measurable business outcomes.
+                </p>
+
+                <ul>
+                  <li>Technical SEO</li>
+                  <li>Search strategy</li>
+                  <li>Content optimization</li>
+                  <li>Performance reporting</li>
+                </ul>
+              </div>
+
+              <span class="service-link">
+                Explore service
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </span>
+            </a>
+
+            <a
+              routerLink="/services/digital-growth"
+              class="service-card"
+            >
+              <div class="service-top">
+                <span class="service-number">06</span>
+
+                <ion-icon
+                  name="trending-up-outline"
+                ></ion-icon>
+              </div>
+
+              <div class="service-content">
+                <h3>Digital Growth</h3>
+
+                <p>
+                  Connect campaigns, lead generation and automation
+                  into a consistent digital growth engine.
+                </p>
+
+                <ul>
+                  <li>Lead generation</li>
+                  <li>Campaign systems</li>
+                  <li>Marketing automation</li>
+                  <li>Growth analytics</li>
+                </ul>
+              </div>
+
+              <span class="service-link">
+                Explore service
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                ></ion-icon>
+              </span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="capabilities-section">
+
+        <div class="container capabilities-layout">
+
+          <div class="capabilities-copy">
+
+            <span class="dark-label">
+              From strategy to scale
+            </span>
+
+            <h2>
+              One team across the digital lifecycle.
+            </h2>
+
+            <p>
+              Strategy, design, engineering, automation and growth
+              work better when they are connected from the start.
+            </p>
+
+          </div>
+
+          <div class="capabilities-list">
+
+            <div class="capability-row">
+              <span>01</span>
+              <strong>Strategy</strong>
+              <p>Business goals, requirements and digital direction.</p>
+            </div>
+
+            <div class="capability-row">
+              <span>02</span>
+              <strong>Product Design</strong>
+              <p>User journeys, systems thinking and interface design.</p>
+            </div>
+
+            <div class="capability-row">
+              <span>03</span>
+              <strong>Engineering</strong>
+              <p>Scalable web, mobile and platform development.</p>
+            </div>
+
+            <div class="capability-row">
+              <span>04</span>
+              <strong>Automation</strong>
+              <p>Connected workflows that reduce repetitive work.</p>
+            </div>
+
+            <div class="capability-row">
+              <span>05</span>
+              <strong>Integrations</strong>
+              <p>APIs, CRM, ERP and business system connectivity.</p>
+            </div>
+
+            <div class="capability-row">
+              <span>06</span>
+              <strong>Growth</strong>
+              <p>SEO, analytics, campaigns and optimization.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="engagement-section">
+
+        <div class="container">
+
+          <div class="section-heading engagement-heading">
+
+            <span class="section-label">
+              Engagement models
+            </span>
+
+            <h2>
+              Work with us in the way your project needs.
+            </h2>
+
+          </div>
+
+          <div class="engagement-grid">
+
+            <article class="engagement-card">
+              <span class="engagement-number">01</span>
+
+              <h3>Project Delivery</h3>
+
+              <p>
+                A defined outcome, scope and delivery plan managed
+                end-to-end by the ATANA team.
+              </p>
+
+              <span class="engagement-tag">
+                Best for defined projects
+              </span>
+            </article>
+
+            <article class="engagement-card">
+              <span class="engagement-number">02</span>
+
+              <h3>Dedicated Product Team</h3>
+
+              <p>
+                A flexible design and engineering team working
+                continuously with your business.
+              </p>
+
+              <span class="engagement-tag">
+                Best for evolving products
+              </span>
+            </article>
+
+            <article class="engagement-card">
+              <span class="engagement-number">03</span>
+
+              <h3>Transformation Partner</h3>
+
+              <p>
+                Ongoing technology, automation and process improvement
+                across multiple business initiatives.
+              </p>
+
+              <span class="engagement-tag">
+                Best for long-term change
+              </span>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="process-section">
+
+        <div class="container">
+
+          <span class="section-label">
+            How we work
+          </span>
+
+          <h2>
+            From problem to progress.
+          </h2>
+
+          <div class="process-line">
+
+            <div class="process-step">
+              <span>01</span>
+              <strong>Discover</strong>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step">
+              <span>02</span>
+              <strong>Architect</strong>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step">
+              <span>03</span>
+              <strong>Design</strong>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step">
+              <span>04</span>
+              <strong>Build</strong>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step">
+              <span>05</span>
+              <strong>Integrate</strong>
+            </div>
+
+            <div class="process-connector"></div>
+
+            <div class="process-step">
+              <span>06</span>
+              <strong>Optimize</strong>
+            </div>
+
+          </div>
+
+          <a
+            routerLink="/process"
+            class="text-link"
+          >
+            Explore our process
+
+            <ion-icon
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <app-footer></app-footer>
+
+  </div>
 </ion-content>

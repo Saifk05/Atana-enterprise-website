@@ -1,39 +1,63 @@
 <header class="site-header">
+
   <div class="container header-inner">
 
     <a
-  class="brand"
-  href="/home"
-  aria-label="ATANA Home"
->
-<span class="brand-mark" aria-hidden="true">
-  <span class="logo-curve curve-one"></span>
-  <span class="logo-curve curve-two"></span>
-  <span class="logo-curve curve-three"></span>
-</span>
+      class="brand"
+      href="/home"
+      aria-label="ATANA Home"
+    >
+      <span
+        class="brand-mark"
+        aria-hidden="true"
+      >
+        <span class="logo-curve curve-one"></span>
+        <span class="logo-curve curve-two"></span>
+        <span class="logo-curve curve-three"></span>
+      </span>
 
-      <span class="brand-name">ATANA</span>
+      <span class="brand-name">
+        ATANA
+      </span>
     </a>
 
-    <nav class="desktop-nav" aria-label="Primary navigation">
+    <nav
+      class="desktop-nav"
+      aria-label="Primary navigation"
+    >
 
-      <a routerLink="/services-overview" routerLinkActive="active">
+      <a
+        routerLink="/services"
+        routerLinkActive="active"
+      >
         Services
       </a>
 
-      <a routerLink="/process" routerLinkActive="active">
+      <a
+        routerLink="/process"
+        routerLinkActive="active"
+      >
         Process
       </a>
 
-      <a routerLink="/case-studies" routerLinkActive="active">
+      <a
+        routerLink="/case-studies"
+        routerLinkActive="active"
+      >
         Work
       </a>
 
-      <a routerLink="/about" routerLinkActive="active">
+      <a
+        routerLink="/about"
+        routerLinkActive="active"
+      >
         Company
       </a>
 
-      <a routerLink="/contact" routerLinkActive="active">
+      <a
+        routerLink="/contact"
+        routerLinkActive="active"
+      >
         Contact
       </a>
 
@@ -43,8 +67,13 @@
       routerLink="/contact"
       class="start-project"
     >
-      <span>Start a Project</span>
-      <ion-icon name="arrow-forward-outline"></ion-icon>
+      <span>
+        Start a Project
+      </span>
+
+      <ion-icon
+        name="arrow-forward-outline"
+      ></ion-icon>
     </a>
 
     <button
@@ -65,46 +94,70 @@
     class="mobile-panel"
     [class.open]="menuOpen"
   >
-    <nav class="mobile-nav">
+
+    <nav
+      class="mobile-nav"
+      aria-label="Mobile navigation"
+    >
 
       <a
-        routerLink="/services-overview"
+        routerLink="/services"
+        routerLinkActive="active"
         (click)="closeMenu()"
       >
-        Services
-        <ion-icon name="arrow-forward-outline"></ion-icon>
+        <span>Services</span>
+
+        <ion-icon
+          name="arrow-forward-outline"
+        ></ion-icon>
       </a>
 
       <a
         routerLink="/process"
+        routerLinkActive="active"
         (click)="closeMenu()"
       >
-        Process
-        <ion-icon name="arrow-forward-outline"></ion-icon>
+        <span>Process</span>
+
+        <ion-icon
+          name="arrow-forward-outline"
+        ></ion-icon>
       </a>
 
       <a
         routerLink="/case-studies"
+        routerLinkActive="active"
         (click)="closeMenu()"
       >
-        Work
-        <ion-icon name="arrow-forward-outline"></ion-icon>
+        <span>Work</span>
+
+        <ion-icon
+          name="arrow-forward-outline"
+        ></ion-icon>
       </a>
 
       <a
         routerLink="/about"
+        routerLinkActive="active"
         (click)="closeMenu()"
       >
-        Company
-        <ion-icon name="arrow-forward-outline"></ion-icon>
+        <span>Company</span>
+
+        <ion-icon
+          name="arrow-forward-outline"
+        ></ion-icon>
       </a>
 
       <a
         routerLink="/contact"
+        routerLinkActive="active"
         (click)="closeMenu()"
       >
-        Contact
-        <ion-icon name="arrow-forward-outline"></ion-icon>
+        <span>Contact</span>
+
+        <ion-icon
+          name="arrow-forward-outline"
+        ></ion-icon>
       </a>
 
     </nav>
@@ -114,9 +167,15 @@
       class="mobile-cta"
       (click)="closeMenu()"
     >
-      Start a Project
-      <ion-icon name="arrow-forward-outline"></ion-icon>
+      <span>
+        Start a Project
+      </span>
+
+      <ion-icon
+        name="arrow-forward-outline"
+      ></ion-icon>
     </a>
 
   </div>
+
 </header>

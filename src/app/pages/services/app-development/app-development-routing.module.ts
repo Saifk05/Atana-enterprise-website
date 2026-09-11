@@ -6,13 +6,13 @@ import {
 } from '@angular/router';
 
 import {
-  ServicesOverviewPage
-} from './services-overview.page';
+  AppDevelopmentPage
+} from './app-development.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ServicesOverviewPage
+    component: AppDevelopmentPage
   }
 ];
 
@@ -24,4 +24,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class ServicesOverviewPageRoutingModule {}
+export class AppDevelopmentPageRoutingModule {}
