@@ -1,3 +1,122 @@
-<p>
-  header works!
-</p>
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a
+  class="brand"
+  href="/home"
+  aria-label="ATANA Home"
+>
+<span class="brand-mark" aria-hidden="true">
+  <span class="logo-curve curve-one"></span>
+  <span class="logo-curve curve-two"></span>
+  <span class="logo-curve curve-three"></span>
+</span>
+
+      <span class="brand-name">ATANA</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+
+      <a routerLink="/services-overview" routerLinkActive="active">
+        Services
+      </a>
+
+      <a routerLink="/process" routerLinkActive="active">
+        Process
+      </a>
+
+      <a routerLink="/case-studies" routerLinkActive="active">
+        Work
+      </a>
+
+      <a routerLink="/about" routerLinkActive="active">
+        Company
+      </a>
+
+      <a routerLink="/contact" routerLinkActive="active">
+        Contact
+      </a>
+
+    </nav>
+
+    <a
+      routerLink="/contact"
+      class="start-project"
+    >
+      <span>Start a Project</span>
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </a>
+
+    <button
+      type="button"
+      class="mobile-menu-btn"
+      [class.open]="menuOpen"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen"
+      aria-label="Toggle navigation"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <div
+    class="mobile-panel"
+    [class.open]="menuOpen"
+  >
+    <nav class="mobile-nav">
+
+      <a
+        routerLink="/services-overview"
+        (click)="closeMenu()"
+      >
+        Services
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <a
+        routerLink="/process"
+        (click)="closeMenu()"
+      >
+        Process
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <a
+        routerLink="/case-studies"
+        (click)="closeMenu()"
+      >
+        Work
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <a
+        routerLink="/about"
+        (click)="closeMenu()"
+      >
+        Company
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+      <a
+        routerLink="/contact"
+        (click)="closeMenu()"
+      >
+        Contact
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </a>
+
+    </nav>
+
+    <a
+      routerLink="/contact"
+      class="mobile-cta"
+      (click)="closeMenu()"
+    >
+      Start a Project
+      <ion-icon name="arrow-forward-outline"></ion-icon>
+    </a>
+
+  </div>
+</header>
