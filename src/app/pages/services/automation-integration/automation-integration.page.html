@@ -1,13 +1,670 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>automation-integration</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">automation-integration</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <div class="service-detail-page">
+
+    <section class="service-hero">
+
+      <app-header></app-header>
+
+      <div class="container service-hero-grid">
+
+        <div class="hero-copy">
+
+          <span class="eyebrow">
+            Automation & Integration
+          </span>
+
+          <h1>
+            Connect systems.
+            Automate the work
+            between them.
+          </h1>
+
+          <p>
+            We design automated workflows and integrations that
+            connect applications, reduce repetitive work and keep
+            business operations moving reliably.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              routerLink="/contact"
+              class="primary-button"
+            >
+              Start a Project
+            </a>
+
+            <a
+              routerLink="/services"
+              class="secondary-link"
+            >
+              View All Services
+
+              <ion-icon
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+          <div class="automation-shell">
+
+            <div class="shell-header">
+
+              <div class="shell-header-left">
+                <span class="shell-dot"></span>
+
+                <span>
+                  Workflow Automation
+                </span>
+              </div>
+
+              <span class="status-badge">
+                Active
+              </span>
+
+            </div>
+
+            <div class="workflow">
+
+              <div class="workflow-node trigger-node">
+
+                <span class="node-icon">
+                  <ion-icon
+                    name="flash-outline"
+                  ></ion-icon>
+                </span>
+
+                <div>
+                  <span class="node-label">
+                    Trigger
+                  </span>
+
+                  <strong>
+                    New Order
+                  </strong>
+                </div>
+
+              </div>
+
+              <div class="workflow-line">
+                <span></span>
+              </div>
+
+              <div class="workflow-node process-node">
+
+                <span class="node-icon">
+                  <ion-icon
+                    name="git-network-outline"
+                  ></ion-icon>
+                </span>
+
+                <div>
+                  <span class="node-label">
+                    Process
+                  </span>
+
+                  <strong>
+                    Validate Data
+                  </strong>
+                </div>
+
+              </div>
+
+              <div class="workflow-line">
+                <span></span>
+              </div>
+
+              <div class="workflow-node integration-node">
+
+                <span class="node-icon">
+                  <ion-icon
+                    name="server-outline"
+                  ></ion-icon>
+                </span>
+
+                <div>
+                  <span class="node-label">
+                    Integration
+                  </span>
+
+                  <strong>
+                    Update CRM
+                  </strong>
+                </div>
+
+              </div>
+
+              <div class="workflow-line">
+                <span></span>
+              </div>
+
+              <div class="workflow-node action-node">
+
+                <span class="node-icon">
+                  <ion-icon
+                    name="mail-outline"
+                  ></ion-icon>
+                </span>
+
+                <div>
+                  <span class="node-label">
+                    Action
+                  </span>
+
+                  <strong>
+                    Notify Team
+                  </strong>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="automation-metrics">
+
+              <div>
+                <span>
+                  Workflows
+                </span>
+
+                <strong>
+                  24
+                </strong>
+              </div>
+
+              <div>
+                <span>
+                  Tasks Automated
+                </span>
+
+                <strong>
+                  18.2K
+                </strong>
+              </div>
+
+              <div>
+                <span>
+                  Success Rate
+                </span>
+
+                <strong>
+                  99.4%
+                </strong>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="integration-chip integration-chip-one">
+            CRM
+          </div>
+
+          <div class="integration-chip integration-chip-two">
+            ERP
+          </div>
+
+          <div class="integration-chip integration-chip-three">
+            API
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-wave">
+
+        <svg
+          viewBox="0 0 1440 180"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="
+              M0,110
+              C220,35 420,120 650,98
+              C850,80 1060,35 1260,64
+              C1350,76 1405,94 1440,105
+              L1440,180
+              L0,180
+              Z
+            "
+          ></path>
+        </svg>
+
+      </div>
+
+    </section>
+
+    <main>
+
+      <section class="intro-section">
+
+        <div class="container intro-grid">
+
+          <div>
+
+            <span class="section-label">
+              Automation
+            </span>
+
+            <h2>
+              Remove repetitive work from critical operations.
+            </h2>
+
+          </div>
+
+          <div class="intro-copy">
+
+            <p>
+              Many business processes still depend on teams manually
+              moving information between systems, sending updates,
+              checking statuses and repeating the same actions.
+            </p>
+
+            <p>
+              We automate those handoffs and connect the underlying
+              applications so work moves through the business with less
+              friction and fewer errors.
+            </p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="capabilities-section">
+
+        <div class="container">
+
+          <div class="section-heading">
+
+            <span class="section-label">
+              Capabilities
+            </span>
+
+            <h2>
+              Automation across your operational stack.
+            </h2>
+
+          </div>
+
+          <div class="capability-grid">
+
+            <article class="capability-card">
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                Workflow Automation
+              </h3>
+
+              <p>
+                Automate repetitive tasks, approvals, notifications
+                and business rules across operational workflows.
+              </p>
+
+            </article>
+
+            <article class="capability-card">
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                API Integrations
+              </h3>
+
+              <p>
+                Connect applications through reliable APIs and move
+                data securely between business systems.
+              </p>
+
+            </article>
+
+            <article class="capability-card">
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                CRM & ERP Integration
+              </h3>
+
+              <p>
+                Synchronize customer, sales, finance and operational
+                data across enterprise platforms.
+              </p>
+
+            </article>
+
+            <article class="capability-card">
+
+              <span>
+                04
+              </span>
+
+              <h3>
+                Process Automation
+              </h3>
+
+              <p>
+                Design event-driven systems that automatically respond
+                to business actions and operational conditions.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="architecture-section">
+
+        <div class="container architecture-grid">
+
+          <div class="architecture-copy">
+
+            <span class="dark-label">
+              Connected architecture
+            </span>
+
+            <h2>
+              One workflow across multiple systems.
+            </h2>
+
+            <p>
+              We connect the systems your teams already use and create
+              a reliable automation layer between them.
+            </p>
+
+          </div>
+
+          <div class="architecture-visual">
+
+            <div class="architecture-row">
+
+              <div class="architecture-box">
+                <strong>
+                  Website
+                </strong>
+                <span>
+                  Lead / Order
+                </span>
+              </div>
+
+              <div class="architecture-line"></div>
+
+              <div class="architecture-box highlighted">
+                <strong>
+                  Automation
+                </strong>
+                <span>
+                  Logic / Routing
+                </span>
+              </div>
+
+              <div class="architecture-line"></div>
+
+              <div class="architecture-box">
+                <strong>
+                  CRM
+                </strong>
+                <span>
+                  Customer Data
+                </span>
+              </div>
+
+            </div>
+
+            <div class="architecture-branch"></div>
+
+            <div class="architecture-row secondary-row">
+
+              <div class="architecture-box">
+                <strong>
+                  ERP
+                </strong>
+                <span>
+                  Operations
+                </span>
+              </div>
+
+              <div class="architecture-line"></div>
+
+              <div class="architecture-box">
+                <strong>
+                  Email
+                </strong>
+                <span>
+                  Notifications
+                </span>
+              </div>
+
+              <div class="architecture-line"></div>
+
+              <div class="architecture-box">
+                <strong>
+                  Analytics
+                </strong>
+                <span>
+                  Reporting
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="outcomes-section">
+
+        <div class="container">
+
+          <div class="section-heading">
+
+            <span class="section-label">
+              Business outcomes
+            </span>
+
+            <h2>
+              Less manual effort.
+              More reliable operations.
+            </h2>
+
+          </div>
+
+          <div class="outcomes-grid">
+
+            <article>
+
+              <span class="outcome-number">
+                01
+              </span>
+
+              <strong>
+                Faster Workflows
+              </strong>
+
+              <p>
+                Reduce delays caused by repetitive manual handoffs.
+              </p>
+
+            </article>
+
+            <article>
+
+              <span class="outcome-number">
+                02
+              </span>
+
+              <strong>
+                Fewer Errors
+              </strong>
+
+              <p>
+                Reduce manual data entry and inconsistent processing.
+              </p>
+
+            </article>
+
+            <article>
+
+              <span class="outcome-number">
+                03
+              </span>
+
+              <strong>
+                Better Visibility
+              </strong>
+
+              <p>
+                Track workflow activity and operational status clearly.
+              </p>
+
+            </article>
+
+            <article>
+
+              <span class="outcome-number">
+                04
+              </span>
+
+              <strong>
+                Scalable Operations
+              </strong>
+
+              <p>
+                Handle higher volume without increasing repetitive work.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="process-section">
+
+        <div class="container">
+
+          <span class="section-label">
+            Automation process
+          </span>
+
+          <h2>
+            Automate what matters.
+          </h2>
+
+          <div class="process-grid">
+
+            <article>
+
+              <span>
+                01
+              </span>
+
+              <h3>
+                Map
+              </h3>
+
+              <p>
+                Understand the existing workflow and system handoffs.
+              </p>
+
+            </article>
+
+            <article>
+
+              <span>
+                02
+              </span>
+
+              <h3>
+                Identify
+              </h3>
+
+              <p>
+                Find repetitive tasks, delays and integration gaps.
+              </p>
+
+            </article>
+
+            <article>
+
+              <span>
+                03
+              </span>
+
+              <h3>
+                Design
+              </h3>
+
+              <p>
+                Define triggers, conditions, actions and integrations.
+              </p>
+
+            </article>
+
+            <article>
+
+              <span>
+                04
+              </span>
+
+              <h3>
+                Automate
+              </h3>
+
+              <p>
+                Build workflows and connect the required systems.
+              </p>
+
+            </article>
+
+            <article>
+
+              <span>
+                05
+              </span>
+
+              <h3>
+                Monitor
+              </h3>
+
+              <p>
+                Track reliability, exceptions and ongoing performance.
+              </p>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <app-footer></app-footer>
+
+  </div>
+
 </ion-content>
