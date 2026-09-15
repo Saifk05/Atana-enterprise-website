@@ -1,13 +1,293 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>contact</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">contact</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <div class="contact-page">
+
+    <section class="contact-hero">
+
+      <app-header></app-header>
+
+      <div class="container hero-inner">
+
+        <span class="eyebrow">
+          Start a Project
+        </span>
+
+        <div class="hero-grid">
+
+          <h1>
+            Let's build
+            something useful.
+          </h1>
+
+          <p>
+            Have a product to build, a process to improve,
+            systems to connect or a digital growth challenge?
+            Tell us a little about it.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="hero-wave">
+
+        <svg
+          viewBox="0 0 1440 150"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="
+              M0,80
+              C230,135 430,55 670,80
+              C910,105 1100,140 1290,95
+              C1360,78 1410,68 1440,70
+              L1440,150
+              L0,150
+              Z
+            "
+          ></path>
+        </svg>
+
+      </div>
+
+    </section>
+
+    <main>
+
+      <section class="contact-section">
+
+        <div class="container contact-grid">
+
+          <div class="contact-copy">
+
+            <span class="section-label">
+              Project enquiry
+            </span>
+
+            <h2>
+              Tell us about
+              your project.
+            </h2>
+
+            <p>
+              You don't need a complete specification.
+              Start with the problem, idea or outcome
+              you're working toward.
+            </p>
+
+            <div class="availability">
+
+              <span></span>
+
+              <p>
+                Open to new projects
+              </p>
+
+            </div>
+
+          </div>
+
+          <form
+            class="contact-form"
+            [formGroup]="contactForm"
+          >
+
+            <div class="field-row">
+
+              <div class="field">
+
+                <label for="name">
+                  Name
+                </label>
+
+                <input
+                  id="name"
+                  type="text"
+                  formControlName="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                />
+
+                <small
+                  *ngIf="
+                    contactForm.get('name')?.touched &&
+                    contactForm.get('name')?.invalid
+                  "
+                >
+                  Please enter your name.
+                </small>
+
+              </div>
+
+              <div class="field">
+
+                <label for="email">
+                  Work email
+                </label>
+
+                <input
+                  id="email"
+                  type="email"
+                  formControlName="email"
+                  placeholder="you@company.com"
+                  autocomplete="email"
+                />
+
+                <small
+                  *ngIf="
+                    contactForm.get('email')?.touched &&
+                    contactForm.get('email')?.invalid
+                  "
+                >
+                  Enter a valid email address.
+                </small>
+
+              </div>
+
+            </div>
+
+            <div class="field-row">
+
+              <div class="field">
+
+                <label for="company">
+                  Company
+                </label>
+
+                <input
+                  id="company"
+                  type="text"
+                  formControlName="company"
+                  placeholder="Company name"
+                  autocomplete="organization"
+                />
+
+              </div>
+
+              <div class="field">
+
+                <label for="service">
+                  Service
+                </label>
+
+                <select
+                  id="service"
+                  formControlName="service"
+                >
+
+                  <option value="" disabled>
+                    Select a service
+                  </option>
+
+                  <option value="App Development">
+                    App Development
+                  </option>
+
+                  <option value="Digital Transformation">
+                    Digital Transformation
+                  </option>
+
+                  <option value="Automation & Integration">
+                    Automation & Integration
+                  </option>
+
+                  <option value="Web Development">
+                    Web Development
+                  </option>
+
+                  <option value="SEO">
+                    SEO
+                  </option>
+
+                  <option value="Digital Growth">
+                    Digital Growth
+                  </option>
+
+                  <option value="Other">
+                    Other
+                  </option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+            <div class="field message-field">
+
+              <label for="message">
+                Tell us about your project
+              </label>
+
+              <textarea
+                id="message"
+                formControlName="message"
+                rows="5"
+                placeholder="What are you looking to build, improve or solve?"
+              ></textarea>
+
+              <small
+                *ngIf="
+                  contactForm.get('message')?.touched &&
+                  contactForm.get('message')?.invalid
+                "
+              >
+                Please tell us a little about your project.
+              </small>
+
+            </div>
+
+            <div class="form-bottom">
+
+              <p>
+                Direct online enquiries are opening soon.
+              </p>
+
+              <button
+                type="button"
+                class="submit-button"
+                (click)="handleContact()"
+              >
+
+                <span>
+                  Contact ATANA
+                </span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                ></ion-icon>
+
+              </button>
+
+            </div>
+
+            <div
+              class="notice"
+              *ngIf="showNotice"
+            >
+
+              <span>
+                Enquiry channel launching soon
+              </span>
+
+              <p>
+                We're currently setting up our direct project
+                enquiry channel. Please check back shortly.
+              </p>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </section>
+
+    </main>
+
+    <app-footer></app-footer>
+
+  </div>
+
 </ion-content>

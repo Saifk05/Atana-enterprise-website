@@ -1,20 +1,37 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule
+} from '@angular/core';
 
+import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular/lazy';
 
-import { ContactPageRoutingModule } from './contact-routing.module';
+import {
+  ContactPageRoutingModule
+} from './contact-routing.module';
 
-import { ContactPage } from './contact.page';
+import {
+  ContactPage
+} from './contact.page';
+
+import {
+  SharedModule
+} from '../../shared/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
+    ReactiveFormsModule,
     IonicModule,
-    ContactPageRoutingModule
+    ContactPageRoutingModule,
+    SharedModule
   ],
-  declarations: [ContactPage]
+  declarations: [
+    ContactPage
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 export class ContactPageModule {}
