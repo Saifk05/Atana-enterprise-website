@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="contact-content">
 
   <div class="contact-page">
 
@@ -6,17 +6,25 @@
 
       <app-header></app-header>
 
-      <div class="container hero-inner">
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
 
-        <span class="eyebrow">
-          Start a Project
-        </span>
+      <div class="container contact-hero-grid">
 
-        <div class="hero-grid">
+        <div class="hero-copy">
+
+          <div class="hero-eyebrow">
+            <span></span>
+            START A PROJECT / ATANA
+          </div>
 
           <h1>
             Let's build
-            something useful.
+            <span>something useful.</span>
           </h1>
 
           <p>
@@ -25,29 +33,242 @@
             Tell us a little about it.
           </p>
 
+          <div class="hero-status">
+
+            <div class="status-indicator">
+              <i></i>
+              OPEN TO NEW PROJECTS
+            </div>
+
+            <span>
+              PRODUCT · PLATFORMS · AUTOMATION · GROWTH
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+          <div class="visual-label">
+            PROJECT INTAKE / 01
+            <small>READY</small>
+          </div>
+
+          <div class="project-shell">
+
+            <div class="shell-header">
+
+              <div class="shell-brand">
+
+                <span class="shell-mark">
+                  <i></i>
+                  <i></i>
+                </span>
+
+                <div>
+                  <small>ATANA</small>
+                  <strong>Project Intake</strong>
+                </div>
+
+              </div>
+
+              <div class="shell-status">
+                <i></i>
+                AVAILABLE
+              </div>
+
+            </div>
+
+            <div class="shell-body">
+
+              <div class="shell-heading">
+
+                <div>
+                  <span>STARTING POINT</span>
+                  <strong>
+                    Tell us what needs
+                    <em>to move forward.</em>
+                  </strong>
+                </div>
+
+                <div class="intake-state">
+                  01 / 04
+                </div>
+
+              </div>
+
+              <div class="intake-flow">
+
+                <div class="intake-step active">
+
+                  <div class="step-top">
+                    <span>01</span>
+                    <i></i>
+                  </div>
+
+                  <div class="step-icon">
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+                  </div>
+
+                  <small>CONTEXT</small>
+                  <strong>Tell us the problem</strong>
+
+                  <p>
+                    Product, process, system or growth challenge.
+                  </p>
+
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="intake-step">
+
+                  <div class="step-top">
+                    <span>02</span>
+                    <i></i>
+                  </div>
+
+                  <div class="step-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                  </div>
+
+                  <small>DISCOVERY</small>
+                  <strong>Understand the need</strong>
+
+                  <p>
+                    Goals, constraints and business context.
+                  </p>
+
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="intake-step">
+
+                  <div class="step-top">
+                    <span>03</span>
+                    <i></i>
+                  </div>
+
+                  <div class="step-icon">
+                    <ion-icon name="git-network-outline"></ion-icon>
+                  </div>
+
+                  <small>DIRECTION</small>
+                  <strong>Shape the approach</strong>
+
+                  <p>
+                    Define the right path before execution.
+                  </p>
+
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="intake-step">
+
+                  <div class="step-top">
+                    <span>04</span>
+                    <i></i>
+                  </div>
+
+                  <div class="step-icon">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                  </div>
+
+                  <small>NEXT</small>
+                  <strong>Move into delivery</strong>
+
+                  <p>
+                    Build around the outcome that matters.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div class="shell-message">
+
+                <div class="message-icon">
+                  <ion-icon name="information-circle-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <small>YOU DON'T NEED A COMPLETE SPECIFICATION</small>
+                  <strong>
+                    Start with the idea, problem or outcome.
+                  </strong>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="shell-footer">
+
+              <div>
+                <span>Context</span>
+                <strong>Business First</strong>
+              </div>
+
+              <div>
+                <span>Approach</span>
+                <strong>Collaborative</strong>
+              </div>
+
+              <div>
+                <span>Outcome</span>
+                <strong>Useful Systems</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-project">
+
+            <div class="floating-icon">
+              <ion-icon name="layers-outline"></ion-icon>
+            </div>
+
+            <div>
+              <small>Project Type</small>
+              <strong>Digital Systems</strong>
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-status">
+
+            <div class="floating-icon">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </div>
+
+            <div>
+              <small>Status</small>
+              <strong>Ready to Discuss</strong>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
 
-      <div class="hero-wave">
+      <div class="hero-bottom">
 
-        <svg
-          viewBox="0 0 1440 150"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path
-            d="
-              M0,80
-              C230,135 430,55 670,80
-              C910,105 1100,140 1290,95
-              C1360,78 1410,68 1440,70
-              L1440,150
-              L0,150
-              Z
-            "
-          ></path>
-        </svg>
+        <div class="container hero-bottom-inner">
+          <span>Products</span>
+          <i></i>
+          <span>Platforms</span>
+          <i></i>
+          <span>Automation</span>
+          <i></i>
+          <span>Web</span>
+          <i></i>
+          <span>Growth</span>
+        </div>
 
       </div>
 
@@ -57,17 +278,21 @@
 
       <section class="contact-section">
 
-        <div class="container contact-grid">
+        <div class="container contact-layout">
 
           <div class="contact-copy">
 
+            <div class="section-index">
+              01 / PROJECT ENQUIRY
+            </div>
+
             <span class="section-label">
-              Project enquiry
+              START WITH THE PROBLEM
             </span>
 
             <h2>
               Tell us about
-              your project.
+              <span>your project.</span>
             </h2>
 
             <p>
@@ -78,207 +303,504 @@
 
             <div class="availability">
 
-              <span></span>
+              <div class="availability-dot">
+                <span></span>
+              </div>
 
-              <p>
-                Open to new projects
-              </p>
+              <div>
+                <strong>Open to new projects</strong>
+                <small>
+                  Product · Operations · Integration · Growth
+                </small>
+              </div>
+
+            </div>
+
+            <div class="contact-process">
+
+              <div class="process-item">
+
+                <span>01</span>
+
+                <div>
+                  <strong>Share the context</strong>
+                  <p>
+                    Tell us what you're trying to build,
+                    improve or solve.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="process-item">
+
+                <span>02</span>
+
+                <div>
+                  <strong>We'll understand the need</strong>
+                  <p>
+                    We look at the business objective,
+                    users and technical context.
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="process-item">
+
+                <span>03</span>
+
+                <div>
+                  <strong>Define the next step</strong>
+                  <p>
+                    If there is a fit, we shape the right
+                    approach together.
+                  </p>
+                </div>
+
+              </div>
 
             </div>
 
           </div>
 
-          <form
-            class="contact-form"
-            [formGroup]="contactForm"
-          >
+          <div class="form-panel">
 
-            <div class="field-row">
+            <div class="form-panel-header">
 
-              <div class="field">
-
-                <label for="name">
-                  Name
-                </label>
-
-                <input
-                  id="name"
-                  type="text"
-                  formControlName="name"
-                  placeholder="Your name"
-                  autocomplete="name"
-                />
-
-                <small
-                  *ngIf="
-                    contactForm.get('name')?.touched &&
-                    contactForm.get('name')?.invalid
-                  "
-                >
-                  Please enter your name.
-                </small>
-
-              </div>
-
-              <div class="field">
-
-                <label for="email">
-                  Work email
-                </label>
-
-                <input
-                  id="email"
-                  type="email"
-                  formControlName="email"
-                  placeholder="you@company.com"
-                  autocomplete="email"
-                />
-
-                <small
-                  *ngIf="
-                    contactForm.get('email')?.touched &&
-                    contactForm.get('email')?.invalid
-                  "
-                >
-                  Enter a valid email address.
-                </small>
-
-              </div>
-
-            </div>
-
-            <div class="field-row">
-
-              <div class="field">
-
-                <label for="company">
-                  Company
-                </label>
-
-                <input
-                  id="company"
-                  type="text"
-                  formControlName="company"
-                  placeholder="Company name"
-                  autocomplete="organization"
-                />
-
-              </div>
-
-              <div class="field">
-
-                <label for="service">
-                  Service
-                </label>
-
-                <select
-                  id="service"
-                  formControlName="service"
-                >
-
-                  <option value="" disabled>
-                    Select a service
-                  </option>
-
-                  <option value="App Development">
-                    App Development
-                  </option>
-
-                  <option value="Digital Transformation">
-                    Digital Transformation
-                  </option>
-
-                  <option value="Automation & Integration">
-                    Automation & Integration
-                  </option>
-
-                  <option value="Web Development">
-                    Web Development
-                  </option>
-
-                  <option value="SEO">
-                    SEO
-                  </option>
-
-                  <option value="Digital Growth">
-                    Digital Growth
-                  </option>
-
-                  <option value="Other">
-                    Other
-                  </option>
-
-                </select>
-
-              </div>
-
-            </div>
-
-            <div class="field message-field">
-
-              <label for="message">
-                Tell us about your project
-              </label>
-
-              <textarea
-                id="message"
-                formControlName="message"
-                rows="5"
-                placeholder="What are you looking to build, improve or solve?"
-              ></textarea>
-
-              <small
-                *ngIf="
-                  contactForm.get('message')?.touched &&
-                  contactForm.get('message')?.invalid
-                "
-              >
-                Please tell us a little about your project.
-              </small>
-
-            </div>
-
-            <div class="form-bottom">
-
-              <p>
-                Direct online enquiries are opening soon.
-              </p>
-
-              <button
-                type="button"
-                class="submit-button"
-                (click)="handleContact()"
-              >
+              <div>
 
                 <span>
-                  Contact ATANA
+                  PROJECT / INTAKE
                 </span>
 
-                <ion-icon
-                  name="arrow-forward-outline"
-                ></ion-icon>
+                <strong>
+                  Start a conversation
+                </strong>
 
-              </button>
+              </div>
+
+              <div class="form-status">
+                <i></i>
+                AVAILABLE
+              </div>
 
             </div>
 
-            <div
-              class="notice"
-              *ngIf="showNotice"
+            <form
+              class="contact-form"
+              [formGroup]="contactForm"
             >
 
-              <span>
-                Enquiry channel launching soon
+              <div class="field-row">
+
+                <div class="field">
+
+                  <label for="name">
+                    <span>01</span>
+                    Name
+                  </label>
+
+                  <input
+                    id="name"
+                    type="text"
+                    formControlName="name"
+                    placeholder="Your name"
+                    autocomplete="name"
+                  />
+
+                  <small
+                    class="field-error"
+                    *ngIf="
+                      contactForm.get('name')?.touched &&
+                      contactForm.get('name')?.invalid
+                    "
+                  >
+                    Please enter your name.
+                  </small>
+
+                </div>
+
+                <div class="field">
+
+                  <label for="email">
+                    <span>02</span>
+                    Work email
+                  </label>
+
+                  <input
+                    id="email"
+                    type="email"
+                    formControlName="email"
+                    placeholder="you@company.com"
+                    autocomplete="email"
+                  />
+
+                  <small
+                    class="field-error"
+                    *ngIf="
+                      contactForm.get('email')?.touched &&
+                      contactForm.get('email')?.invalid
+                    "
+                  >
+                    Enter a valid email address.
+                  </small>
+
+                </div>
+
+              </div>
+
+              <div class="field-row">
+
+                <div class="field">
+
+                  <label for="company">
+                    <span>03</span>
+                    Company
+                  </label>
+
+                  <input
+                    id="company"
+                    type="text"
+                    formControlName="company"
+                    placeholder="Company name"
+                    autocomplete="organization"
+                  />
+
+                </div>
+
+                <div class="field">
+
+                  <label for="service">
+                    <span>04</span>
+                    Service
+                  </label>
+
+                  <div class="select-wrapper">
+
+                    <select
+                      id="service"
+                      formControlName="service"
+                    >
+
+                      <option value="" disabled>
+                        Select a service
+                      </option>
+
+                      <option value="App Development">
+                        App Development
+                      </option>
+
+                      <option value="Digital Transformation">
+                        Digital Transformation
+                      </option>
+
+                      <option value="Automation & Integration">
+                        Automation & Integration
+                      </option>
+
+                      <option value="Web Development">
+                        Web Development
+                      </option>
+
+                      <option value="SEO">
+                        SEO
+                      </option>
+
+                      <option value="Digital Growth">
+                        Digital Growth
+                      </option>
+
+                      <option value="Other">
+                        Other
+                      </option>
+
+                    </select>
+
+                    <ion-icon
+                      name="chevron-down-outline"
+                    ></ion-icon>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="field message-field">
+
+                <label for="message">
+                  <span>05</span>
+                  Tell us about your project
+                </label>
+
+                <textarea
+                  id="message"
+                  formControlName="message"
+                  rows="5"
+                  placeholder="What are you looking to build, improve or solve?"
+                ></textarea>
+
+                <small
+                  class="field-error"
+                  *ngIf="
+                    contactForm.get('message')?.touched &&
+                    contactForm.get('message')?.invalid
+                  "
+                >
+                  Please tell us a little about your project.
+                </small>
+
+              </div>
+
+              <div class="form-context">
+
+                <div>
+                  <ion-icon name="bulb-outline"></ion-icon>
+                </div>
+
+                <p>
+                  A short description is enough. We can work through
+                  requirements, scope and technical direction together.
+                </p>
+
+              </div>
+
+              <div class="form-bottom">
+
+                <div class="form-note">
+
+                  <span>
+                    ATANA / PROJECT ENQUIRY
+                  </span>
+
+                  <p>
+                    Direct online enquiries are opening soon.
+                  </p>
+
+                </div>
+
+                <button
+                  type="button"
+                  class="submit-button"
+                  (click)="handleContact()"
+                >
+
+                  <span>
+                    Contact ATANA
+                  </span>
+
+                  <span class="button-arrow">
+                    <ion-icon
+                      name="arrow-forward-outline"
+                    ></ion-icon>
+                  </span>
+
+                </button>
+
+              </div>
+
+              <div
+                class="notice"
+                *ngIf="showNotice"
+              >
+
+                <div class="notice-icon">
+                  <ion-icon
+                    name="information-circle-outline"
+                  ></ion-icon>
+                </div>
+
+                <div>
+
+                  <span>
+                    Enquiry channel launching soon
+                  </span>
+
+                  <p>
+                    We're currently setting up our direct project
+                    enquiry channel. Please check back shortly.
+                  </p>
+
+                </div>
+
+              </div>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="contact-principles">
+
+        <div class="container">
+
+          <div class="principles-heading">
+
+            <div class="section-index">
+              02 / HOW WE START
+            </div>
+
+            <div>
+
+              <span class="section-label">
+                BEFORE TECHNOLOGY
               </span>
 
-              <p>
-                We're currently setting up our direct project
-                enquiry channel. Please check back shortly.
-              </p>
+              <h2>
+                Start with context.
+                <span>Then build the right thing.</span>
+              </h2>
 
             </div>
 
-          </form>
+            <p>
+              The first conversation is about understanding
+              what needs to change, not choosing a technology stack.
+            </p>
+
+          </div>
+
+          <div class="principles-grid">
+
+            <article>
+
+              <span class="principle-number">
+                01
+              </span>
+
+              <div class="principle-icon">
+                <ion-icon name="business-outline"></ion-icon>
+              </div>
+
+              <div>
+                <small>BUSINESS</small>
+                <h3>What needs to improve?</h3>
+                <p>
+                  We begin with the business objective and
+                  the reason the project matters.
+                </p>
+              </div>
+
+            </article>
+
+            <article class="featured">
+
+              <span class="principle-number">
+                02
+              </span>
+
+              <div class="principle-icon">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+
+              <div>
+                <small>PEOPLE</small>
+                <h3>Who needs it to work?</h3>
+                <p>
+                  We understand the customers, teams and
+                  workflows the solution needs to support.
+                </p>
+              </div>
+
+            </article>
+
+            <article>
+
+              <span class="principle-number">
+                03
+              </span>
+
+              <div class="principle-icon">
+                <ion-icon name="git-network-outline"></ion-icon>
+              </div>
+
+              <div>
+                <small>SYSTEM</small>
+                <h3>What needs to connect?</h3>
+                <p>
+                  We identify existing platforms, data and
+                  processes that shape the solution.
+                </p>
+              </div>
+
+            </article>
+
+            <article>
+
+              <span class="principle-number">
+                04
+              </span>
+
+              <div class="principle-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
+
+              <div>
+                <small>OUTCOME</small>
+                <h3>What does success mean?</h3>
+                <p>
+                  We define what a useful result should
+                  look like before moving into delivery.
+                </p>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="contact-cta">
+
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
+
+        <div class="container contact-cta-inner">
+
+          <div class="cta-index">
+            03 / START
+          </div>
+
+          <div class="cta-copy">
+
+            <span>
+              HAVE SOMETHING IN MIND?
+            </span>
+
+            <h2>
+              Start with the problem.
+              <strong>We'll work from there.</strong>
+            </h2>
+
+            <p>
+              Products, platforms, operations, integrations,
+              websites or growth — the first step is understanding
+              what the business actually needs.
+            </p>
+
+          </div>
+
+          <a
+            href="#contact-form"
+            class="cta-button"
+            onclick="document.querySelector('.form-panel')?.scrollIntoView({behavior:'smooth'}); return false;"
+          >
+
+            <span>
+              Tell Us About It
+            </span>
+
+            <span class="cta-arrow">
+              <ion-icon name="arrow-up-outline"></ion-icon>
+            </span>
+
+          </a>
 
         </div>
 

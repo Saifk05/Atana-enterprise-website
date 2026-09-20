@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="process-content">
 
   <div class="process-page">
 
@@ -6,17 +6,25 @@
 
       <app-header></app-header>
 
-      <div class="container hero-inner">
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
+
+      <div class="container process-hero-grid">
 
         <div class="hero-copy">
 
-          <span class="eyebrow">
-            Our Process
-          </span>
+          <div class="hero-eyebrow">
+            <span></span>
+            OUR PROCESS / DELIVERY SYSTEM
+          </div>
 
           <h1>
             From business problem
-            to working system.
+            <span>to working system.</span>
           </h1>
 
           <p>
@@ -27,156 +35,246 @@
 
           <div class="hero-actions">
 
-            <a
-              routerLink="/contact"
-              class="primary-button"
-            >
-              Start a Project
+            <a routerLink="/contact" class="primary-button">
+              <span>Start a Project</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <a
-              href="#delivery-process"
-              class="secondary-link"
-            >
+            <a href="#delivery-process" class="secondary-link">
               Explore Our Process
-
-              <ion-icon
-                name="arrow-down-outline"
-              ></ion-icon>
+              <ion-icon name="arrow-down-outline"></ion-icon>
             </a>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>08</strong>
+              <span>Delivery Stages</span>
+            </div>
+
+            <div>
+              <strong>04</strong>
+              <span>Connected Disciplines</span>
+            </div>
+
+            <div>
+              <strong>01</strong>
+              <span>Delivery System</span>
+            </div>
 
           </div>
 
         </div>
 
-        <div class="hero-system">
+        <div class="hero-visual">
 
-          <div class="system-header">
+          <div class="visual-label">
+            ATANA / DELIVERY SYSTEM
+            <small>02 / PROCESS</small>
+          </div>
 
-            <div class="system-title">
+          <div class="process-shell">
 
-              <span class="system-dot"></span>
+            <div class="shell-header">
 
-              <span>
-                ATANA Delivery System
-              </span>
+              <div class="shell-brand">
+
+                <span class="shell-mark">
+                  <i></i>
+                  <i></i>
+                </span>
+
+                <div>
+                  <small>ATANA</small>
+                  <strong>Delivery System</strong>
+                </div>
+
+              </div>
+
+              <div class="shell-status">
+                <i></i>
+                SYSTEM / ACTIVE
+              </div>
 
             </div>
 
-            <span class="system-status">
-              End-to-end
-            </span>
+            <div class="shell-body">
+
+              <div class="shell-heading">
+
+                <div>
+                  <span>PROJECT DELIVERY</span>
+                  <strong>
+                    From uncertainty
+                    <em>to measurable impact.</em>
+                  </strong>
+                </div>
+
+                <div class="delivery-status">
+                  <i></i>
+                  END-TO-END
+                </div>
+
+              </div>
+
+              <div class="delivery-system">
+
+                <div class="delivery-line"></div>
+
+                <div class="delivery-stage stage-discover">
+
+                  <span class="delivery-number">01</span>
+
+                  <div class="delivery-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>UNDERSTAND</small>
+                    <strong>Discover</strong>
+                    <span>Business context</span>
+                  </div>
+
+                </div>
+
+                <div class="delivery-stage stage-define">
+
+                  <span class="delivery-number">02</span>
+
+                  <div class="delivery-icon">
+                    <ion-icon name="compass-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>DIRECTION</small>
+                    <strong>Define</strong>
+                    <span>Priorities & scope</span>
+                  </div>
+
+                </div>
+
+                <div class="delivery-stage stage-build active">
+
+                  <span class="delivery-number">03</span>
+
+                  <div class="delivery-icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>CREATE</small>
+                    <strong>Build</strong>
+                    <span>Design & engineering</span>
+                  </div>
+
+                </div>
+
+                <div class="delivery-stage stage-launch">
+
+                  <span class="delivery-number">04</span>
+
+                  <div class="delivery-icon">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>DELIVER</small>
+                    <strong>Launch</strong>
+                    <span>Production system</span>
+                  </div>
+
+                </div>
+
+                <div class="delivery-stage stage-optimize">
+
+                  <span class="delivery-number">05</span>
+
+                  <div class="delivery-icon">
+                    <ion-icon name="trending-up-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>IMPROVE</small>
+                    <strong>Optimize</strong>
+                    <span>Measure & evolve</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="shell-metrics">
+
+                <div>
+                  <span>STRATEGY</span>
+                  <strong>Clear</strong>
+                  <small>Business direction</small>
+                </div>
+
+                <div>
+                  <span>DELIVERY</span>
+                  <strong>Iterative</strong>
+                  <small>Continuous validation</small>
+                </div>
+
+                <div>
+                  <span>OUTCOME</span>
+                  <strong>Measurable</strong>
+                  <small>Business impact</small>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="shell-footer">
+
+              <div>
+                <i></i>
+                <span>Business</span>
+                <strong>Aligned</strong>
+              </div>
+
+              <div>
+                <i></i>
+                <span>Engineering</span>
+                <strong>Connected</strong>
+              </div>
+
+              <div>
+                <i></i>
+                <span>Delivery</span>
+                <strong>Production-ready</strong>
+              </div>
+
+            </div>
 
           </div>
 
-          <div class="system-body">
+          <div class="floating-card floating-strategy">
 
-            <div class="system-stage">
-
-              <span class="stage-number">
-                01
-              </span>
-
-              <div>
-                <strong>
-                  Understand
-                </strong>
-
-                <small>
-                  Business & users
-                </small>
-              </div>
-
+            <div class="floating-icon">
+              <ion-icon name="compass-outline"></ion-icon>
             </div>
 
-            <div class="system-connector">
-
-              <span></span>
-
-              <ion-icon
-                name="arrow-forward-outline"
-              ></ion-icon>
-
-            </div>
-
-            <div class="system-stage active">
-
-              <span class="stage-number">
-                02
-              </span>
-
-              <div>
-                <strong>
-                  Create
-                </strong>
-
-                <small>
-                  Design & engineering
-                </small>
-              </div>
-
-            </div>
-
-            <div class="system-connector">
-
-              <span></span>
-
-              <ion-icon
-                name="arrow-forward-outline"
-              ></ion-icon>
-
-            </div>
-
-            <div class="system-stage">
-
-              <span class="stage-number">
-                03
-              </span>
-
-              <div>
-                <strong>
-                  Improve
-                </strong>
-
-                <small>
-                  Measure & scale
-                </small>
-              </div>
-
+            <div>
+              <small>Direction</small>
+              <strong>Strategy Aligned</strong>
             </div>
 
           </div>
 
-          <div class="system-metrics">
+          <div class="floating-card floating-delivery">
 
-            <div>
-              <span>
-                Strategy
-              </span>
-
-              <strong>
-                Clear
-              </strong>
+            <div class="floating-icon">
+              <ion-icon name="git-branch-outline"></ion-icon>
             </div>
 
             <div>
-              <span>
-                Delivery
-              </span>
-
-              <strong>
-                Iterative
-              </strong>
-            </div>
-
-            <div>
-              <span>
-                Outcome
-              </span>
-
-              <strong>
-                Measurable
-              </strong>
+              <small>Execution</small>
+              <strong>Connected Delivery</strong>
             </div>
 
           </div>
@@ -185,29 +283,28 @@
 
       </div>
 
-      <div class="hero-wave">
+      <div class="hero-bottom">
 
-        <svg
-          viewBox="0 0 1440 180"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path
-            d="
-              M0,110
-              C220,35 420,120 650,98
-              C850,80 1060,35 1260,64
-              C1350,76 1405,94 1440,105
-              L1440,180
-              L0,180
-              Z
-            "
-          ></path>
-        </svg>
+        <div class="container hero-bottom-inner">
+          <span>Discover</span>
+          <i></i>
+          <span>Define</span>
+          <i></i>
+          <span>Architect</span>
+          <i></i>
+          <span>Design</span>
+          <i></i>
+          <span>Build</span>
+          <i></i>
+          <span>Launch</span>
+          <i></i>
+          <span>Optimize</span>
+        </div>
 
       </div>
 
     </section>
+
 
     <main>
 
@@ -215,15 +312,19 @@
 
         <div class="container intro-grid">
 
-          <div>
+          <div class="section-index">
+            01 / HOW WE WORK
+          </div>
+
+          <div class="intro-heading">
 
             <span class="section-label">
-              How we work
+              DELIVERY PHILOSOPHY
             </span>
 
             <h2>
               Structure where it matters.
-              Flexibility where it helps.
+              <span>Flexibility where it helps.</span>
             </h2>
 
           </div>
@@ -247,24 +348,26 @@
 
       </section>
 
-      <section
-        id="delivery-process"
-        class="delivery-section"
-      >
+
+      <section id="delivery-process" class="delivery-section">
 
         <div class="container">
 
           <div class="delivery-heading">
 
-            <div>
+            <div class="section-index">
+              02 / DELIVERY FRAMEWORK
+            </div>
+
+            <div class="delivery-heading-copy">
 
               <span class="section-label">
-                Delivery framework
+                FROM IDEA TO IMPACT
               </span>
 
               <h2>
                 One connected journey
-                from idea to impact.
+                <span>from problem to production.</span>
               </h2>
 
             </div>
@@ -276,6 +379,7 @@
 
           </div>
 
+
           <div class="delivery-timeline">
 
             <article class="timeline-step">
@@ -286,27 +390,47 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Understand
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Discover
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Understand the business, users, existing systems,
-                  constraints and the problem worth solving.
-                </p>
+                  <span class="step-type">
+                    UNDERSTAND
+                  </span>
+
+                  <h3>Discover</h3>
+
+                  <p>
+                    Understand the business, users, existing systems,
+                    constraints and the problem worth solving.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>Business</small>
+                    <small>Users</small>
+                    <small>Systems</small>
+                    <small>Constraints</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Business Context</strong>
                 </div>
 
               </div>
 
             </article>
+
 
             <article class="timeline-step">
 
@@ -316,27 +440,47 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Direction
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="compass-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Define
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Turn discovery into clear requirements,
-                  priorities, success measures and project scope.
-                </p>
+                  <span class="step-type">
+                    DIRECTION
+                  </span>
+
+                  <h3>Define</h3>
+
+                  <p>
+                    Turn discovery into clear requirements,
+                    priorities, success measures and project scope.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>Requirements</small>
+                    <small>Priorities</small>
+                    <small>Scope</small>
+                    <small>Success</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Delivery Roadmap</strong>
                 </div>
 
               </div>
 
             </article>
+
 
             <article class="timeline-step">
 
@@ -346,27 +490,47 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Foundation
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Architect
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Define the technical foundation, system boundaries,
-                  integrations, data flows and platform structure.
-                </p>
+                  <span class="step-type">
+                    FOUNDATION
+                  </span>
+
+                  <h3>Architect</h3>
+
+                  <p>
+                    Define the technical foundation, system boundaries,
+                    integrations, data flows and platform structure.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>Architecture</small>
+                    <small>Data</small>
+                    <small>APIs</small>
+                    <small>Platforms</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Solution Architecture</strong>
                 </div>
 
               </div>
 
             </article>
+
 
             <article class="timeline-step">
 
@@ -376,21 +540,40 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Experience
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Design
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Translate requirements into clear journeys,
-                  interfaces and digital experiences built around users.
-                </p>
+                  <span class="step-type">
+                    EXPERIENCE
+                  </span>
+
+                  <h3>Design</h3>
+
+                  <p>
+                    Translate requirements into clear journeys,
+                    interfaces and digital experiences built around users.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>Journeys</small>
+                    <small>UX</small>
+                    <small>Interface</small>
+                    <small>Validation</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Product Experience</strong>
                 </div>
 
@@ -398,7 +581,8 @@
 
             </article>
 
-            <article class="timeline-step">
+
+            <article class="timeline-step featured">
 
               <div class="timeline-marker">
                 <span>05</span>
@@ -406,27 +590,47 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Engineering
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Build
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Engineer the product in structured iterations
-                  with continuous validation and technical review.
-                </p>
+                  <span class="step-type">
+                    ENGINEERING
+                  </span>
+
+                  <h3>Build</h3>
+
+                  <p>
+                    Engineer the product in structured iterations
+                    with continuous validation and technical review.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>Frontend</small>
+                    <small>Backend</small>
+                    <small>Quality</small>
+                    <small>Iteration</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Working Product</strong>
                 </div>
 
               </div>
 
             </article>
+
 
             <article class="timeline-step">
 
@@ -436,27 +640,47 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Connectivity
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="git-branch-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Integrate
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Connect applications, APIs, platforms and data
-                  so the solution works within the wider business.
-                </p>
+                  <span class="step-type">
+                    CONNECTIVITY
+                  </span>
+
+                  <h3>Integrate</h3>
+
+                  <p>
+                    Connect applications, APIs, platforms and data
+                    so the solution works within the wider business.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>APIs</small>
+                    <small>Platforms</small>
+                    <small>Data</small>
+                    <small>Automation</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Connected System</strong>
                 </div>
 
               </div>
 
             </article>
+
 
             <article class="timeline-step">
 
@@ -466,27 +690,47 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Production
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Launch
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Validate, deploy and transition the solution
-                  into production with a controlled release.
-                </p>
+                  <span class="step-type">
+                    PRODUCTION
+                  </span>
+
+                  <h3>Launch</h3>
+
+                  <p>
+                    Validate, deploy and transition the solution
+                    into production with a controlled release.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>Testing</small>
+                    <small>Release</small>
+                    <small>Deployment</small>
+                    <small>Transition</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Production Release</strong>
                 </div>
 
               </div>
 
             </article>
+
 
             <article class="timeline-step">
 
@@ -496,21 +740,40 @@
 
               <div class="timeline-content">
 
-                <span class="step-type">
-                  Evolution
-                </span>
+                <div class="timeline-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </div>
 
-                <h3>
-                  Optimize
-                </h3>
+                <div class="timeline-main">
 
-                <p>
-                  Measure real-world performance, improve the
-                  experience and evolve the system as needs change.
-                </p>
+                  <span class="step-type">
+                    EVOLUTION
+                  </span>
+
+                  <h3>Optimize</h3>
+
+                  <p>
+                    Measure real-world performance, improve the
+                    experience and evolve the system as needs change.
+                  </p>
+
+                </div>
+
+                <div class="step-focus">
+
+                  <span>FOCUS</span>
+
+                  <div>
+                    <small>Measure</small>
+                    <small>Learn</small>
+                    <small>Improve</small>
+                    <small>Scale</small>
+                  </div>
+
+                </div>
 
                 <div class="step-output">
-                  <span>Output</span>
+                  <span>OUTPUT</span>
                   <strong>Continuous Improvement</strong>
                 </div>
 
@@ -524,19 +787,27 @@
 
       </section>
 
+
       <section class="architecture-section">
 
-        <div class="container architecture-grid">
+        <div class="architecture-grid-background"></div>
+        <div class="architecture-glow"></div>
+
+        <div class="container architecture-layout">
 
           <div class="architecture-copy">
 
+            <div class="dark-index">
+              03 / DELIVERY ARCHITECTURE
+            </div>
+
             <span class="dark-label">
-              One delivery system
+              ONE DELIVERY SYSTEM
             </span>
 
             <h2>
-              Strategy should stay
-              connected to execution.
+              Strategy stays connected
+              <span>to execution.</span>
             </h2>
 
             <p>
@@ -545,95 +816,168 @@
               process so important decisions are not made in isolation.
             </p>
 
+            <a routerLink="/contact" class="architecture-link">
+              Discuss Your Project
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
           </div>
 
-          <div class="architecture-model">
 
-            <div class="architecture-row">
+          <div class="architecture-system">
+
+            <div class="architecture-system-header">
 
               <span>
-                01
+                ATANA / DELIVERY ARCHITECTURE
               </span>
 
               <div>
-                <strong>
-                  Strategy
-                </strong>
-
-                <small>
-                  Goals / priorities / outcomes
-                </small>
+                <i></i>
+                CONNECTED
               </div>
-
-              <span class="architecture-state">
-                Direction
-              </span>
 
             </div>
 
-            <div class="architecture-row">
+            <div class="architecture-system-body">
 
-              <span>
-                02
-              </span>
+              <div class="architecture-primary">
 
-              <div>
-                <strong>
-                  Experience
-                </strong>
+                <div class="architecture-node">
 
-                <small>
-                  Users / journeys / interfaces
-                </small>
+                  <span>01</span>
+
+                  <div class="architecture-icon">
+                    <ion-icon name="compass-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>DIRECTION</small>
+                    <strong>Strategy</strong>
+                    <p>Goals / priorities / outcomes</p>
+                  </div>
+
+                  <div class="architecture-state">
+                    Direction
+                  </div>
+
+                </div>
+
+                <div class="architecture-connector">
+                  <span></span>
+                  <ion-icon name="arrow-down-outline"></ion-icon>
+                </div>
+
+
+                <div class="architecture-node">
+
+                  <span>02</span>
+
+                  <div class="architecture-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>ADOPTION</small>
+                    <strong>Experience</strong>
+                    <p>Users / journeys / interfaces</p>
+                  </div>
+
+                  <div class="architecture-state">
+                    Adoption
+                  </div>
+
+                </div>
+
+                <div class="architecture-connector">
+                  <span></span>
+                  <ion-icon name="arrow-down-outline"></ion-icon>
+                </div>
+
+
+                <div class="architecture-node active">
+
+                  <span>03</span>
+
+                  <div class="architecture-icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>CAPABILITY</small>
+                    <strong>Technology</strong>
+                    <p>Applications / APIs / platforms</p>
+                  </div>
+
+                  <div class="architecture-state">
+                    Capability
+                  </div>
+
+                </div>
+
+                <div class="architecture-connector">
+                  <span></span>
+                  <ion-icon name="arrow-down-outline"></ion-icon>
+                </div>
+
+
+                <div class="architecture-node">
+
+                  <span>04</span>
+
+                  <div class="architecture-icon">
+                    <ion-icon name="settings-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>IMPACT</small>
+                    <strong>Operations</strong>
+                    <p>Processes / teams / performance</p>
+                  </div>
+
+                  <div class="architecture-state">
+                    Impact
+                  </div>
+
+                </div>
+
               </div>
 
-              <span class="architecture-state">
-                Adoption
-              </span>
+              <div class="architecture-flow">
+
+                <span>BUSINESS</span>
+                <i></i>
+                <span>EXPERIENCE</span>
+                <i></i>
+                <span>ENGINEERING</span>
+                <i></i>
+                <span>OPERATIONS</span>
+
+              </div>
 
             </div>
 
-            <div class="architecture-row">
-
-              <span>
-                03
-              </span>
+            <div class="architecture-system-footer">
 
               <div>
-                <strong>
-                  Technology
-                </strong>
-
-                <small>
-                  Applications / APIs / platforms
-                </small>
+                <span>Direction</span>
+                <strong>Aligned</strong>
               </div>
-
-              <span class="architecture-state">
-                Capability
-              </span>
-
-            </div>
-
-            <div class="architecture-row">
-
-              <span>
-                04
-              </span>
 
               <div>
-                <strong>
-                  Operations
-                </strong>
-
-                <small>
-                  Processes / teams / performance
-                </small>
+                <span>Experience</span>
+                <strong>User-centered</strong>
               </div>
 
-              <span class="architecture-state">
-                Impact
-              </span>
+              <div>
+                <span>Engineering</span>
+                <strong>Maintainable</strong>
+              </div>
+
+              <div>
+                <span>Outcome</span>
+                <strong>Measurable</strong>
+              </div>
 
             </div>
 
@@ -643,35 +987,59 @@
 
       </section>
 
+
       <section class="collaboration-section">
 
         <div class="container">
 
-          <div class="section-heading">
+          <div class="collaboration-heading">
 
-            <span class="section-label">
-              Working together
-            </span>
+            <div class="section-index">
+              04 / COLLABORATION
+            </div>
 
-            <h2>
-              Clear collaboration
-              throughout delivery.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                WORKING TOGETHER
+              </span>
+
+              <h2>
+                Clear collaboration
+                <span>throughout delivery.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Good delivery depends on shared context, fast feedback
+              and clear decisions across business and technical teams.
+            </p>
 
           </div>
+
 
           <div class="collaboration-grid">
 
             <article>
 
-              <span class="card-index">
-                01
-              </span>
+              <div class="collaboration-top">
 
-              <div>
+                <span>01</span>
+
+                <div class="collaboration-icon">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+
+              </div>
+
+              <div class="collaboration-content">
+
+                <small>VISIBILITY</small>
 
                 <h3>
-                  Shared Visibility
+                  Shared
+                  Visibility
                 </h3>
 
                 <p>
@@ -682,18 +1050,33 @@
 
               </div>
 
+              <div class="collaboration-status">
+                <i></i>
+                Transparent Delivery
+              </div>
+
             </article>
 
-            <article>
 
-              <span class="card-index">
-                02
-              </span>
+            <article class="featured">
 
-              <div>
+              <div class="collaboration-top">
+
+                <span>02</span>
+
+                <div class="collaboration-icon">
+                  <ion-icon name="checkmark-done-outline"></ion-icon>
+                </div>
+
+              </div>
+
+              <div class="collaboration-content">
+
+                <small>VALIDATION</small>
 
                 <h3>
-                  Regular Validation
+                  Regular
+                  Validation
                 </h3>
 
                 <p>
@@ -703,18 +1086,33 @@
 
               </div>
 
+              <div class="collaboration-status">
+                <i></i>
+                Continuous Feedback
+              </div>
+
             </article>
+
 
             <article>
 
-              <span class="card-index">
-                03
-              </span>
+              <div class="collaboration-top">
 
-              <div>
+                <span>03</span>
+
+                <div class="collaboration-icon">
+                  <ion-icon name="chatbubbles-outline"></ion-icon>
+                </div>
+
+              </div>
+
+              <div class="collaboration-content">
+
+                <small>COMMUNICATION</small>
 
                 <h3>
-                  Direct Communication
+                  Direct
+                  Communication
                 </h3>
 
                 <p>
@@ -722,6 +1120,11 @@
                   so decisions can be made with the right context.
                 </p>
 
+              </div>
+
+              <div class="collaboration-status">
+                <i></i>
+                Connected Teams
               </div>
 
             </article>
@@ -732,94 +1135,214 @@
 
       </section>
 
+
       <section class="principles-section">
 
         <div class="container">
 
           <div class="principles-heading">
 
-            <span class="section-label">
-              Delivery principles
-            </span>
+            <div class="section-index">
+              05 / PRINCIPLES
+            </div>
 
-            <h2>
-              How we make
-              better decisions.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                DELIVERY PRINCIPLES
+              </span>
+
+              <h2>
+                Principles for making
+                <span>better decisions.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Our process is structured, but the principles behind
+              the decisions matter more than following a rigid methodology.
+            </p>
 
           </div>
+
 
           <div class="principles-list">
 
             <article>
 
-              <span>
+              <span class="principle-number">
                 01
               </span>
 
-              <h3>
-                Business first.
-              </h3>
+              <div class="principle-icon">
+                <ion-icon name="business-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>OBJECTIVE</small>
+
+                <h3>
+                  Business first.
+                </h3>
+
+              </div>
 
               <p>
                 Technology decisions should support a clear
                 business objective.
               </p>
 
+              <div class="principle-state">
+                ALIGN
+              </div>
+
             </article>
+
 
             <article>
 
-              <span>
+              <span class="principle-number">
                 02
               </span>
 
-              <h3>
-                Reduce complexity.
-              </h3>
+              <div class="principle-icon">
+                <ion-icon name="contract-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>SIMPLICITY</small>
+
+                <h3>
+                  Reduce complexity.
+                </h3>
+
+              </div>
 
               <p>
                 Good systems make work simpler rather than
                 introducing unnecessary layers.
               </p>
 
+              <div class="principle-state">
+                SIMPLIFY
+              </div>
+
             </article>
 
-            <article>
 
-              <span>
+            <article class="active">
+
+              <span class="principle-number">
                 03
               </span>
 
-              <h3>
-                Build for change.
-              </h3>
+              <div class="principle-icon">
+                <ion-icon name="git-branch-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>EVOLUTION</small>
+
+                <h3>
+                  Build for change.
+                </h3>
+
+              </div>
 
               <p>
                 Products and platforms should be able to evolve
                 as the business grows.
               </p>
 
+              <div class="principle-state">
+                EVOLVE
+              </div>
+
             </article>
+
 
             <article>
 
-              <span>
+              <span class="principle-number">
                 04
               </span>
 
-              <h3>
-                Measure outcomes.
-              </h3>
+              <div class="principle-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>IMPACT</small>
+
+                <h3>
+                  Measure outcomes.
+                </h3>
+
+              </div>
 
               <p>
                 Delivery is successful when the system creates
                 measurable improvement.
               </p>
 
+              <div class="principle-state">
+                MEASURE
+              </div>
+
             </article>
 
           </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="process-cta">
+
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
+
+        <div class="container process-cta-inner">
+
+          <div class="cta-index">
+            06 / START
+          </div>
+
+          <div class="cta-copy">
+
+            <span>
+              HAVE A PROJECT IN MIND?
+            </span>
+
+            <h2>
+              Turn the problem into
+              <strong>a working system.</strong>
+            </h2>
+
+            <p>
+              Bring us the business problem. We will help define,
+              architect, design and engineer the system around it.
+            </p>
+
+          </div>
+
+          <a routerLink="/contact" class="cta-button">
+
+            <span>
+              Start a Project
+            </span>
+
+            <span class="cta-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+
+          </a>
 
         </div>
 

@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="about-content">
 
   <div class="about-page">
 
@@ -6,46 +6,290 @@
 
       <app-header></app-header>
 
-      <div class="container hero-inner">
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
 
-        <div class="hero-main">
+      <div class="container about-hero-grid">
 
-          <span class="eyebrow">
-            About ATANA
-          </span>
+        <div class="hero-copy">
+
+          <div class="hero-eyebrow">
+            <span></span>
+            ABOUT ATANA / DIGITAL TECHNOLOGY
+          </div>
 
           <h1>
             Technology should
-            move business forward.
+            <span>move business forward.</span>
           </h1>
+
+          <p>
+            ATANA is a digital technology and consulting company helping
+            businesses build better products, modernize operations and
+            create connected digital systems.
+          </p>
+
+          <div class="hero-actions">
+
+            <a routerLink="/contact" class="primary-button">
+              <span>Start a Project</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
+            <a href="#company" class="secondary-link">
+              Discover ATANA
+              <ion-icon name="arrow-down-outline"></ion-icon>
+            </a>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>01</strong>
+              <span>Business First</span>
+            </div>
+
+            <div>
+              <strong>04</strong>
+              <span>Core Capabilities</span>
+            </div>
+
+            <div>
+              <strong>360°</strong>
+              <span>Digital Thinking</span>
+            </div>
+
+          </div>
 
         </div>
 
-        <div class="hero-bottom">
 
-          <p>
-            ATANA is a digital technology and consulting company
-            helping businesses build better products, modernize
-            operations and create connected digital systems.
-          </p>
+        <div class="hero-visual">
 
-          <div class="hero-index">
+          <div class="visual-label">
+            ATANA / COMPANY SYSTEM
+            <small>04 / ABOUT</small>
+          </div>
 
-            <span>
-              Strategy
-            </span>
+          <div class="company-shell">
 
-            <span>
-              Design
-            </span>
+            <div class="shell-header">
 
-            <span>
-              Engineering
-            </span>
+              <div class="shell-brand">
 
-            <span>
-              Growth
-            </span>
+                <span class="shell-mark">
+                  <i></i>
+                  <i></i>
+                </span>
+
+                <div>
+                  <small>ATANA</small>
+                  <strong>Digital Capability</strong>
+                </div>
+
+              </div>
+
+              <div class="shell-status">
+                <i></i>
+                SYSTEM / CONNECTED
+              </div>
+
+            </div>
+
+
+            <div class="shell-body">
+
+              <div class="shell-heading">
+
+                <div>
+                  <span>BUSINESS + TECHNOLOGY</span>
+
+                  <strong>
+                    One connected
+                    <em>digital capability.</em>
+                  </strong>
+                </div>
+
+                <div class="system-status">
+                  <i></i>
+                  ACTIVE
+                </div>
+
+              </div>
+
+
+              <div class="capability-map">
+
+                <div class="capability-line line-horizontal"></div>
+                <div class="capability-line line-vertical"></div>
+
+                <div class="company-core">
+
+                  <span>ATANA</span>
+
+                  <div class="core-mark">
+                    <i></i>
+                    <i></i>
+                  </div>
+
+                  <strong>Digital<br>Execution</strong>
+
+                  <small>
+                    BUSINESS → IMPACT
+                  </small>
+
+                </div>
+
+
+                <div class="capability-node node-strategy">
+
+                  <span>01</span>
+
+                  <div class="node-icon">
+                    <ion-icon name="compass-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>DIRECTION</small>
+                    <strong>Strategy</strong>
+                    <p>Goals & priorities</p>
+                  </div>
+
+                </div>
+
+
+                <div class="capability-node node-experience">
+
+                  <span>02</span>
+
+                  <div class="node-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>ADOPTION</small>
+                    <strong>Experience</strong>
+                    <p>Products & journeys</p>
+                  </div>
+
+                </div>
+
+
+                <div class="capability-node node-engineering active">
+
+                  <span>03</span>
+
+                  <div class="node-icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>CAPABILITY</small>
+                    <strong>Engineering</strong>
+                    <p>Systems & platforms</p>
+                  </div>
+
+                </div>
+
+
+                <div class="capability-node node-growth">
+
+                  <span>04</span>
+
+                  <div class="node-icon">
+                    <ion-icon name="trending-up-outline"></ion-icon>
+                  </div>
+
+                  <div>
+                    <small>IMPACT</small>
+                    <strong>Growth</strong>
+                    <p>Adoption & performance</p>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="shell-metrics">
+
+                <div>
+                  <span>THINKING</span>
+                  <strong>Business-led</strong>
+                  <small>Start with the problem</small>
+                </div>
+
+                <div>
+                  <span>DELIVERY</span>
+                  <strong>Connected</strong>
+                  <small>Strategy to execution</small>
+                </div>
+
+                <div>
+                  <span>OUTCOME</span>
+                  <strong>Measurable</strong>
+                  <small>Built around impact</small>
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="shell-footer">
+
+              <div>
+                <i></i>
+                <span>Strategy</span>
+                <strong>Aligned</strong>
+              </div>
+
+              <div>
+                <i></i>
+                <span>Technology</span>
+                <strong>Connected</strong>
+              </div>
+
+              <div>
+                <i></i>
+                <span>Business</span>
+                <strong>Moving Forward</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="floating-card floating-business">
+
+            <div class="floating-icon">
+              <ion-icon name="business-outline"></ion-icon>
+            </div>
+
+            <div>
+              <small>Starting Point</small>
+              <strong>Business Problem</strong>
+            </div>
+
+          </div>
+
+
+          <div class="floating-card floating-impact">
+
+            <div class="floating-icon">
+              <ion-icon name="analytics-outline"></ion-icon>
+            </div>
+
+            <div>
+              <small>Destination</small>
+              <strong>Measurable Impact</strong>
+            </div>
 
           </div>
 
@@ -53,61 +297,51 @@
 
       </div>
 
-      <div class="hero-statement">
 
-        <div class="statement-track">
+      <div class="hero-bottom">
 
-          <span>THINK</span>
+        <div class="container hero-bottom-inner">
+
+          <span>Think</span>
           <i></i>
-          <span>BUILD</span>
+
+          <span>Design</span>
           <i></i>
-          <span>CONNECT</span>
+
+          <span>Build</span>
           <i></i>
-          <span>GROW</span>
+
+          <span>Connect</span>
+          <i></i>
+
+          <span>Grow</span>
 
         </div>
 
       </div>
 
-      <div class="hero-wave">
-
-        <svg
-          viewBox="0 0 1440 170"
-          preserveAspectRatio="none"
-          aria-hidden="true"
-        >
-          <path
-            d="
-              M0,95
-              C220,155 425,55 665,85
-              C890,112 1080,155 1285,105
-              C1350,89 1405,72 1440,67
-              L1440,170
-              L0,170
-              Z
-            "
-          ></path>
-        </svg>
-
-      </div>
-
     </section>
+
 
     <main>
 
-      <section class="company-intro">
+      <section id="company" class="company-intro">
 
         <div class="container company-intro-grid">
+
+          <div class="section-index">
+            01 / THE COMPANY
+          </div>
 
           <div class="intro-heading">
 
             <span class="section-label">
-              The company
+              WHY ATANA
             </span>
 
             <h2>
               Built around the
-              problems that matter.
+              <span>problems that matter.</span>
             </h2>
 
           </div>
@@ -138,14 +372,24 @@
 
       </section>
 
+
       <section class="belief-section">
 
-        <div class="container">
+        <div class="belief-background">
+          <div class="belief-grid-pattern"></div>
+          <div class="belief-glow"></div>
+        </div>
 
-          <div class="belief-header">
+        <div class="container belief-layout">
+
+          <div class="belief-meta">
+
+            <div class="section-index">
+              02 / WHAT WE BELIEVE
+            </div>
 
             <span class="section-label">
-              What we believe
+              OUR POINT OF VIEW
             </span>
 
             <p>
@@ -155,6 +399,7 @@
 
           </div>
 
+
           <div class="belief-statement">
 
             <span class="quote-mark">
@@ -163,15 +408,27 @@
 
             <h2>
               The best digital systems
-              disappear into the way
+              <span>disappear into the way</span>
               a business works.
             </h2>
+
+            <div class="belief-footer">
+
+              <div>
+                <span>ATANA</span>
+                <strong>Technology with purpose.</strong>
+              </div>
+
+              <div class="belief-line"></div>
+
+            </div>
 
           </div>
 
         </div>
 
       </section>
+
 
       <section class="approach-section">
 
@@ -179,104 +436,193 @@
 
           <div class="approach-heading">
 
-            <span class="section-label">
-              Our perspective
-            </span>
+            <div class="section-index">
+              03 / OUR PERSPECTIVE
+            </div>
 
-            <h2>
-              Four ideas shape
-              how we work.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                HOW WE THINK
+              </span>
+
+              <h2>
+                Four ideas shape
+                <span>how we work.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              The technology changes. These principles stay consistent
+              across products, platforms, operations and digital growth.
+            </p>
 
           </div>
+
 
           <div class="approach-list">
 
             <article>
 
-              <span class="approach-number">
-                01
-              </span>
+              <div class="approach-top">
 
-              <h3>
-                Understand before building.
-              </h3>
+                <span class="approach-number">
+                  01
+                </span>
 
-              <p>
-                We start with the business problem, the people involved
-                and the outcome that matters before deciding what
-                technology should be created.
-              </p>
+                <div class="approach-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </div>
 
-              <span class="approach-tag">
-                Context
-              </span>
+              </div>
 
-            </article>
+              <div class="approach-content">
 
-            <article>
+                <small>
+                  CONTEXT
+                </small>
 
-              <span class="approach-number">
-                02
-              </span>
+                <h3>
+                  Understand
+                  before building.
+                </h3>
 
-              <h3>
-                Simplicity is a capability.
-              </h3>
+                <p>
+                  We start with the business problem, the people involved
+                  and the outcome that matters before deciding what
+                  technology should be created.
+                </p>
 
-              <p>
-                Complexity has a cost. We design products, workflows
-                and architectures that make difficult work easier
-                to understand and operate.
-              </p>
+              </div>
 
-              <span class="approach-tag">
-                Clarity
-              </span>
+              <div class="approach-tag">
+                <i></i>
+                Business Context
+              </div>
 
             </article>
 
-            <article>
 
-              <span class="approach-number">
-                03
-              </span>
+            <article class="featured">
 
-              <h3>
-                Systems should connect.
-              </h3>
+              <div class="approach-top">
 
-              <p>
-                Applications create more value when information,
-                processes and platforms work together instead of
-                operating as isolated tools.
-              </p>
+                <span class="approach-number">
+                  02
+                </span>
 
-              <span class="approach-tag">
-                Connection
-              </span>
+                <div class="approach-icon">
+                  <ion-icon name="contract-outline"></ion-icon>
+                </div>
+
+              </div>
+
+              <div class="approach-content">
+
+                <small>
+                  CLARITY
+                </small>
+
+                <h3>
+                  Simplicity is
+                  a capability.
+                </h3>
+
+                <p>
+                  Complexity has a cost. We design products, workflows
+                  and architectures that make difficult work easier
+                  to understand and operate.
+                </p>
+
+              </div>
+
+              <div class="approach-tag">
+                <i></i>
+                Reduce Complexity
+              </div>
 
             </article>
 
+
             <article>
 
-              <span class="approach-number">
-                04
-              </span>
+              <div class="approach-top">
 
-              <h3>
-                Build for what comes next.
-              </h3>
+                <span class="approach-number">
+                  03
+                </span>
 
-              <p>
-                Businesses change. We create digital foundations
-                that can evolve as teams, customers and operational
-                requirements grow.
-              </p>
+                <div class="approach-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </div>
 
-              <span class="approach-tag">
-                Evolution
-              </span>
+              </div>
+
+              <div class="approach-content">
+
+                <small>
+                  CONNECTION
+                </small>
+
+                <h3>
+                  Systems should
+                  connect.
+                </h3>
+
+                <p>
+                  Applications create more value when information,
+                  processes and platforms work together instead of
+                  operating as isolated tools.
+                </p>
+
+              </div>
+
+              <div class="approach-tag">
+                <i></i>
+                Connected Systems
+              </div>
+
+            </article>
+
+
+            <article>
+
+              <div class="approach-top">
+
+                <span class="approach-number">
+                  04
+                </span>
+
+                <div class="approach-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </div>
+
+              </div>
+
+              <div class="approach-content">
+
+                <small>
+                  EVOLUTION
+                </small>
+
+                <h3>
+                  Build for what
+                  comes next.
+                </h3>
+
+                <p>
+                  Businesses change. We create digital foundations
+                  that can evolve as teams, customers and operational
+                  requirements grow.
+                </p>
+
+              </div>
+
+              <div class="approach-tag">
+                <i></i>
+                Built to Evolve
+              </div>
 
             </article>
 
@@ -286,19 +632,27 @@
 
       </section>
 
+
       <section class="system-section">
 
-        <div class="container system-grid">
+        <div class="system-grid-background"></div>
+        <div class="system-glow"></div>
+
+        <div class="container system-layout">
 
           <div class="system-copy">
 
+            <div class="dark-index">
+              04 / CONNECTED CAPABILITY
+            </div>
+
             <span class="dark-label">
-              One connected capability
+              ONE DIGITAL SYSTEM
             </span>
 
             <h2>
               Business thinking
-              meets digital execution.
+              <span>meets digital execution.</span>
             </h2>
 
             <p>
@@ -306,118 +660,233 @@
               into something useful, operational and measurable.
             </p>
 
-            <a
-              routerLink="/services"
-              class="dark-link"
-            >
-              Explore our services
+            <a routerLink="/services" class="dark-link">
 
-              <ion-icon
-                name="arrow-forward-outline"
-              ></ion-icon>
+              Explore Our Services
+
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+
             </a>
 
           </div>
 
+
           <div class="capability-system">
 
-            <div class="system-node">
+            <div class="capability-system-header">
 
               <span>
-                01
+                ATANA / CAPABILITY ARCHITECTURE
               </span>
 
               <div>
-                <strong>
-                  Strategy
-                </strong>
-
-                <small>
-                  Business goals and direction
-                </small>
+                <i></i>
+                CONNECTED
               </div>
 
-              <span class="node-state">
-                Why
-              </span>
+            </div>
+
+
+            <div class="capability-system-body">
+
+              <div class="system-node">
+
+                <span class="node-number">
+                  01
+                </span>
+
+                <div class="system-node-icon">
+                  <ion-icon name="compass-outline"></ion-icon>
+                </div>
+
+                <div class="system-node-copy">
+
+                  <small>
+                    DIRECTION
+                  </small>
+
+                  <strong>
+                    Strategy
+                  </strong>
+
+                  <p>
+                    Business goals / priorities / roadmap
+                  </p>
+
+                </div>
+
+                <span class="node-state">
+                  WHY
+                </span>
+
+              </div>
+
+
+              <div class="node-connector">
+
+                <span></span>
+
+                <ion-icon name="arrow-down-outline"></ion-icon>
+
+              </div>
+
+
+              <div class="system-node">
+
+                <span class="node-number">
+                  02
+                </span>
+
+                <div class="system-node-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
+
+                <div class="system-node-copy">
+
+                  <small>
+                    ADOPTION
+                  </small>
+
+                  <strong>
+                    Experience
+                  </strong>
+
+                  <p>
+                    Products / journeys / interfaces
+                  </p>
+
+                </div>
+
+                <span class="node-state">
+                  WHAT
+                </span>
+
+              </div>
+
+
+              <div class="node-connector">
+
+                <span></span>
+
+                <ion-icon name="arrow-down-outline"></ion-icon>
+
+              </div>
+
+
+              <div class="system-node active">
+
+                <span class="node-number">
+                  03
+                </span>
+
+                <div class="system-node-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </div>
+
+                <div class="system-node-copy">
+
+                  <small>
+                    CAPABILITY
+                  </small>
+
+                  <strong>
+                    Engineering
+                  </strong>
+
+                  <p>
+                    Applications / APIs / platforms
+                  </p>
+
+                </div>
+
+                <span class="node-state">
+                  HOW
+                </span>
+
+              </div>
+
+
+              <div class="node-connector">
+
+                <span></span>
+
+                <ion-icon name="arrow-down-outline"></ion-icon>
+
+              </div>
+
+
+              <div class="system-node">
+
+                <span class="node-number">
+                  04
+                </span>
+
+                <div class="system-node-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+
+                <div class="system-node-copy">
+
+                  <small>
+                    IMPACT
+                  </small>
+
+                  <strong>
+                    Growth
+                  </strong>
+
+                  <p>
+                    Adoption / performance / optimization
+                  </p>
+
+                </div>
+
+                <span class="node-state">
+                  IMPACT
+                </span>
+
+              </div>
 
             </div>
 
-            <div class="node-connector">
-              <span></span>
+
+            <div class="capability-flow">
+
+              <span>BUSINESS</span>
+              <i></i>
+
+              <span>EXPERIENCE</span>
+              <i></i>
+
+              <span>TECHNOLOGY</span>
+              <i></i>
+
+              <span>GROWTH</span>
+
             </div>
 
-            <div class="system-node">
 
-              <span>
-                02
-              </span>
+            <div class="capability-system-footer">
 
               <div>
-                <strong>
-                  Experience
-                </strong>
-
-                <small>
-                  Products and user journeys
-                </small>
+                <span>Direction</span>
+                <strong>Aligned</strong>
               </div>
-
-              <span class="node-state">
-                What
-              </span>
-
-            </div>
-
-            <div class="node-connector">
-              <span></span>
-            </div>
-
-            <div class="system-node">
-
-              <span>
-                03
-              </span>
 
               <div>
-                <strong>
-                  Engineering
-                </strong>
-
-                <small>
-                  Applications and platforms
-                </small>
+                <span>Experience</span>
+                <strong>Useful</strong>
               </div>
-
-              <span class="node-state">
-                How
-              </span>
-
-            </div>
-
-            <div class="node-connector">
-              <span></span>
-            </div>
-
-            <div class="system-node">
-
-              <span>
-                04
-              </span>
 
               <div>
-                <strong>
-                  Growth
-                </strong>
-
-                <small>
-                  Adoption and performance
-                </small>
+                <span>Engineering</span>
+                <strong>Scalable</strong>
               </div>
 
-              <span class="node-state">
-                Impact
-              </span>
+              <div>
+                <span>Impact</span>
+                <strong>Measurable</strong>
+              </div>
 
             </div>
 
@@ -427,21 +896,26 @@
 
       </section>
 
+
       <section class="work-section">
 
         <div class="container">
 
           <div class="work-heading">
 
+            <div class="section-index">
+              05 / WHAT WE WORK ON
+            </div>
+
             <div>
 
               <span class="section-label">
-                What we work on
+                DIGITAL CAPABILITY
               </span>
 
               <h2>
-                Digital capability
-                across the business.
+                Across the business.
+                <span>Not just the interface.</span>
               </h2>
 
             </div>
@@ -453,6 +927,7 @@
 
           </div>
 
+
           <div class="work-grid">
 
             <a
@@ -460,14 +935,27 @@
               class="work-card"
             >
 
-              <span class="work-number">
-                01
-              </span>
+              <div class="work-card-top">
+
+                <span class="work-number">
+                  01
+                </span>
+
+                <div class="work-icon">
+                  <ion-icon name="apps-outline"></ion-icon>
+                </div>
+
+              </div>
 
               <div class="work-card-bottom">
 
+                <small>
+                  PRODUCT ENGINEERING
+                </small>
+
                 <h3>
-                  Digital Products
+                  Digital
+                  Products
                 </h3>
 
                 <p>
@@ -475,27 +963,47 @@
                   platforms and internal software.
                 </p>
 
-                <ion-icon
-                  name="arrow-forward-outline"
-                ></ion-icon>
+                <div class="work-link">
+
+                  <span>
+                    Explore Capability
+                  </span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+
+                </div>
 
               </div>
 
             </a>
 
+
             <a
               routerLink="/services/digital-transformation"
-              class="work-card"
+              class="work-card featured"
             >
 
-              <span class="work-number">
-                02
-              </span>
+              <div class="work-card-top">
+
+                <span class="work-number">
+                  02
+                </span>
+
+                <div class="work-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div>
+
+              </div>
 
               <div class="work-card-bottom">
 
+                <small>
+                  TRANSFORMATION
+                </small>
+
                 <h3>
-                  Digital Operations
+                  Digital
+                  Operations
                 </h3>
 
                 <p>
@@ -503,27 +1011,47 @@
                   business operating systems.
                 </p>
 
-                <ion-icon
-                  name="arrow-forward-outline"
-                ></ion-icon>
+                <div class="work-link">
+
+                  <span>
+                    Explore Capability
+                  </span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+
+                </div>
 
               </div>
 
             </a>
+
 
             <a
               routerLink="/services/automation-integration"
               class="work-card"
             >
 
-              <span class="work-number">
-                03
-              </span>
+              <div class="work-card-top">
+
+                <span class="work-number">
+                  03
+                </span>
+
+                <div class="work-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </div>
+
+              </div>
 
               <div class="work-card-bottom">
 
+                <small>
+                  INTEGRATION
+                </small>
+
                 <h3>
-                  Connected Systems
+                  Connected
+                  Systems
                 </h3>
 
                 <p>
@@ -531,27 +1059,47 @@
                   connected information flows.
                 </p>
 
-                <ion-icon
-                  name="arrow-forward-outline"
-                ></ion-icon>
+                <div class="work-link">
+
+                  <span>
+                    Explore Capability
+                  </span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+
+                </div>
 
               </div>
 
             </a>
+
 
             <a
               routerLink="/services/digital-growth"
               class="work-card"
             >
 
-              <span class="work-number">
-                04
-              </span>
+              <div class="work-card-top">
+
+                <span class="work-number">
+                  04
+                </span>
+
+                <div class="work-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </div>
+
+              </div>
 
               <div class="work-card-bottom">
 
+                <small>
+                  PERFORMANCE
+                </small>
+
                 <h3>
-                  Digital Growth
+                  Digital
+                  Growth
                 </h3>
 
                 <p>
@@ -559,9 +1107,15 @@
                   measurable digital performance.
                 </p>
 
-                <ion-icon
-                  name="arrow-forward-outline"
-                ></ion-icon>
+                <div class="work-link">
+
+                  <span>
+                    Explore Capability
+                  </span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+
+                </div>
 
               </div>
 
@@ -573,97 +1127,171 @@
 
       </section>
 
+
       <section class="principles-section">
 
-        <div class="container principles-grid">
+        <div class="container">
 
           <div class="principles-heading">
 
-            <span class="section-label">
-              Our standards
-            </span>
+            <div class="section-index">
+              06 / OUR STANDARDS
+            </div>
 
-            <h2>
-              What good work
-              means to us.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                WHAT GOOD WORK MEANS
+              </span>
+
+              <h2>
+                Standards that guide
+                <span>every decision.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Good digital work should create lasting business value,
+              not just another layer of technology.
+            </p>
 
           </div>
+
 
           <div class="principles-list">
 
             <article>
 
-              <span>
+              <span class="principle-number">
                 01
               </span>
 
-              <div>
+              <div class="principle-icon">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>
+                  VALUE
+                </small>
+
                 <h3>
                   Useful over impressive.
                 </h3>
 
-                <p>
-                  We prioritize solutions that create real value
-                  over technology that exists only to look sophisticated.
-                </p>
+              </div>
+
+              <p>
+                We prioritize solutions that create real value
+                over technology that exists only to look sophisticated.
+              </p>
+
+              <div class="principle-state">
+                USEFUL
               </div>
 
             </article>
 
+
             <article>
 
-              <span>
+              <span class="principle-number">
                 02
               </span>
 
-              <div>
+              <div class="principle-icon">
+                <ion-icon name="contract-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>
+                  CLARITY
+                </small>
+
                 <h3>
                   Clear over complicated.
                 </h3>
 
-                <p>
-                  Good communication, good interfaces and good
-                  architecture should reduce unnecessary complexity.
-                </p>
+              </div>
+
+              <p>
+                Good communication, good interfaces and good
+                architecture should reduce unnecessary complexity.
+              </p>
+
+              <div class="principle-state">
+                CLEAR
               </div>
 
             </article>
 
-            <article>
 
-              <span>
+            <article class="active">
+
+              <span class="principle-number">
                 03
               </span>
 
-              <div>
+              <div class="principle-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>
+                  IMPACT
+                </small>
+
                 <h3>
                   Outcomes over output.
                 </h3>
 
-                <p>
-                  Shipping features is not the goal. Improving how
-                  the business performs is what ultimately matters.
-                </p>
+              </div>
+
+              <p>
+                Shipping features is not the goal. Improving how
+                the business performs is what ultimately matters.
+              </p>
+
+              <div class="principle-state">
+                IMPACT
               </div>
 
             </article>
 
+
             <article>
 
-              <span>
+              <span class="principle-number">
                 04
               </span>
 
-              <div>
+              <div class="principle-icon">
+                <ion-icon name="git-branch-outline"></ion-icon>
+              </div>
+
+              <div class="principle-content">
+
+                <small>
+                  LONGEVITY
+                </small>
+
                 <h3>
                   Long-term over temporary.
                 </h3>
 
-                <p>
-                  We make decisions with maintainability,
-                  adaptability and future growth in mind.
-                </p>
+              </div>
+
+              <p>
+                We make decisions with maintainability,
+                adaptability and future growth in mind.
+              </p>
+
+              <div class="principle-state">
+                EVOLVE
               </div>
 
             </article>
@@ -674,36 +1302,50 @@
 
       </section>
 
-      <section class="closing-section">
 
-        <div class="container closing-inner">
+      <section class="about-cta">
 
-          <span class="section-label">
-            ATANA
-          </span>
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
 
-          <h2>
-            Build what the
-            business needs next.
-          </h2>
+        <div class="container about-cta-inner">
 
-          <p>
-            Whether that means a new product, better operations,
-            connected systems or stronger digital growth, we start
-            with the problem and build from there.
-          </p>
+          <div class="cta-index">
+            07 / NEXT
+          </div>
+
+          <div class="cta-copy">
+
+            <span>
+              BUILD WITH ATANA
+            </span>
+
+            <h2>
+              Build what the
+              <strong>business needs next.</strong>
+            </h2>
+
+            <p>
+              Whether that means a new product, better operations,
+              connected systems or stronger digital growth, we start
+              with the problem and build from there.
+            </p>
+
+          </div>
 
           <a
             routerLink="/contact"
-            class="closing-button"
+            class="cta-button"
           >
+
             <span>
               Start a Project
             </span>
 
-            <ion-icon
-              name="arrow-forward-outline"
-            ></ion-icon>
+            <span class="cta-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+
           </a>
 
         </div>
@@ -711,6 +1353,7 @@
       </section>
 
     </main>
+
 
     <app-footer></app-footer>
 
