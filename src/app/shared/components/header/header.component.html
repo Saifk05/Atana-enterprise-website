@@ -1,181 +1,51 @@
 <header class="site-header">
-
   <div class="container header-inner">
 
-    <a
-      class="brand"
-      href="/home"
-      aria-label="ATANA Home"
-    >
-      <span
-        class="brand-mark"
-        aria-hidden="true"
-      >
+    <a routerLink="/home" class="brand" aria-label="ATANA Home">
+      <span class="brand-mark" aria-hidden="true">
         <span class="logo-curve curve-one"></span>
         <span class="logo-curve curve-two"></span>
         <span class="logo-curve curve-three"></span>
       </span>
-
-      <span class="brand-name">
-        ATANA
-      </span>
+      <span class="brand-name">ATANA</span>
     </a>
 
-    <nav
-      class="desktop-nav"
-      aria-label="Primary navigation"
-    >
-
-      <a
-        routerLink="/services"
-        routerLinkActive="active"
-      >
-        Services
-      </a>
-
-      <a
-        routerLink="/process"
-        routerLinkActive="active"
-      >
-        Process
-      </a>
-
-      <a
-        routerLink="/work"
-        routerLinkActive="active"
-      >
-        Work
-      </a>
-
-      <a
-        routerLink="/about"
-        routerLinkActive="active"
-      >
-        Company
-      </a>
-
-      <a
-        routerLink="/contact"
-        routerLinkActive="active"
-      >
-        Contact
-      </a>
-
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a routerLink="/services" routerLinkActive="active">Services</a>
+      <a routerLink="/process" routerLinkActive="active">Process</a>
+      <a routerLink="/work" routerLinkActive="active">Work</a>
+      <a routerLink="/about" routerLinkActive="active">Company</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
     </nav>
 
-    <a
-      routerLink="/contact"
-      class="start-project"
-    >
-      <span>
-        Start a Project
-      </span>
-
-      <ion-icon
-        name="arrow-forward-outline"
-      ></ion-icon>
+    <a routerLink="/contact" class="start-project">
+      <span>Start a Project</span>
+      <ion-icon name="arrow-forward-outline"></ion-icon>
     </a>
 
-    <button
-      type="button"
-      class="mobile-menu-btn"
-      [class.open]="menuOpen"
-      (click)="toggleMenu()"
-      [attr.aria-expanded]="menuOpen"
-      aria-label="Toggle navigation"
-    >
+    <button type="button" class="mobile-menu-btn" [class.open]="menuOpen" (click)="toggleMenu()" [attr.aria-expanded]="menuOpen" aria-label="Toggle navigation">
       <span></span>
       <span></span>
     </button>
 
   </div>
 
-  <div
-    class="mobile-panel"
-    [class.open]="menuOpen"
-  >
+  <div class="mobile-panel" [class.open]="menuOpen">
+    <div class="container mobile-panel-inner">
 
-    <nav
-      class="mobile-nav"
-      aria-label="Mobile navigation"
-    >
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a routerLink="/services" routerLinkActive="active" (click)="closeMenu()"><span>Services</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+        <a routerLink="/process" routerLinkActive="active" (click)="closeMenu()"><span>Process</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+        <a routerLink="/work" routerLinkActive="active" (click)="closeMenu()"><span>Work</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+        <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()"><span>Company</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()"><span>Contact</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
+      </nav>
 
-      <a
-        routerLink="/services"
-        routerLinkActive="active"
-        (click)="closeMenu()"
-      >
-        <span>Services</span>
-
-        <ion-icon
-          name="arrow-forward-outline"
-        ></ion-icon>
+      <a routerLink="/contact" class="mobile-cta" (click)="closeMenu()">
+        <span>Start a Project</span>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
       </a>
 
-      <a
-        routerLink="/process"
-        routerLinkActive="active"
-        (click)="closeMenu()"
-      >
-        <span>Process</span>
-
-        <ion-icon
-          name="arrow-forward-outline"
-        ></ion-icon>
-      </a>
-
-      <a
-        routerLink="/work"
-        routerLinkActive="active"
-        (click)="closeMenu()"
-      >
-        <span>Work</span>
-
-        <ion-icon
-          name="arrow-forward-outline"
-        ></ion-icon>
-      </a>
-
-      <a
-        routerLink="/about"
-        routerLinkActive="active"
-        (click)="closeMenu()"
-      >
-        <span>Company</span>
-
-        <ion-icon
-          name="arrow-forward-outline"
-        ></ion-icon>
-      </a>
-
-      <a
-        routerLink="/contact"
-        routerLinkActive="active"
-        (click)="closeMenu()"
-      >
-        <span>Contact</span>
-
-        <ion-icon
-          name="arrow-forward-outline"
-        ></ion-icon>
-      </a>
-
-    </nav>
-
-    <a
-      routerLink="/contact"
-      class="mobile-cta"
-      (click)="closeMenu()"
-    >
-      <span>
-        Start a Project
-      </span>
-
-      <ion-icon
-        name="arrow-forward-outline"
-      ></ion-icon>
-    </a>
-
+    </div>
   </div>
-
 </header>
