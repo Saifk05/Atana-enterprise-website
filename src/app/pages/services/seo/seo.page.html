@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="service-detail-content">
 
   <div class="service-detail-page">
 
@@ -6,18 +6,25 @@
 
       <app-header></app-header>
 
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
+
       <div class="container service-hero-grid">
 
         <div class="hero-copy">
 
-          <span class="eyebrow">
-            Search Engine Optimization
-          </span>
+          <div class="hero-eyebrow">
+            <span></span>
+            Search Engine Optimization / Organic Growth
+          </div>
 
           <h1>
-            Build visibility
-            where your customers
-            are already searching.
+            Build visibility where
+            <span>your customers search.</span>
           </h1>
 
           <p>
@@ -28,23 +35,34 @@
 
           <div class="hero-actions">
 
-            <a
-              routerLink="/contact"
-              class="primary-button"
-            >
-              Start a Project
+            <a routerLink="/contact" class="primary-button">
+              <span>Start a Project</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <a
-              routerLink="/services"
-              class="secondary-link"
-            >
-              View All Services
-
-              <ion-icon
-                name="arrow-forward-outline"
-              ></ion-icon>
+            <a routerLink="/services" class="secondary-link">
+              <span>View All Services</span>
+              <ion-icon name="arrow-up-outline"></ion-icon>
             </a>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>42.8K</strong>
+              <span>Organic Traffic</span>
+            </div>
+
+            <div>
+              <strong>1,284</strong>
+              <span>Keywords</span>
+            </div>
+
+            <div>
+              <strong>78%</strong>
+              <span>Visibility</span>
+            </div>
 
           </div>
 
@@ -52,173 +70,364 @@
 
         <div class="hero-visual">
 
-          <div class="seo-dashboard">
+          <div class="visual-label">
+            <span>ATANA / SEARCH INTELLIGENCE</span>
+            <small>05 / SEO</small>
+          </div>
 
-            <div class="dashboard-header">
+          <div class="seo-shell">
+
+            <div class="shell-header">
+
+              <div class="shell-brand">
+
+                <span class="shell-mark">
+                  <i></i>
+                  <i></i>
+                </span>
+
+                <div>
+                  <strong>Search Intelligence</strong>
+                  <small>Organic performance workspace</small>
+                </div>
+
+              </div>
+
+              <div class="shell-status">
+                <i></i>
+                GROWING
+              </div>
+
+            </div>
+
+            <div class="seo-dashboard">
+
+              <div class="dashboard-heading">
+
+                <div>
+                  <span>Organic Performance</span>
+                  <strong>Search Overview</strong>
+                </div>
+
+                <div class="dashboard-period">
+                  LAST 6 MONTHS
+                </div>
+
+              </div>
+
+              <div class="metrics-grid">
+
+                <div class="metric-card primary-metric">
+
+                  <div class="metric-top">
+                    <span>Organic Traffic</span>
+
+                    <span class="metric-icon">
+                      <ion-icon name="trending-up-outline"></ion-icon>
+                    </span>
+                  </div>
+
+                  <strong>42.8K</strong>
+
+                  <small>
+                    <i></i>
+                    +34.2%
+                  </small>
+
+                  <div class="metric-progress">
+                    <span></span>
+                  </div>
+
+                </div>
+
+                <div class="metric-card">
+
+                  <div class="metric-top">
+                    <span>Keywords</span>
+                    <ion-icon name="search-outline"></ion-icon>
+                  </div>
+
+                  <strong>1,284</strong>
+
+                  <small>
+                    <i></i>
+                    +18.7%
+                  </small>
+
+                </div>
+
+                <div class="metric-card">
+
+                  <div class="metric-top">
+                    <span>Visibility</span>
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <strong>78%</strong>
+
+                  <small>
+                    <i></i>
+                    +12.4%
+                  </small>
+
+                </div>
+
+              </div>
+
+              <div class="dashboard-lower">
+
+                <div class="search-chart">
+
+                  <div class="chart-header">
+
+                    <div>
+                      <span>Search Visibility</span>
+                      <strong>Organic Growth</strong>
+                    </div>
+
+                    <small>6 MONTHS</small>
+
+                  </div>
+
+                  <div class="chart-stage">
+
+                    <div class="chart-grid">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+
+                    <svg
+                      class="chart-area-fill"
+                      viewBox="0 0 520 180"
+                      preserveAspectRatio="none"
+                    >
+                      <defs>
+
+                        <linearGradient
+                          id="seoArea"
+                          x1="0"
+                          y1="0"
+                          x2="0"
+                          y2="1"
+                        >
+                          <stop
+                            offset="0%"
+                            stop-color="#155EEF"
+                            stop-opacity=".24"
+                          ></stop>
+
+                          <stop
+                            offset="100%"
+                            stop-color="#155EEF"
+                            stop-opacity="0"
+                          ></stop>
+
+                        </linearGradient>
+
+                      </defs>
+
+                      <path
+                        d="
+                          M10 148
+                          C55 145 72 132 110 135
+                          C151 138 170 116 211 118
+                          C253 120 276 92 317 97
+                          C358 102 382 66 421 72
+                          C460 78 483 42 510 35
+                          L510 180
+                          L10 180
+                          Z
+                        "
+                      ></path>
+
+                    </svg>
+
+                    <svg
+                      class="chart-line"
+                      viewBox="0 0 520 180"
+                      preserveAspectRatio="none"
+                    >
+                      <path
+                        d="
+                          M10 148
+                          C55 145 72 132 110 135
+                          C151 138 170 116 211 118
+                          C253 120 276 92 317 97
+                          C358 102 382 66 421 72
+                          C460 78 483 42 510 35
+                        "
+                      ></path>
+                    </svg>
+
+                    <div class="chart-points">
+                      <span class="point point-one"></span>
+                      <span class="point point-two"></span>
+                      <span class="point point-three"></span>
+                      <span class="point point-four"></span>
+                    </div>
+
+                  </div>
+
+                  <div class="chart-axis">
+                    <span>APR</span>
+                    <span>MAY</span>
+                    <span>JUN</span>
+                    <span>JUL</span>
+                    <span>AUG</span>
+                    <span>SEP</span>
+                  </div>
+
+                </div>
+
+                <div class="visibility-panel">
+
+                  <div class="visibility-heading">
+
+                    <div>
+                      <span>Visibility</span>
+                      <strong>Search Health</strong>
+                    </div>
+
+                    <ion-icon name="pulse-outline"></ion-icon>
+
+                  </div>
+
+                  <div class="visibility-score">
+
+                    <div class="score-ring">
+                      <div>
+                        <strong>78</strong>
+                        <span>/100</span>
+                      </div>
+                    </div>
+
+                    <div class="score-copy">
+                      <span>Overall visibility</span>
+                      <strong>Strong</strong>
+                      <small>+12.4% improvement</small>
+                    </div>
+
+                  </div>
+
+                  <div class="visibility-stats">
+
+                    <div>
+                      <span>Top 3</span>
+                      <strong>84</strong>
+                    </div>
+
+                    <div>
+                      <span>Top 10</span>
+                      <strong>312</strong>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="keyword-panel">
+
+                <div class="keyword-heading">
+
+                  <div>
+                    <span>Keyword Movement</span>
+                    <strong>Priority Rankings</strong>
+                  </div>
+
+                  <small>
+                    LIVE
+                  </small>
+
+                </div>
+
+                <div class="keyword-table">
+
+                  <div class="keyword-row keyword-header">
+                    <span>Keyword</span>
+                    <span>Position</span>
+                    <span>Change</span>
+                  </div>
+
+                  <div class="keyword-row">
+                    <strong>digital transformation</strong>
+                    <span>#3</span>
+                    <span class="positive">
+                      <ion-icon name="arrow-up-outline"></ion-icon>
+                      4
+                    </span>
+                  </div>
+
+                  <div class="keyword-row">
+                    <strong>enterprise automation</strong>
+                    <span>#6</span>
+                    <span class="positive">
+                      <ion-icon name="arrow-up-outline"></ion-icon>
+                      7
+                    </span>
+                  </div>
+
+                  <div class="keyword-row">
+                    <strong>application development</strong>
+                    <span>#8</span>
+                    <span class="positive">
+                      <ion-icon name="arrow-up-outline"></ion-icon>
+                      3
+                    </span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="shell-footer">
 
               <div>
-
-                <span class="dashboard-label">
-                  Organic Performance
-                </span>
-
-                <strong>
-                  Search Overview
-                </strong>
-
+                <span>Indexing</span>
+                <strong>Healthy</strong>
               </div>
 
-              <span class="status-pill">
-                Growing
-              </span>
-
-            </div>
-
-            <div class="metrics-grid">
-
-              <div class="metric-card">
-
-                <span>
-                  Organic Traffic
-                </span>
-
-                <strong>
-                  42.8K
-                </strong>
-
-                <small>
-                  +34.2%
-                </small>
-
+              <div>
+                <span>Tracking</span>
+                <strong>Live</strong>
               </div>
 
-              <div class="metric-card">
-
-                <span>
-                  Keywords
-                </span>
-
-                <strong>
-                  1,284
-                </strong>
-
-                <small>
-                  +18.7%
-                </small>
-
-              </div>
-
-              <div class="metric-card">
-
-                <span>
-                  Visibility
-                </span>
-
-                <strong>
-                  78%
-                </strong>
-
-                <small>
-                  +12.4%
-                </small>
-
+              <div>
+                <span>Optimization</span>
+                <strong>Active</strong>
               </div>
 
             </div>
 
-            <div class="chart-panel">
+          </div>
 
-              <div class="chart-heading">
+          <div class="floating-card floating-ranking">
 
-                <span>
-                  Search Visibility
-                </span>
+            <span class="floating-icon">
+              <ion-icon name="trending-up-outline"></ion-icon>
+            </span>
 
-                <strong>
-                  Last 6 Months
-                </strong>
-
-              </div>
-
-              <div class="chart-area">
-
-                <span style="height: 34%"></span>
-                <span style="height: 42%"></span>
-                <span style="height: 50%"></span>
-                <span style="height: 60%"></span>
-                <span style="height: 72%"></span>
-                <span style="height: 88%"></span>
-
-              </div>
-
+            <div>
+              <small>Ranking Growth</small>
+              <strong>+24.8%</strong>
             </div>
 
-            <div class="keyword-table">
+          </div>
 
-              <div class="keyword-row header-row">
+          <div class="floating-card floating-index">
 
-                <span>
-                  Keyword
-                </span>
+            <span class="floating-icon">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </span>
 
-                <span>
-                  Position
-                </span>
-
-                <span>
-                  Change
-                </span>
-
-              </div>
-
-              <div class="keyword-row">
-
-                <strong>
-                  digital transformation
-                </strong>
-
-                <span>
-                  #3
-                </span>
-
-                <span class="positive">
-                  +4
-                </span>
-
-              </div>
-
-              <div class="keyword-row">
-
-                <strong>
-                  enterprise automation
-                </strong>
-
-                <span>
-                  #6
-                </span>
-
-                <span class="positive">
-                  +7
-                </span>
-
-              </div>
-
-              <div class="keyword-row">
-
-                <strong>
-                  application development
-                </strong>
-
-                <span>
-                  #8
-                </span>
-
-                <span class="positive">
-                  +3
-                </span>
-
-              </div>
-
+            <div>
+              <small>Pages Indexed</small>
+              <strong>98.7%</strong>
             </div>
 
           </div>
@@ -227,24 +436,19 @@
 
       </div>
 
-      <div class="hero-wave">
+      <div class="hero-bottom">
 
-        <svg
-          viewBox="0 0 1440 180"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="
-              M0,110
-              C220,35 420,120 650,98
-              C850,80 1060,35 1260,64
-              C1350,76 1405,94 1440,105
-              L1440,180
-              L0,180
-              Z
-            "
-          ></path>
-        </svg>
+        <div class="container hero-bottom-inner">
+          <span>Audit</span>
+          <i></i>
+          <span>Research</span>
+          <i></i>
+          <span>Optimize</span>
+          <i></i>
+          <span>Expand</span>
+          <i></i>
+          <span>Measure</span>
+        </div>
 
       </div>
 
@@ -256,14 +460,19 @@
 
         <div class="container intro-grid">
 
-          <div>
+          <div class="section-index">
+            01 / ORGANIC GROWTH
+          </div>
+
+          <div class="intro-heading">
 
             <span class="section-label">
-              Organic growth
+              Search foundations
             </span>
 
             <h2>
-              Search performance built on stronger foundations.
+              Search performance built on
+              <span>stronger foundations.</span>
             </h2>
 
           </div>
@@ -272,13 +481,14 @@
 
             <p>
               SEO works best when technical performance, website
-              structure and content strategy are treated as one system.
+              structure and content strategy are treated as one
+              connected system.
             </p>
 
             <p>
               We identify the issues limiting visibility, improve the
-              underlying website and build a search strategy around the
-              topics your audience is actively looking for.
+              underlying website and build a search strategy around
+              the topics your audience is actively looking for.
             </p>
 
           </div>
@@ -293,13 +503,28 @@
 
           <div class="section-heading">
 
-            <span class="section-label">
-              Capabilities
-            </span>
+            <div class="section-index">
+              02 / CAPABILITIES
+            </div>
 
-            <h2>
-              Improve visibility across every layer of search.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                Search capabilities
+              </span>
+
+              <h2>
+                Improve visibility across
+                <span>every layer of search.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Technical quality, search intent, content relevance and
+              measurement work together to create sustainable organic
+              visibility.
+            </p>
 
           </div>
 
@@ -307,69 +532,165 @@
 
             <article class="capability-card">
 
-              <span>
-                01
-              </span>
+              <div class="capability-top">
 
-              <h3>
-                Technical SEO
-              </h3>
+                <span class="capability-number">
+                  01
+                </span>
 
-              <p>
-                Improve crawlability, indexing, site performance,
-                structure and technical search health.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </span>
 
-            </article>
+              </div>
 
-            <article class="capability-card">
+              <div class="capability-content">
 
-              <span>
-                02
-              </span>
+                <span class="capability-type">
+                  Foundation
+                </span>
 
-              <h3>
-                Keyword Strategy
-              </h3>
+                <h3>
+                  Technical<br />
+                  SEO
+                </h3>
 
-              <p>
-                Identify valuable search opportunities based on
-                relevance, competition and business intent.
-              </p>
+                <p>
+                  Improve crawlability, indexing, site performance,
+                  structure and overall technical search health.
+                </p>
 
-            </article>
+              </div>
 
-            <article class="capability-card">
-
-              <span>
-                03
-              </span>
-
-              <h3>
-                Content Optimization
-              </h3>
-
-              <p>
-                Improve page structure, messaging and relevance around
-                the topics customers are searching for.
-              </p>
+              <div class="capability-bottom">
+                <span>Crawlability</span>
+                <span>Indexing</span>
+                <span>Performance</span>
+              </div>
 
             </article>
 
             <article class="capability-card">
 
-              <span>
-                04
-              </span>
+              <div class="capability-top">
 
-              <h3>
-                Search Analytics
-              </h3>
+                <span class="capability-number">
+                  02
+                </span>
 
-              <p>
-                Track rankings, visibility, organic traffic and
-                conversion performance over time.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Opportunity
+                </span>
+
+                <h3>
+                  Keyword<br />
+                  Strategy
+                </h3>
+
+                <p>
+                  Identify valuable search opportunities based on
+                  relevance, competition and meaningful business intent.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Demand</span>
+                <span>Intent</span>
+                <span>Opportunity</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card featured">
+
+              <div class="featured-label">
+                Search Focus
+              </div>
+
+              <div class="capability-top">
+
+                <span class="capability-number">
+                  03
+                </span>
+
+                <span class="capability-icon">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Relevance
+                </span>
+
+                <h3>
+                  Content<br />
+                  Optimization
+                </h3>
+
+                <p>
+                  Improve page structure, messaging and topical
+                  relevance around what customers are searching for.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Content</span>
+                <span>Structure</span>
+                <span>Relevance</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card">
+
+              <div class="capability-top">
+
+                <span class="capability-number">
+                  04
+                </span>
+
+                <span class="capability-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Intelligence
+                </span>
+
+                <h3>
+                  Search<br />
+                  Analytics
+                </h3>
+
+                <p>
+                  Track rankings, visibility, organic traffic and
+                  conversion performance over time.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Rankings</span>
+                <span>Traffic</span>
+                <span>Reporting</span>
+              </div>
 
             </article>
 
@@ -381,16 +702,24 @@
 
       <section class="strategy-section">
 
-        <div class="container strategy-grid">
+        <div class="strategy-grid-background"></div>
+        <div class="strategy-glow"></div>
+
+        <div class="container strategy-layout">
 
           <div class="strategy-copy">
+
+            <div class="dark-index">
+              03 / SEARCH ARCHITECTURE
+            </div>
 
             <span class="dark-label">
               Search strategy
             </span>
 
             <h2>
-              SEO is more than rankings.
+              SEO is more than
+              <span>rankings.</span>
             </h2>
 
             <p>
@@ -399,92 +728,187 @@
               search visibility.
             </p>
 
+            <a routerLink="/contact" class="strategy-link">
+              <span>Discuss your search strategy</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
           </div>
 
-          <div class="strategy-flow">
+          <div class="search-system">
 
-            <div class="strategy-item">
+            <div class="search-system-header">
 
               <span>
-                01
+                ATANA / ORGANIC GROWTH SYSTEM
               </span>
 
               <div>
+                <i></i>
+                ACTIVE
+              </div>
 
-                <strong>
-                  Technical Foundation
-                </strong>
+            </div>
 
-                <p>
-                  Performance, indexing, crawlability and architecture.
-                </p>
+            <div class="search-system-body">
+
+              <div class="search-stage">
+
+                <div class="search-stage-index">
+                  01
+                </div>
+
+                <span class="search-stage-icon">
+                  <ion-icon name="server-outline"></ion-icon>
+                </span>
+
+                <div class="search-stage-content">
+                  <small>Foundation</small>
+                  <strong>Technical Foundation</strong>
+                  <p>
+                    Performance, indexing, crawlability
+                    and site architecture.
+                  </p>
+                </div>
+
+                <div class="search-stage-status">
+                  <span>HEALTH</span>
+                  <strong>98%</strong>
+                </div>
+
+                <div class="search-stage-dot">
+                  <i></i>
+                </div>
+
+              </div>
+
+              <div class="system-connector">
+                <span></span>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+              </div>
+
+              <div class="search-stage">
+
+                <div class="search-stage-index">
+                  02
+                </div>
+
+                <span class="search-stage-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </span>
+
+                <div class="search-stage-content">
+                  <small>Demand</small>
+                  <strong>Search Intent</strong>
+                  <p>
+                    Understand what your audience is
+                    actively searching for.
+                  </p>
+                </div>
+
+                <div class="search-stage-status">
+                  <span>DEMAND</span>
+                  <strong>HIGH</strong>
+                </div>
+
+                <div class="search-stage-dot">
+                  <i></i>
+                </div>
+
+              </div>
+
+              <div class="system-connector">
+                <span></span>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+              </div>
+
+              <div class="search-stage active">
+
+                <div class="search-stage-index">
+                  03
+                </div>
+
+                <span class="search-stage-icon">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                </span>
+
+                <div class="search-stage-content">
+                  <small>Relevance</small>
+                  <strong>Relevant Content</strong>
+                  <p>
+                    Build useful pages around meaningful
+                    search demand and user needs.
+                  </p>
+                </div>
+
+                <div class="search-stage-status">
+                  <span>QUALITY</span>
+                  <strong>STRONG</strong>
+                </div>
+
+                <div class="search-stage-dot">
+                  <i></i>
+                </div>
+
+              </div>
+
+              <div class="system-connector">
+                <span></span>
+                <ion-icon name="arrow-down-outline"></ion-icon>
+              </div>
+
+              <div class="search-stage">
+
+                <div class="search-stage-index">
+                  04
+                </div>
+
+                <span class="search-stage-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </span>
+
+                <div class="search-stage-content">
+                  <small>Performance</small>
+                  <strong>Organic Growth</strong>
+                  <p>
+                    Convert stronger visibility into
+                    qualified organic traffic.
+                  </p>
+                </div>
+
+                <div class="search-stage-status">
+                  <span>GROWTH</span>
+                  <strong>+34%</strong>
+                </div>
+
+                <div class="search-stage-dot">
+                  <i></i>
+                </div>
 
               </div>
 
             </div>
 
-            <div class="strategy-line"></div>
-
-            <div class="strategy-item">
-
-              <span>
-                02
-              </span>
+            <div class="search-system-footer">
 
               <div>
-
-                <strong>
-                  Search Intent
-                </strong>
-
-                <p>
-                  Understand what your audience is actively searching for.
-                </p>
-
+                <span>Crawlability</span>
+                <strong>Healthy</strong>
               </div>
 
-            </div>
-
-            <div class="strategy-line"></div>
-
-            <div class="strategy-item">
-
-              <span>
-                03
-              </span>
-
               <div>
-
-                <strong>
-                  Relevant Content
-                </strong>
-
-                <p>
-                  Build useful pages around meaningful search demand.
-                </p>
-
+                <span>Relevance</span>
+                <strong>Optimized</strong>
               </div>
 
-            </div>
-
-            <div class="strategy-line"></div>
-
-            <div class="strategy-item">
-
-              <span>
-                04
-              </span>
+              <div>
+                <span>Visibility</span>
+                <strong>Growing</strong>
+              </div>
 
               <div>
-
-                <strong>
-                  Organic Growth
-                </strong>
-
-                <p>
-                  Convert greater visibility into qualified traffic.
-                </p>
-
+                <span>Measurement</span>
+                <strong>Live</strong>
               </div>
 
             </div>
@@ -499,89 +923,216 @@
 
         <div class="container">
 
-          <div class="section-heading">
+          <div class="audit-heading">
 
-            <span class="section-label">
-              What we evaluate
-            </span>
+            <div class="section-index">
+              04 / SEO AUDIT
+            </div>
 
-            <h2>
-              Understand what is limiting your search performance.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                What we evaluate
+              </span>
+
+              <h2>
+                Understand what is limiting
+                <span>search performance.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              We evaluate the technical, structural and content signals
+              that influence how search engines discover, understand
+              and rank your website.
+            </p>
 
           </div>
 
           <div class="audit-grid">
 
-            <article>
+            <article class="audit-card">
 
-              <strong>
-                Crawl & Indexing
-              </strong>
+              <div class="audit-top">
+                <span>01</span>
 
-              <span>
-                01
-              </span>
+                <span class="audit-icon">
+                  <ion-icon name="search-outline"></ion-icon>
+                </span>
+              </div>
 
-            </article>
+              <div class="audit-content">
+                <span>Discovery</span>
+                <h3>
+                  Crawl &<br />
+                  Indexing
+                </h3>
 
-            <article>
+                <p>
+                  Review how search engines discover,
+                  crawl and index important pages.
+                </p>
+              </div>
 
-              <strong>
-                Core Web Vitals
-              </strong>
-
-              <span>
-                02
-              </span>
-
-            </article>
-
-            <article>
-
-              <strong>
-                Site Architecture
-              </strong>
-
-              <span>
-                03
-              </span>
+              <div class="audit-status">
+                <span>Search Access</span>
+                <i></i>
+              </div>
 
             </article>
 
-            <article>
+            <article class="audit-card">
 
-              <strong>
-                Metadata
-              </strong>
+              <div class="audit-top">
+                <span>02</span>
 
-              <span>
-                04
-              </span>
+                <span class="audit-icon">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="audit-content">
+                <span>Performance</span>
+                <h3>
+                  Core Web<br />
+                  Vitals
+                </h3>
+
+                <p>
+                  Evaluate loading performance, responsiveness
+                  and visual stability.
+                </p>
+              </div>
+
+              <div class="audit-status">
+                <span>User Experience</span>
+                <i></i>
+              </div>
 
             </article>
 
-            <article>
+            <article class="audit-card featured">
 
-              <strong>
-                Content Quality
-              </strong>
+              <div class="featured-label">
+                Technical
+              </div>
 
-              <span>
-                05
-              </span>
+              <div class="audit-top">
+                <span>03</span>
+
+                <span class="audit-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="audit-content">
+                <span>Structure</span>
+                <h3>
+                  Site<br />
+                  Architecture
+                </h3>
+
+                <p>
+                  Review hierarchy, navigation and how
+                  authority moves through the website.
+                </p>
+              </div>
+
+              <div class="audit-status">
+                <span>Architecture</span>
+                <i></i>
+              </div>
 
             </article>
 
-            <article>
+            <article class="audit-card">
 
-              <strong>
-                Internal Linking
-              </strong>
+              <div class="audit-top">
+                <span>04</span>
 
-              <span>
-                06
-              </span>
+                <span class="audit-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="audit-content">
+                <span>Signals</span>
+                <h3>
+                  Search<br />
+                  Metadata
+                </h3>
+
+                <p>
+                  Review titles, descriptions, headings
+                  and page-level search signals.
+                </p>
+              </div>
+
+              <div class="audit-status">
+                <span>Page Signals</span>
+                <i></i>
+              </div>
+
+            </article>
+
+            <article class="audit-card">
+
+              <div class="audit-top">
+                <span>05</span>
+
+                <span class="audit-icon">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="audit-content">
+                <span>Relevance</span>
+                <h3>
+                  Content<br />
+                  Quality
+                </h3>
+
+                <p>
+                  Evaluate usefulness, depth, relevance
+                  and alignment with search intent.
+                </p>
+              </div>
+
+              <div class="audit-status">
+                <span>Content Value</span>
+                <i></i>
+              </div>
+
+            </article>
+
+            <article class="audit-card">
+
+              <div class="audit-top">
+                <span>06</span>
+
+                <span class="audit-icon">
+                  <ion-icon name="link-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="audit-content">
+                <span>Authority</span>
+                <h3>
+                  Internal<br />
+                  Linking
+                </h3>
+
+                <p>
+                  Improve contextual relationships and
+                  authority flow between important pages.
+                </p>
+              </div>
+
+              <div class="audit-status">
+                <span>Authority Flow</span>
+                <i></i>
+              </div>
 
             </article>
 
@@ -595,81 +1146,152 @@
 
         <div class="container">
 
-          <div class="section-heading">
+          <div class="outcomes-heading">
 
-            <span class="section-label">
-              Business outcomes
-            </span>
+            <div class="section-index">
+              05 / BUSINESS OUTCOMES
+            </div>
 
-            <h2>
-              Organic visibility that supports long-term growth.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                Organic impact
+              </span>
+
+              <h2>
+                Visibility that supports
+                <span>long-term growth.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Search performance should create more than ranking
+              improvements. It should increase discoverability,
+              attract relevant demand and create durable acquisition.
+            </p>
 
           </div>
 
           <div class="outcomes-grid">
 
-            <article>
+            <article class="outcome-card">
 
-              <span>
-                01
-              </span>
+              <div class="outcome-top">
 
-              <strong>
-                More Visibility
-              </strong>
+                <span>01</span>
 
-              <p>
-                Increase exposure across relevant search results.
-              </p>
+                <span class="outcome-icon">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </span>
 
-            </article>
+              </div>
 
-            <article>
+              <div class="outcome-content">
 
-              <span>
-                02
-              </span>
+                <span>Discovery</span>
 
-              <strong>
-                Better Traffic
-              </strong>
+                <h3>
+                  More<br />
+                  Visibility
+                </h3>
 
-              <p>
-                Attract visitors with stronger commercial intent.
-              </p>
+                <p>
+                  Increase exposure across relevant
+                  search results and customer journeys.
+                </p>
+
+              </div>
 
             </article>
 
-            <article>
+            <article class="outcome-card">
 
-              <span>
-                03
-              </span>
+              <div class="outcome-top">
 
-              <strong>
-                Stronger Authority
-              </strong>
+                <span>02</span>
 
-              <p>
-                Build greater relevance around your expertise.
-              </p>
+                <span class="outcome-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>Acquisition</span>
+
+                <h3>
+                  Better<br />
+                  Traffic
+                </h3>
+
+                <p>
+                  Attract visitors with stronger relevance
+                  and meaningful commercial intent.
+                </p>
+
+              </div>
 
             </article>
 
-            <article>
+            <article class="outcome-card">
 
-              <span>
-                04
-              </span>
+              <div class="outcome-top">
 
-              <strong>
-                Sustainable Growth
-              </strong>
+                <span>03</span>
 
-              <p>
-                Create long-term acquisition beyond paid campaigns.
-              </p>
+                <span class="outcome-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>Relevance</span>
+
+                <h3>
+                  Stronger<br />
+                  Authority
+                </h3>
+
+                <p>
+                  Build greater topical relevance around
+                  your expertise, products and services.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+
+                <span>04</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>Scale</span>
+
+                <h3>
+                  Sustainable<br />
+                  Growth
+                </h3>
+
+                <p>
+                  Create a long-term acquisition channel
+                  beyond continuous paid campaigns.
+                </p>
+
+              </div>
 
             </article>
 
@@ -683,97 +1305,203 @@
 
         <div class="container">
 
-          <span class="section-label">
-            SEO process
-          </span>
+          <div class="process-heading">
 
-          <h2>
-            Measure. Improve. Grow.
-          </h2>
+            <div class="section-index">
+              06 / SEO PROCESS
+            </div>
 
-          <div class="process-grid">
+            <div>
 
-            <article>
+              <span class="section-label">
+                How we improve search
+              </span>
 
-              <span>
+              <h2>
+                Measure. Improve.
+                <span>Grow.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              SEO is an ongoing system. We establish the baseline,
+              identify demand, improve technical and content quality,
+              expand visibility and measure performance continuously.
+            </p>
+
+          </div>
+
+          <div class="process-flow">
+
+            <article class="process-step">
+
+              <span class="process-number">
                 01
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
 
               <h3>
                 Audit
               </h3>
 
               <p>
-                Review technical health, rankings and current visibility.
+                Review technical health, rankings
+                and current search visibility.
               </p>
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 02
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="compass-outline"></ion-icon>
+              </div>
 
               <h3>
                 Research
               </h3>
 
               <p>
-                Identify search demand, competitors and opportunities.
+                Identify search demand, competitors
+                and valuable opportunities.
               </p>
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 03
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="options-outline"></ion-icon>
+              </div>
 
               <h3>
                 Optimize
               </h3>
 
               <p>
-                Improve technical structure, pages and content.
+                Improve technical structure,
+                pages and content relevance.
               </p>
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 04
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="add-circle-outline"></ion-icon>
+              </div>
 
               <h3>
                 Expand
               </h3>
 
               <p>
-                Build new pages around valuable search opportunities.
+                Build new pages around valuable
+                search opportunities.
               </p>
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 05
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
 
               <h3>
                 Measure
               </h3>
 
               <p>
-                Track rankings, traffic and business performance.
+                Track rankings, traffic and
+                meaningful business performance.
               </p>
 
             </article>
 
           </div>
+
+        </div>
+
+      </section>
+
+      <section class="service-cta">
+
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
+
+        <div class="container service-cta-inner">
+
+          <div class="cta-index">
+            07 / START
+          </div>
+
+          <div class="cta-copy">
+
+            <span>
+              Ready to improve visibility?
+            </span>
+
+            <h2>
+              Build a stronger foundation for
+              <strong>sustainable organic growth.</strong>
+            </h2>
+
+            <p>
+              Tell us where your search visibility is today.
+              We'll help identify the technical, content and
+              strategic opportunities that can move it forward.
+            </p>
+
+          </div>
+
+          <a routerLink="/contact" class="cta-button">
+
+            <span>
+              Start a Project
+            </span>
+
+            <span class="cta-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+
+          </a>
 
         </div>
 

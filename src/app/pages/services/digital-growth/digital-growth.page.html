@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="service-detail-content">
 
   <div class="service-detail-page">
 
@@ -6,44 +6,63 @@
 
       <app-header></app-header>
 
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
+
       <div class="container service-hero-grid">
 
         <div class="hero-copy">
 
-          <span class="eyebrow">
-            Digital Growth
-          </span>
+          <div class="hero-eyebrow">
+            <span></span>
+            Digital Growth / Performance & Conversion
+          </div>
 
           <h1>
-            Turn digital activity
-            into measurable growth.
+            Turn digital activity into
+            <span>measurable growth.</span>
           </h1>
 
           <p>
-            We connect strategy, content, acquisition and analytics
-            to help businesses attract the right audience,
-            improve conversion and build sustainable digital growth.
+            We connect strategy, content, acquisition, conversion and
+            analytics to help businesses attract the right audience,
+            improve performance and build sustainable digital growth.
           </p>
 
           <div class="hero-actions">
 
-            <a
-              routerLink="/contact"
-              class="primary-button"
-            >
-              Start a Project
+            <a routerLink="/contact" class="primary-button">
+              <span>Start a Project</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <a
-              routerLink="/services"
-              class="secondary-link"
-            >
-              View All Services
-
-              <ion-icon
-                name="arrow-forward-outline"
-              ></ion-icon>
+            <a routerLink="/services" class="secondary-link">
+              <span>View All Services</span>
+              <ion-icon name="arrow-up-outline"></ion-icon>
             </a>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>+38.6%</strong>
+              <span>Qualified Growth</span>
+            </div>
+
+            <div>
+              <strong>4.8%</strong>
+              <span>Conversion</span>
+            </div>
+
+            <div>
+              <strong>84.2K</strong>
+              <span>Traffic</span>
+            </div>
 
           </div>
 
@@ -51,146 +70,331 @@
 
         <div class="hero-visual">
 
+          <div class="visual-label">
+            <span>ATANA / GROWTH INTELLIGENCE</span>
+            <small>06 / GROWTH</small>
+          </div>
+
           <div class="growth-shell">
 
             <div class="shell-header">
 
-              <div class="shell-title">
+              <div class="shell-brand">
 
-                <span class="shell-dot"></span>
-
-                <span>
-                  Growth Performance
+                <span class="shell-mark">
+                  <i></i>
+                  <i></i>
                 </span>
+
+                <div>
+                  <strong>Growth Performance</strong>
+                  <small>Digital growth workspace</small>
+                </div>
 
               </div>
 
-              <span class="shell-period">
-                Last 90 days
-              </span>
-
-            </div>
-
-            <div class="growth-summary">
-
-              <div class="summary-primary">
-
-                <span>
-                  Qualified Growth
-                </span>
-
-                <strong>
-                  +38.6%
-                </strong>
-
-                <small>
-                  Compared with previous period
-                </small>
-
-              </div>
-
-              <div class="mini-metrics">
-
-                <div>
-
-                  <span>
-                    Traffic
-                  </span>
-
-                  <strong>
-                    84.2K
-                  </strong>
-
-                  <small>
-                    +21%
-                  </small>
-
-                </div>
-
-                <div>
-
-                  <span>
-                    Leads
-                  </span>
-
-                  <strong>
-                    1,284
-                  </strong>
-
-                  <small>
-                    +32%
-                  </small>
-
-                </div>
-
-                <div>
-
-                  <span>
-                    Conversion
-                  </span>
-
-                  <strong>
-                    4.8%
-                  </strong>
-
-                  <small>
-                    +18%
-                  </small>
-
-                </div>
-
+              <div class="shell-period">
+                <i></i>
+                LAST 90 DAYS
               </div>
 
             </div>
 
-            <div class="growth-chart">
+            <div class="growth-dashboard">
 
-              <div class="chart-header">
+              <div class="dashboard-heading">
 
-                <span>
-                  Growth Trend
-                </span>
+                <div>
+                  <span>Performance Overview</span>
+                  <strong>Growth Intelligence</strong>
+                </div>
 
-                <small>
-                  Acquisition → Conversion
-                </small>
+                <div class="dashboard-status">
+                  <i></i>
+                  LIVE DATA
+                </div>
 
               </div>
 
-              <div class="chart-stage">
+              <div class="growth-summary">
 
-                <div class="chart-grid">
+                <div class="summary-primary">
 
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <div class="summary-top">
+
+                    <span>
+                      Qualified Growth
+                    </span>
+
+                    <span class="summary-icon">
+                      <ion-icon name="trending-up-outline"></ion-icon>
+                    </span>
+
+                  </div>
+
+                  <strong>
+                    +38.6%
+                  </strong>
+
+                  <small>
+                    Compared with previous period
+                  </small>
+
+                  <div class="summary-progress">
+                    <span></span>
+                  </div>
 
                 </div>
 
-                <svg
-                  class="chart-line"
-                  viewBox="0 0 520 180"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="
-                      M10 148
-                      C55 142 80 126 118 129
-                      C160 132 174 101 215 106
-                      C255 111 278 78 322 82
-                      C367 86 382 48 425 58
-                      C465 68 486 30 510 27
-                    "
-                  ></path>
-                </svg>
+                <div class="mini-metrics">
 
-                <div class="chart-points">
+                  <div class="mini-metric">
 
-                  <span class="point point-one"></span>
-                  <span class="point point-two"></span>
-                  <span class="point point-three"></span>
-                  <span class="point point-four"></span>
+                    <div class="mini-metric-top">
+
+                      <span>Traffic</span>
+
+                      <ion-icon name="people-outline"></ion-icon>
+
+                    </div>
+
+                    <strong>
+                      84.2K
+                    </strong>
+
+                    <small>
+                      <i></i>
+                      +21%
+                    </small>
+
+                  </div>
+
+                  <div class="mini-metric">
+
+                    <div class="mini-metric-top">
+
+                      <span>Leads</span>
+
+                      <ion-icon name="person-add-outline"></ion-icon>
+
+                    </div>
+
+                    <strong>
+                      1,284
+                    </strong>
+
+                    <small>
+                      <i></i>
+                      +32%
+                    </small>
+
+                  </div>
+
+                  <div class="mini-metric">
+
+                    <div class="mini-metric-top">
+
+                      <span>Conversion</span>
+
+                      <ion-icon name="analytics-outline"></ion-icon>
+
+                    </div>
+
+                    <strong>
+                      4.8%
+                    </strong>
+
+                    <small>
+                      <i></i>
+                      +18%
+                    </small>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="dashboard-lower">
+
+                <div class="growth-chart">
+
+                  <div class="chart-header">
+
+                    <div>
+                      <span>Growth Trend</span>
+                      <strong>Acquisition → Conversion</strong>
+                    </div>
+
+                    <small>
+                      90 DAYS
+                    </small>
+
+                  </div>
+
+                  <div class="chart-stage">
+
+                    <div class="chart-grid">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+
+                    <svg
+                      class="chart-area-fill"
+                      viewBox="0 0 520 180"
+                      preserveAspectRatio="none"
+                    >
+                      <defs>
+
+                        <linearGradient
+                          id="growthArea"
+                          x1="0"
+                          y1="0"
+                          x2="0"
+                          y2="1"
+                        >
+                          <stop
+                            offset="0%"
+                            stop-color="#155EEF"
+                            stop-opacity=".22"
+                          ></stop>
+
+                          <stop
+                            offset="100%"
+                            stop-color="#155EEF"
+                            stop-opacity="0"
+                          ></stop>
+
+                        </linearGradient>
+
+                      </defs>
+
+                      <path
+                        d="
+                          M10 148
+                          C55 142 80 126 118 129
+                          C160 132 174 101 215 106
+                          C255 111 278 78 322 82
+                          C367 86 382 48 425 58
+                          C465 68 486 30 510 27
+                          L510 180
+                          L10 180
+                          Z
+                        "
+                      ></path>
+
+                    </svg>
+
+                    <svg
+                      class="chart-line"
+                      viewBox="0 0 520 180"
+                      preserveAspectRatio="none"
+                    >
+
+                      <path
+                        d="
+                          M10 148
+                          C55 142 80 126 118 129
+                          C160 132 174 101 215 106
+                          C255 111 278 78 322 82
+                          C367 86 382 48 425 58
+                          C465 68 486 30 510 27
+                        "
+                      ></path>
+
+                    </svg>
+
+                    <div class="chart-points">
+
+                      <span class="point point-one"></span>
+                      <span class="point point-two"></span>
+                      <span class="point point-three"></span>
+                      <span class="point point-four"></span>
+
+                    </div>
+
+                  </div>
+
+                  <div class="chart-axis">
+                    <span>W1</span>
+                    <span>W3</span>
+                    <span>W5</span>
+                    <span>W7</span>
+                    <span>W9</span>
+                    <span>W12</span>
+                  </div>
+
+                </div>
+
+                <div class="channel-panel">
+
+                  <div class="channel-heading">
+
+                    <div>
+                      <span>Acquisition</span>
+                      <strong>Channel Mix</strong>
+                    </div>
+
+                    <ion-icon name="options-outline"></ion-icon>
+
+                  </div>
+
+                  <div class="channel-list">
+
+                    <div class="channel-item">
+
+                      <div class="channel-top">
+                        <span>Organic</span>
+                        <strong>42%</strong>
+                      </div>
+
+                      <div class="channel-bar">
+                        <span class="organic-bar"></span>
+                      </div>
+
+                      <small>
+                        Search & content
+                      </small>
+
+                    </div>
+
+                    <div class="channel-item">
+
+                      <div class="channel-top">
+                        <span>Paid</span>
+                        <strong>28%</strong>
+                      </div>
+
+                      <div class="channel-bar">
+                        <span class="paid-bar"></span>
+                      </div>
+
+                      <small>
+                        Campaign acquisition
+                      </small>
+
+                    </div>
+
+                    <div class="channel-item">
+
+                      <div class="channel-top">
+                        <span>Direct</span>
+                        <strong>18%</strong>
+                      </div>
+
+                      <div class="channel-bar">
+                        <span class="direct-bar"></span>
+                      </div>
+
+                      <small>
+                        Brand demand
+                      </small>
+
+                    </div>
+
+                  </div>
 
                 </div>
 
@@ -198,56 +402,49 @@
 
             </div>
 
-            <div class="channel-row">
+            <div class="shell-footer">
 
               <div>
-
-                <span class="channel-label">
-                  Organic
-                </span>
-
-                <div class="channel-bar">
-                  <span class="organic-bar"></span>
-                </div>
-
-                <strong>
-                  42%
-                </strong>
-
+                <span>Attribution</span>
+                <strong>Connected</strong>
               </div>
 
               <div>
-
-                <span class="channel-label">
-                  Paid
-                </span>
-
-                <div class="channel-bar">
-                  <span class="paid-bar"></span>
-                </div>
-
-                <strong>
-                  28%
-                </strong>
-
+                <span>Analytics</span>
+                <strong>Live</strong>
               </div>
 
               <div>
-
-                <span class="channel-label">
-                  Direct
-                </span>
-
-                <div class="channel-bar">
-                  <span class="direct-bar"></span>
-                </div>
-
-                <strong>
-                  18%
-                </strong>
-
+                <span>Optimization</span>
+                <strong>Active</strong>
               </div>
 
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-conversion">
+
+            <span class="floating-icon">
+              <ion-icon name="trending-up-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Conversion</small>
+              <strong>+18.2%</strong>
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-leads">
+
+            <span class="floating-icon">
+              <ion-icon name="person-add-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Qualified Leads</small>
+              <strong>+32%</strong>
             </div>
 
           </div>
@@ -256,24 +453,25 @@
 
       </div>
 
-      <div class="hero-wave">
+      <div class="hero-bottom">
 
-        <svg
-          viewBox="0 0 1440 180"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="
-              M0,110
-              C220,35 420,120 650,98
-              C850,80 1060,35 1260,64
-              C1350,76 1405,94 1440,105
-              L1440,180
-              L0,180
-              Z
-            "
-          ></path>
-        </svg>
+        <div class="container hero-bottom-inner">
+
+          <span>Attract</span>
+          <i></i>
+
+          <span>Engage</span>
+          <i></i>
+
+          <span>Convert</span>
+          <i></i>
+
+          <span>Retain</span>
+          <i></i>
+
+          <span>Optimize</span>
+
+        </div>
 
       </div>
 
@@ -285,15 +483,19 @@
 
         <div class="container intro-grid">
 
-          <div>
+          <div class="section-index">
+            01 / GROWTH STRATEGY
+          </div>
+
+          <div class="intro-heading">
 
             <span class="section-label">
-              Growth strategy
+              Full-funnel growth
             </span>
 
             <h2>
-              Growth built around
-              the full digital journey.
+              Growth built around the
+              <span>full digital journey.</span>
             </h2>
 
           </div>
@@ -322,32 +524,58 @@
 
         <div class="container">
 
-          <div class="section-heading">
+          <div class="funnel-heading">
 
-            <span class="section-label">
-              The growth system
-            </span>
+            <div class="section-index">
+              02 / THE GROWTH SYSTEM
+            </div>
 
-            <h2>
-              From attention
-              to long-term value.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                Customer journey
+              </span>
+
+              <h2>
+                From attention to
+                <span>long-term value.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Growth is a connected system. We improve each stage of
+              the journey while measuring how every stage contributes
+              to meaningful business outcomes.
+            </p>
 
           </div>
 
-          <div class="funnel">
+          <div class="growth-funnel">
 
-            <article>
+            <article class="funnel-stage">
 
-              <span>
-                01
-              </span>
+              <div class="funnel-top">
 
-              <div>
+                <span class="funnel-number">
+                  01
+                </span>
 
-                <strong>
+                <span class="funnel-icon">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="funnel-content">
+
+                <span class="funnel-type">
+                  Awareness
+                </span>
+
+                <h3>
                   Attract
-                </strong>
+                </h3>
 
                 <p>
                   Reach the right audience through search,
@@ -356,23 +584,36 @@
 
               </div>
 
-              <small>
-                Awareness
-              </small>
+              <div class="funnel-footer">
+                <span>Reach</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
 
             </article>
 
-            <article>
+            <article class="funnel-stage">
 
-              <span>
-                02
-              </span>
+              <div class="funnel-top">
 
-              <div>
+                <span class="funnel-number">
+                  02
+                </span>
 
-                <strong>
+                <span class="funnel-icon">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="funnel-content">
+
+                <span class="funnel-type">
+                  Experience
+                </span>
+
+                <h3>
                   Engage
-                </strong>
+                </h3>
 
                 <p>
                   Create clear experiences that help users
@@ -381,23 +622,40 @@
 
               </div>
 
-              <small>
-                Experience
-              </small>
+              <div class="funnel-footer">
+                <span>Intent</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
 
             </article>
 
-            <article>
+            <article class="funnel-stage featured">
 
-              <span>
-                03
-              </span>
+              <div class="featured-label">
+                Revenue Point
+              </div>
 
-              <div>
+              <div class="funnel-top">
 
-                <strong>
+                <span class="funnel-number">
+                  03
+                </span>
+
+                <span class="funnel-icon">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="funnel-content">
+
+                <span class="funnel-type">
+                  Conversion
+                </span>
+
+                <h3>
                   Convert
-                </strong>
+                </h3>
 
                 <p>
                   Improve journeys, landing pages and decision
@@ -406,23 +664,36 @@
 
               </div>
 
-              <small>
-                Conversion
-              </small>
+              <div class="funnel-footer">
+                <span>Action</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
 
             </article>
 
-            <article>
+            <article class="funnel-stage">
 
-              <span>
-                04
-              </span>
+              <div class="funnel-top">
 
-              <div>
+                <span class="funnel-number">
+                  04
+                </span>
 
-                <strong>
+                <span class="funnel-icon">
+                  <ion-icon name="repeat-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="funnel-content">
+
+                <span class="funnel-type">
+                  Retention
+                </span>
+
+                <h3>
                   Retain
-                </strong>
+                </h3>
 
                 <p>
                   Use lifecycle experiences and better customer
@@ -431,23 +702,36 @@
 
               </div>
 
-              <small>
-                Retention
-              </small>
+              <div class="funnel-footer">
+                <span>Loyalty</span>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </div>
 
             </article>
 
-            <article>
+            <article class="funnel-stage">
 
-              <span>
-                05
-              </span>
+              <div class="funnel-top">
 
-              <div>
+                <span class="funnel-number">
+                  05
+                </span>
 
-                <strong>
+                <span class="funnel-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="funnel-content">
+
+                <span class="funnel-type">
+                  Intelligence
+                </span>
+
+                <h3>
                   Optimize
-                </strong>
+                </h3>
 
                 <p>
                   Measure performance and continuously improve
@@ -456,11 +740,28 @@
 
               </div>
 
-              <small>
-                Intelligence
-              </small>
+              <div class="funnel-footer">
+                <span>Improve</span>
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </div>
 
             </article>
+
+          </div>
+
+          <div class="funnel-progress">
+
+            <span>DISCOVERY</span>
+
+            <div>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+
+            <span>BUSINESS VALUE</span>
 
           </div>
 
@@ -474,14 +775,28 @@
 
           <div class="section-heading">
 
-            <span class="section-label">
-              Capabilities
-            </span>
+            <div class="section-index">
+              03 / CAPABILITIES
+            </div>
 
-            <h2>
-              Everything needed to
-              create digital momentum.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                Growth capabilities
+              </span>
+
+              <h2>
+                Everything needed to create
+                <span>digital momentum.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Strategy, acquisition, conversion and measurement work
+              together as one growth system rather than disconnected
+              marketing activities.
+            </p>
 
           </div>
 
@@ -489,69 +804,165 @@
 
             <article class="capability-card">
 
-              <span>
-                01
-              </span>
+              <div class="capability-top">
 
-              <h3>
-                Growth Strategy
-              </h3>
+                <span class="capability-number">
+                  01
+                </span>
 
-              <p>
-                Define acquisition priorities, audience journeys,
-                channels and measurable growth objectives.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="compass-outline"></ion-icon>
+                </span>
 
-            </article>
+              </div>
 
-            <article class="capability-card">
+              <div class="capability-content">
 
-              <span>
-                02
-              </span>
+                <span class="capability-type">
+                  Direction
+                </span>
 
-              <h3>
-                Performance Marketing
-              </h3>
+                <h3>
+                  Growth<br />
+                  Strategy
+                </h3>
 
-              <p>
-                Build targeted acquisition campaigns focused
-                on qualified traffic and business outcomes.
-              </p>
+                <p>
+                  Define acquisition priorities, audience journeys,
+                  channels and measurable growth objectives.
+                </p>
 
-            </article>
+              </div>
 
-            <article class="capability-card">
-
-              <span>
-                03
-              </span>
-
-              <h3>
-                Conversion Optimization
-              </h3>
-
-              <p>
-                Improve landing pages, user journeys and
-                conversion points through structured iteration.
-              </p>
+              <div class="capability-bottom">
+                <span>Audience</span>
+                <span>Journey</span>
+                <span>Strategy</span>
+              </div>
 
             </article>
 
             <article class="capability-card">
 
-              <span>
-                04
-              </span>
+              <div class="capability-top">
 
-              <h3>
-                Analytics & Measurement
-              </h3>
+                <span class="capability-number">
+                  02
+                </span>
 
-              <p>
-                Build reporting systems that connect digital
-                performance with meaningful business metrics.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Acquisition
+                </span>
+
+                <h3>
+                  Performance<br />
+                  Marketing
+                </h3>
+
+                <p>
+                  Build targeted acquisition campaigns focused
+                  on qualified traffic and business outcomes.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Search</span>
+                <span>Paid</span>
+                <span>Campaigns</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card featured">
+
+              <div class="featured-label">
+                Growth Focus
+              </div>
+
+              <div class="capability-top">
+
+                <span class="capability-number">
+                  03
+                </span>
+
+                <span class="capability-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Conversion
+                </span>
+
+                <h3>
+                  Conversion<br />
+                  Optimization
+                </h3>
+
+                <p>
+                  Improve landing pages, user journeys and
+                  conversion points through structured iteration.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>CRO</span>
+                <span>Journeys</span>
+                <span>Testing</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card">
+
+              <div class="capability-top">
+
+                <span class="capability-number">
+                  04
+                </span>
+
+                <span class="capability-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Intelligence
+                </span>
+
+                <h3>
+                  Analytics &<br />
+                  Measurement
+                </h3>
+
+                <p>
+                  Build reporting systems that connect digital
+                  performance with meaningful business metrics.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Analytics</span>
+                <span>Attribution</span>
+                <span>Reporting</span>
+              </div>
 
             </article>
 
@@ -563,122 +974,255 @@
 
       <section class="intelligence-section">
 
-        <div class="container intelligence-grid">
+        <div class="intelligence-grid-background"></div>
+        <div class="intelligence-glow"></div>
+
+        <div class="container intelligence-layout">
 
           <div class="intelligence-copy">
 
+            <div class="dark-index">
+              04 / GROWTH INTELLIGENCE
+            </div>
+
             <span class="dark-label">
-              Growth intelligence
+              Measure business impact
             </span>
 
             <h2>
               Measure what moves
-              the business.
+              <span>the business.</span>
             </h2>
 
             <p>
               Traffic alone is not growth. We connect acquisition
-              metrics with conversion and business outcomes so teams
-              can understand what is actually working.
+              metrics with engagement, conversion and business
+              outcomes so teams can understand what is actually working.
             </p>
+
+            <a routerLink="/contact" class="intelligence-link">
+              <span>Build your measurement system</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
 
           </div>
 
-          <div class="measurement-stack">
+          <div class="measurement-system">
 
-            <div class="measurement-row">
+            <div class="measurement-header">
 
-              <span class="measurement-index">
-                01
+              <span>
+                ATANA / MEASUREMENT FRAMEWORK
               </span>
 
               <div>
-
-                <strong>
-                  Acquisition
-                </strong>
-
-                <p>
-                  Where qualified users come from.
-                </p>
-
+                <i></i>
+                TRACKING
               </div>
-
-              <span class="measurement-value">
-                Reach
-              </span>
 
             </div>
 
-            <div class="measurement-row">
+            <div class="measurement-body">
 
-              <span class="measurement-index">
-                02
-              </span>
+              <div class="measurement-row">
 
-              <div>
+                <div class="measurement-index">
+                  01
+                </div>
 
-                <strong>
-                  Engagement
-                </strong>
+                <span class="measurement-icon">
+                  <ion-icon name="megaphone-outline"></ion-icon>
+                </span>
 
-                <p>
-                  How users interact with the experience.
-                </p>
+                <div class="measurement-content">
+
+                  <small>
+                    Discovery
+                  </small>
+
+                  <strong>
+                    Acquisition
+                  </strong>
+
+                  <p>
+                    Where qualified users come from.
+                  </p>
+
+                </div>
+
+                <div class="measurement-value">
+
+                  <small>
+                    Metric
+                  </small>
+
+                  <strong>
+                    Reach
+                  </strong>
+
+                </div>
+
+                <div class="measurement-status">
+                  <i></i>
+                </div>
 
               </div>
 
-              <span class="measurement-value">
-                Intent
-              </span>
+              <div class="measurement-row">
+
+                <div class="measurement-index">
+                  02
+                </div>
+
+                <span class="measurement-icon">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </span>
+
+                <div class="measurement-content">
+
+                  <small>
+                    Experience
+                  </small>
+
+                  <strong>
+                    Engagement
+                  </strong>
+
+                  <p>
+                    How users interact with the experience.
+                  </p>
+
+                </div>
+
+                <div class="measurement-value">
+
+                  <small>
+                    Metric
+                  </small>
+
+                  <strong>
+                    Intent
+                  </strong>
+
+                </div>
+
+                <div class="measurement-status">
+                  <i></i>
+                </div>
+
+              </div>
+
+              <div class="measurement-row active">
+
+                <div class="measurement-index">
+                  03
+                </div>
+
+                <span class="measurement-icon">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </span>
+
+                <div class="measurement-content">
+
+                  <small>
+                    Decision
+                  </small>
+
+                  <strong>
+                    Conversion
+                  </strong>
+
+                  <p>
+                    Which journeys generate valuable actions.
+                  </p>
+
+                </div>
+
+                <div class="measurement-value">
+
+                  <small>
+                    Metric
+                  </small>
+
+                  <strong>
+                    Action
+                  </strong>
+
+                </div>
+
+                <div class="measurement-status">
+                  <i></i>
+                </div>
+
+              </div>
+
+              <div class="measurement-row">
+
+                <div class="measurement-index">
+                  04
+                </div>
+
+                <span class="measurement-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </span>
+
+                <div class="measurement-content">
+
+                  <small>
+                    Business
+                  </small>
+
+                  <strong>
+                    Revenue Impact
+                  </strong>
+
+                  <p>
+                    How digital performance supports business growth.
+                  </p>
+
+                </div>
+
+                <div class="measurement-value">
+
+                  <small>
+                    Metric
+                  </small>
+
+                  <strong>
+                    Value
+                  </strong>
+
+                </div>
+
+                <div class="measurement-status">
+                  <i></i>
+                </div>
+
+              </div>
 
             </div>
 
-            <div class="measurement-row">
-
-              <span class="measurement-index">
-                03
-              </span>
+            <div class="measurement-footer">
 
               <div>
-
-                <strong>
-                  Conversion
-                </strong>
-
-                <p>
-                  Which journeys generate valuable actions.
-                </p>
-
+                <span>Acquisition</span>
+                <strong>Tracked</strong>
               </div>
-
-              <span class="measurement-value">
-                Action
-              </span>
-
-            </div>
-
-            <div class="measurement-row">
-
-              <span class="measurement-index">
-                04
-              </span>
 
               <div>
-
-                <strong>
-                  Revenue Impact
-                </strong>
-
-                <p>
-                  How digital performance supports business growth.
-                </p>
-
+                <span>Conversion</span>
+                <strong>Measured</strong>
               </div>
 
-              <span class="measurement-value">
-                Value
-              </span>
+              <div>
+                <span>Attribution</span>
+                <strong>Connected</strong>
+              </div>
+
+              <div>
+                <span>Optimization</span>
+                <strong>Continuous</strong>
+              </div>
 
             </div>
 
@@ -692,86 +1236,168 @@
 
         <div class="container">
 
-          <div class="section-heading">
+          <div class="outcomes-heading">
 
-            <span class="section-label">
-              Business outcomes
-            </span>
+            <div class="section-index">
+              05 / BUSINESS OUTCOMES
+            </div>
 
-            <h2>
-              Growth should be visible
-              beyond the dashboard.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                Beyond the dashboard
+              </span>
+
+              <h2>
+                Growth should be visible
+                <span>beyond the dashboard.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              The objective is not simply more impressions or traffic.
+              Digital growth should improve the quality of demand,
+              conversion and measurable business performance.
+            </p>
 
           </div>
 
           <div class="outcomes-grid">
 
-            <article>
+            <article class="outcome-card">
 
-              <span>
-                01
-              </span>
+              <div class="outcome-top">
 
-              <strong>
-                Better Qualified Traffic
-              </strong>
+                <span>
+                  01
+                </span>
 
-              <p>
-                Focus acquisition on audiences with stronger
-                relevance and business intent.
-              </p>
+                <span class="outcome-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </span>
 
-            </article>
+              </div>
 
-            <article>
+              <div class="outcome-content">
 
-              <span>
-                02
-              </span>
+                <span>
+                  Acquisition
+                </span>
 
-              <strong>
-                Higher Conversion
-              </strong>
+                <h3>
+                  Better Qualified<br />
+                  Traffic
+                </h3>
 
-              <p>
-                Reduce friction throughout important digital
-                journeys and decision points.
-              </p>
+                <p>
+                  Focus acquisition on audiences with stronger
+                  relevance and business intent.
+                </p>
 
-            </article>
-
-            <article>
-
-              <span>
-                03
-              </span>
-
-              <strong>
-                Clearer Attribution
-              </strong>
-
-              <p>
-                Understand which channels and initiatives
-                contribute meaningful results.
-              </p>
+              </div>
 
             </article>
 
-            <article>
+            <article class="outcome-card">
 
-              <span>
-                04
-              </span>
+              <div class="outcome-top">
 
-              <strong>
-                Sustainable Growth
-              </strong>
+                <span>
+                  02
+                </span>
 
-              <p>
-                Build a repeatable system that improves through
-                measurement and iteration.
-              </p>
+                <span class="outcome-icon">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>
+                  Conversion
+                </span>
+
+                <h3>
+                  Higher<br />
+                  Conversion
+                </h3>
+
+                <p>
+                  Reduce friction throughout important digital
+                  journeys and decision points.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+
+                <span>
+                  03
+                </span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>
+                  Intelligence
+                </span>
+
+                <h3>
+                  Clearer<br />
+                  Attribution
+                </h3>
+
+                <p>
+                  Understand which channels and initiatives
+                  contribute meaningful results.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+
+                <span>
+                  04
+                </span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>
+                  Scale
+                </span>
+
+                <h3>
+                  Sustainable<br />
+                  Growth
+                </h3>
+
+                <p>
+                  Build a repeatable system that improves through
+                  measurement and iteration.
+                </p>
+
+              </div>
 
             </article>
 
@@ -785,22 +1411,44 @@
 
         <div class="container">
 
-          <span class="section-label">
-            Growth process
-          </span>
+          <div class="process-heading">
 
-          <h2>
-            Strategy, execution
-            and continuous improvement.
-          </h2>
+            <div class="section-index">
+              06 / GROWTH PROCESS
+            </div>
 
-          <div class="process-grid">
+            <div>
 
-            <article>
+              <span class="section-label">
+                How we grow
+              </span>
 
-              <span>
+              <h2>
+                Strategy, execution and
+                <span>continuous improvement.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Growth is an iterative process. We establish the baseline,
+              prioritize opportunities, execute improvements and use
+              performance data to determine what happens next.
+            </p>
+
+          </div>
+
+          <div class="process-flow">
+
+            <article class="process-step">
+
+              <span class="process-number">
                 01
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
 
               <h3>
                 Audit
@@ -813,11 +1461,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 02
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="options-outline"></ion-icon>
+              </div>
 
               <h3>
                 Prioritize
@@ -830,11 +1486,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 03
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="flash-outline"></ion-icon>
+              </div>
 
               <h3>
                 Execute
@@ -847,11 +1511,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 04
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="analytics-outline"></ion-icon>
+              </div>
 
               <h3>
                 Measure
@@ -864,11 +1536,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 05
               </span>
+
+              <div class="process-icon">
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </div>
 
               <h3>
                 Optimize
@@ -882,6 +1562,52 @@
             </article>
 
           </div>
+
+        </div>
+
+      </section>
+
+      <section class="service-cta">
+
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
+
+        <div class="container service-cta-inner">
+
+          <div class="cta-index">
+            07 / START
+          </div>
+
+          <div class="cta-copy">
+
+            <span>
+              Ready to grow?
+            </span>
+
+            <h2>
+              Turn digital performance into
+              <strong>measurable business growth.</strong>
+            </h2>
+
+            <p>
+              Tell us where you want to improve acquisition,
+              conversion or digital performance. We'll help define
+              the growth system, measurement framework and priorities.
+            </p>
+
+          </div>
+
+          <a routerLink="/contact" class="cta-button">
+
+            <span>
+              Start a Project
+            </span>
+
+            <span class="cta-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+
+          </a>
 
         </div>
 

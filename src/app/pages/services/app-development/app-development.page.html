@@ -1,22 +1,34 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="service-detail-content">
 
   <div class="service-detail-page">
 
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
     <section class="service-hero">
 
       <app-header></app-header>
 
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
+
       <div class="container service-hero-grid">
 
+        <!-- HERO COPY -->
         <div class="hero-copy">
 
-          <span class="eyebrow">
-            App Development
-          </span>
+          <div class="hero-eyebrow">
+            <span></span>
+            App Development / Digital Products
+          </div>
 
           <h1>
             Digital products built
-            for real business work.
+            for <span>real business work.</span>
           </h1>
 
           <p>
@@ -31,84 +43,298 @@
               routerLink="/contact"
               class="primary-button"
             >
-              Start a Project
-            </a>
-
-            <a
-              routerLink="/services"
-              class="secondary-link"
-            >
-              View All Services
+              <span>Start a Project</span>
 
               <ion-icon
                 name="arrow-forward-outline"
               ></ion-icon>
             </a>
 
+            <a
+              routerLink="/services"
+              class="secondary-link"
+            >
+              <span>View All Services</span>
+
+              <ion-icon
+                name="arrow-up-outline"
+              ></ion-icon>
+            </a>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>Web</strong>
+              <span>Applications</span>
+            </div>
+
+            <div>
+              <strong>Mobile</strong>
+              <span>Products</span>
+            </div>
+
+            <div>
+              <strong>Scale</strong>
+              <span>Ready</span>
+            </div>
+
           </div>
 
         </div>
 
+        <!-- =================================================
+             PRODUCT PLATFORM VISUAL
+        ================================================== -->
         <div class="hero-visual">
+
+          <div class="visual-label">
+            <span>ATANA / PRODUCT SYSTEM</span>
+            <small>01 / APP</small>
+          </div>
 
           <div class="product-shell">
 
+            <!-- PRODUCT HEADER -->
             <div class="product-header">
 
-              <span class="product-dot"></span>
+              <div class="product-brand">
 
-              <span class="product-title">
-                Business Platform
-              </span>
+                <div class="product-logo">
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <div>
+                  <strong>ATANA</strong>
+                  <small>Business Platform</small>
+                </div>
+
+              </div>
+
+              <div class="product-header-actions">
+
+                <span class="product-status">
+                  <i></i>
+                  Live
+                </span>
+
+                <div class="product-avatar">
+                  AT
+                </div>
+
+              </div>
 
             </div>
 
+            <!-- PRODUCT BODY -->
             <div class="product-content">
 
-              <div class="product-sidebar">
+              <!-- SIDEBAR -->
+              <aside class="product-sidebar">
 
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="sidebar-icon active">
+                  <ion-icon name="grid-outline"></ion-icon>
+                </div>
 
-              </div>
+                <div class="sidebar-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
 
+                <div class="sidebar-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div>
+
+                <div class="sidebar-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </div>
+
+                <div class="sidebar-icon">
+                  <ion-icon name="settings-outline"></ion-icon>
+                </div>
+
+              </aside>
+
+              <!-- MAIN -->
               <div class="product-main">
 
+                <div class="dashboard-heading">
+
+                  <div>
+                    <span>Workspace</span>
+                    <strong>Product Overview</strong>
+                  </div>
+
+                  <button type="button">
+                    <ion-icon name="add-outline"></ion-icon>
+                    New Task
+                  </button>
+
+                </div>
+
+                <!-- METRICS -->
                 <div class="metric-grid">
 
                   <div class="metric-card">
-                    <span>Users</span>
+
+                    <div class="metric-top">
+                      <span>Active Users</span>
+
+                      <ion-icon
+                        name="people-outline"
+                      ></ion-icon>
+                    </div>
+
                     <strong>2,480</strong>
+
+                    <small>
+                      <i></i>
+                      +12.4% this month
+                    </small>
+
                   </div>
 
                   <div class="metric-card">
-                    <span>Tasks</span>
+
+                    <div class="metric-top">
+                      <span>Tasks Processed</span>
+
+                      <ion-icon
+                        name="checkmark-circle-outline"
+                      ></ion-icon>
+                    </div>
+
                     <strong>18.4K</strong>
+
+                    <small>
+                      <i></i>
+                      +24.8% this month
+                    </small>
+
                   </div>
 
                   <div class="metric-card">
-                    <span>Efficiency</span>
+
+                    <div class="metric-top">
+                      <span>Efficiency</span>
+
+                      <ion-icon
+                        name="trending-up-outline"
+                      ></ion-icon>
+                    </div>
+
                     <strong>+38%</strong>
+
+                    <small>
+                      <i></i>
+                      Improved workflow
+                    </small>
+
                   </div>
 
                 </div>
 
-                <div class="chart-card">
+                <!-- ANALYTICS -->
+                <div class="dashboard-grid">
 
-                  <span class="chart-label">
-                    Product Activity
-                  </span>
+                  <div class="chart-card">
 
-                  <div class="chart-bars">
+                    <div class="chart-header">
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                      <div>
+                        <span>Product Activity</span>
+                        <strong>Usage Analytics</strong>
+                      </div>
+
+                      <small>Last 7 days</small>
+
+                    </div>
+
+                    <div class="chart-area">
+
+                      <div class="chart-lines">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+
+                      <div class="chart-bars">
+                        <span style="height:38%"></span>
+                        <span style="height:55%"></span>
+                        <span style="height:44%"></span>
+                        <span style="height:70%"></span>
+                        <span style="height:58%"></span>
+                        <span style="height:82%"></span>
+                        <span style="height:67%"></span>
+                        <span style="height:92%"></span>
+                      </div>
+
+                    </div>
+
+                    <div class="chart-days">
+                      <span>M</span>
+                      <span>T</span>
+                      <span>W</span>
+                      <span>T</span>
+                      <span>F</span>
+                      <span>S</span>
+                      <span>S</span>
+                      <span>N</span>
+                    </div>
+
+                  </div>
+
+                  <div class="activity-card">
+
+                    <div class="activity-header">
+                      <span>System</span>
+                      <strong>Connected</strong>
+                    </div>
+
+                    <div class="activity-list">
+
+                      <div>
+                        <span class="activity-icon">
+                          <ion-icon name="server-outline"></ion-icon>
+                        </span>
+
+                        <div>
+                          <strong>API Gateway</strong>
+                          <small>Operational</small>
+                        </div>
+
+                        <i></i>
+                      </div>
+
+                      <div>
+                        <span class="activity-icon">
+                          <ion-icon name="cloud-outline"></ion-icon>
+                        </span>
+
+                        <div>
+                          <strong>Cloud Data</strong>
+                          <small>Synced</small>
+                        </div>
+
+                        <i></i>
+                      </div>
+
+                      <div>
+                        <span class="activity-icon">
+                          <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        </span>
+
+                        <div>
+                          <strong>Security</strong>
+                          <small>Protected</small>
+                        </div>
+
+                        <i></i>
+                      </div>
+
+                    </div>
 
                   </div>
 
@@ -116,6 +342,54 @@
 
               </div>
 
+            </div>
+
+            <!-- PRODUCT FOOTER -->
+            <div class="product-footer">
+
+              <div>
+                <span>Platform</span>
+                <strong>Operational</strong>
+              </div>
+
+              <div>
+                <span>Uptime</span>
+                <strong>99.98%</strong>
+              </div>
+
+              <div>
+                <span>Environment</span>
+                <strong>Production</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- FLOATING UI -->
+
+          <div class="floating-card floating-performance">
+
+            <span class="floating-icon">
+              <ion-icon name="flash-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Performance</small>
+              <strong>Optimized</strong>
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-scale">
+
+            <span class="floating-icon">
+              <ion-icon name="trending-up-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Platform</small>
+              <strong>Scale Ready</strong>
             </div>
 
           </div>
@@ -124,41 +398,54 @@
 
       </div>
 
-      <div class="hero-wave">
-        <svg
-          viewBox="0 0 1440 180"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="
-              M0,110
-              C220,35 420,120 650,98
-              C850,80 1060,35 1260,64
-              C1350,76 1405,94 1440,105
-              L1440,180
-              L0,180
-              Z
-            "
-          ></path>
-        </svg>
+      <!-- HERO BOTTOM -->
+      <div class="hero-bottom">
+
+        <div class="container hero-bottom-inner">
+
+          <span>Product Strategy</span>
+          <i></i>
+
+          <span>UX / UI</span>
+          <i></i>
+
+          <span>Engineering</span>
+          <i></i>
+
+          <span>Integrations</span>
+          <i></i>
+
+          <span>Scale</span>
+
+        </div>
+
       </div>
 
     </section>
 
+
     <main>
 
+      <!-- =====================================================
+           INTRO
+      ====================================================== -->
       <section class="intro-section">
 
         <div class="container intro-grid">
 
-          <div>
+          <div class="section-index">
+            01 / WHAT WE BUILD
+          </div>
+
+          <div class="intro-heading">
 
             <span class="section-label">
-              What we build
+              Product engineering
             </span>
 
             <h2>
-              Applications designed around your business.
+              Applications designed around
+              <span>your business.</span>
             </h2>
 
           </div>
@@ -182,81 +469,220 @@
 
       </section>
 
+
+      <!-- =====================================================
+           CAPABILITIES
+      ====================================================== -->
       <section class="capabilities-section">
 
         <div class="container">
 
           <div class="section-heading">
 
-            <span class="section-label">
-              Capabilities
-            </span>
+            <div class="section-index">
+              02 / CAPABILITIES
+            </div>
 
-            <h2>
-              From idea to production.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                From idea to production
+              </span>
+
+              <h2>
+                Digital products built
+                <span>for how people work.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              We combine product thinking, experience design and
+              engineering to build applications that solve practical
+              business problems and scale with demand.
+            </p>
 
           </div>
 
+
           <div class="capability-grid">
 
+            <!-- 01 -->
             <article class="capability-card">
 
-              <span>01</span>
+              <div class="capability-top">
 
-              <h3>
-                Web Applications
-              </h3>
+                <span class="capability-number">
+                  01
+                </span>
 
-              <p>
-                Secure and scalable browser-based applications
-                for customers, employees and business operations.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Browser Based
+                </span>
+
+                <h3>
+                  Web<br />
+                  Applications
+                </h3>
+
+                <p>
+                  Secure and scalable browser-based applications
+                  for customers, employees and business operations.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+
+                <span>Responsive</span>
+                <span>Secure</span>
+                <span>Scalable</span>
+
+              </div>
 
             </article>
 
+
+            <!-- 02 -->
             <article class="capability-card">
 
-              <span>02</span>
+              <div class="capability-top">
 
-              <h3>
-                Mobile Applications
-              </h3>
+                <span class="capability-number">
+                  02
+                </span>
 
-              <p>
-                Mobile-first experiences designed for speed,
-                accessibility and real-world usage.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Mobile First
+                </span>
+
+                <h3>
+                  Mobile<br />
+                  Applications
+                </h3>
+
+                <p>
+                  Mobile-first experiences designed for speed,
+                  accessibility and real-world usage.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+
+                <span>iOS</span>
+                <span>Android</span>
+                <span>Cross Platform</span>
+
+              </div>
 
             </article>
 
+
+            <!-- 03 -->
             <article class="capability-card">
 
-              <span>03</span>
+              <div class="capability-top">
 
-              <h3>
-                Internal Systems
-              </h3>
+                <span class="capability-number">
+                  03
+                </span>
 
-              <p>
-                Custom applications that streamline workflows,
-                approvals, operations and reporting.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Operations
+                </span>
+
+                <h3>
+                  Internal<br />
+                  Systems
+                </h3>
+
+                <p>
+                  Custom applications that streamline workflows,
+                  approvals, operations and reporting.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+
+                <span>Workflow</span>
+                <span>Automation</span>
+                <span>Reporting</span>
+
+              </div>
 
             </article>
 
-            <article class="capability-card">
 
-              <span>04</span>
+            <!-- 04 -->
+            <article class="capability-card featured">
 
-              <h3>
-                Product Platforms
-              </h3>
+              <div class="featured-label">
+                Scale Ready
+              </div>
 
-              <p>
-                Scalable digital platforms designed to support
-                new services, customers and business models.
-              </p>
+              <div class="capability-top">
+
+                <span class="capability-number">
+                  04
+                </span>
+
+                <span class="capability-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Digital Platforms
+                </span>
+
+                <h3>
+                  Product<br />
+                  Platforms
+                </h3>
+
+                <p>
+                  Scalable digital platforms designed to support
+                  new services, customers and business models.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+
+                <span>Cloud</span>
+                <span>APIs</span>
+                <span>Scale</span>
+
+              </div>
 
             </article>
 
@@ -266,58 +692,190 @@
 
       </section>
 
+
+      <!-- =====================================================
+           CONNECTED SYSTEM
+      ====================================================== -->
       <section class="system-section">
 
-        <div class="container system-grid">
+        <div class="system-grid-background"></div>
+        <div class="system-glow"></div>
 
+        <div class="container system-layout">
+
+          <!-- COPY -->
           <div class="system-copy">
+
+            <div class="dark-index">
+              03 / CONNECTED SYSTEMS
+            </div>
 
             <span class="dark-label">
               Connected by design
             </span>
 
             <h2>
-              Your application should not operate in isolation.
+              Your application should not
+              <span>operate in isolation.</span>
             </h2>
 
             <p>
               We design applications that connect with the systems
-              your business already depends on.
+              your business already depends on — creating one
+              connected digital environment instead of another
+              isolated tool.
             </p>
+
+            <a
+              routerLink="/services/automation-integration"
+              class="system-link"
+            >
+              <span>Explore integrations</span>
+
+              <ion-icon
+                name="arrow-forward-outline"
+              ></ion-icon>
+            </a>
 
           </div>
 
-          <div class="system-flow">
 
-            <div class="flow-item">
-              <strong>
-                Application
-              </strong>
+          <!-- ARCHITECTURE VISUAL -->
+          <div class="architecture">
+
+            <div class="architecture-header">
+
               <span>
-                Web / Mobile
+                ATANA / SYSTEM ARCHITECTURE
               </span>
+
+              <div>
+                <i></i>
+                Connected
+              </div>
+
             </div>
 
-            <div class="flow-line"></div>
 
-            <div class="flow-item">
-              <strong>
-                APIs
-              </strong>
-              <span>
-                Integration Layer
-              </span>
+            <div class="architecture-canvas">
+
+              <!-- APP -->
+              <div class="architecture-node app-node">
+
+                <span class="architecture-icon">
+                  <ion-icon name="apps-outline"></ion-icon>
+                </span>
+
+                <div>
+                  <small>Experience Layer</small>
+                  <strong>Application</strong>
+                  <span>Web / Mobile</span>
+                </div>
+
+              </div>
+
+
+              <div class="architecture-line line-one">
+
+                <span></span>
+
+              </div>
+
+
+              <!-- API -->
+              <div class="architecture-node api-node">
+
+                <span class="architecture-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </span>
+
+                <div>
+                  <small>Connection Layer</small>
+                  <strong>API Gateway</strong>
+                  <span>Integration / Logic</span>
+                </div>
+
+              </div>
+
+
+              <div class="architecture-line line-two">
+
+                <span></span>
+
+              </div>
+
+
+              <!-- BUSINESS -->
+              <div class="architecture-node business-node">
+
+                <span class="architecture-icon">
+                  <ion-icon name="server-outline"></ion-icon>
+                </span>
+
+                <div>
+                  <small>Business Layer</small>
+                  <strong>Core Systems</strong>
+                  <span>CRM / ERP / Data</span>
+                </div>
+
+              </div>
+
+
+              <!-- SUPPORTING NODES -->
+
+              <div class="mini-node mini-cloud">
+
+                <ion-icon name="cloud-outline"></ion-icon>
+
+                <span>
+                  <small>Infrastructure</small>
+                  <strong>Cloud</strong>
+                </span>
+
+              </div>
+
+              <div class="mini-node mini-security">
+
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+
+                <span>
+                  <small>Platform</small>
+                  <strong>Security</strong>
+                </span>
+
+              </div>
+
+              <div class="mini-node mini-data">
+
+                <ion-icon name="analytics-outline"></ion-icon>
+
+                <span>
+                  <small>Intelligence</small>
+                  <strong>Analytics</strong>
+                </span>
+
+              </div>
+
             </div>
 
-            <div class="flow-line"></div>
 
-            <div class="flow-item">
-              <strong>
-                Business Systems
-              </strong>
-              <span>
-                CRM / ERP / Data
-              </span>
+            <div class="architecture-footer">
+
+              <div>
+                <span>API</span>
+                <strong>Connected</strong>
+              </div>
+
+              <div>
+                <span>Data</span>
+                <strong>Synced</strong>
+              </div>
+
+              <div>
+                <span>Security</span>
+                <strong>Protected</strong>
+              </div>
+
             </div>
 
           </div>
@@ -326,61 +884,227 @@
 
       </section>
 
+
+      <!-- =====================================================
+           PROCESS
+      ====================================================== -->
       <section class="process-section">
 
         <div class="container">
 
-          <span class="section-label">
-            Delivery process
-          </span>
+          <div class="process-heading">
 
-          <h2>
-            Built with clarity from the start.
-          </h2>
+            <div class="section-index">
+              04 / DELIVERY PROCESS
+            </div>
 
-          <div class="process-grid">
+            <div>
 
-            <article>
-              <span>01</span>
-              <h3>Discover</h3>
+              <span class="section-label">
+                How we build
+              </span>
+
+              <h2>
+                Built with clarity
+                <span>from the start.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Product decisions, design and engineering stay aligned
+              throughout delivery so the final application solves the
+              right problem and remains ready to evolve.
+            </p>
+
+          </div>
+
+
+          <div class="process-flow">
+
+            <!-- 01 -->
+            <article class="process-step">
+
+              <span class="process-number">
+                01
+              </span>
+
+              <div class="process-icon">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+
+              <h3>
+                Discover
+              </h3>
+
               <p>
                 Understand users, requirements and business outcomes.
               </p>
+
             </article>
 
-            <article>
-              <span>02</span>
-              <h3>Architect</h3>
+
+            <div class="process-connector">
+              <span></span>
+            </div>
+
+
+            <!-- 02 -->
+            <article class="process-step">
+
+              <span class="process-number">
+                02
+              </span>
+
+              <div class="process-icon">
+                <ion-icon name="git-network-outline"></ion-icon>
+              </div>
+
+              <h3>
+                Architect
+              </h3>
+
               <p>
                 Define the product structure, technology and integrations.
               </p>
+
             </article>
 
-            <article>
-              <span>03</span>
-              <h3>Design</h3>
+
+            <div class="process-connector">
+              <span></span>
+            </div>
+
+
+            <!-- 03 -->
+            <article class="process-step">
+
+              <span class="process-number">
+                03
+              </span>
+
+              <div class="process-icon">
+                <ion-icon name="color-palette-outline"></ion-icon>
+              </div>
+
+              <h3>
+                Design
+              </h3>
+
               <p>
                 Build clear user journeys and interface systems.
               </p>
+
             </article>
 
-            <article>
-              <span>04</span>
-              <h3>Build</h3>
+
+            <div class="process-connector">
+              <span></span>
+            </div>
+
+
+            <!-- 04 -->
+            <article class="process-step">
+
+              <span class="process-number">
+                04
+              </span>
+
+              <div class="process-icon">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+
+              <h3>
+                Build
+              </h3>
+
               <p>
-                Engineer, integrate and test the product.
+                Engineer, integrate and thoroughly test the product.
               </p>
+
             </article>
 
-            <article>
-              <span>05</span>
-              <h3>Scale</h3>
+
+            <div class="process-connector">
+              <span></span>
+            </div>
+
+
+            <!-- 05 -->
+            <article class="process-step">
+
+              <span class="process-number">
+                05
+              </span>
+
+              <div class="process-icon">
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </div>
+
+              <h3>
+                Scale
+              </h3>
+
               <p>
                 Improve performance and evolve the platform over time.
               </p>
+
             </article>
 
           </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =====================================================
+           FINAL CTA
+      ====================================================== -->
+      <section class="service-cta">
+
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
+
+        <div class="container service-cta-inner">
+
+          <div class="cta-index">
+            05 / START
+          </div>
+
+          <div class="cta-copy">
+
+            <span>
+              Have a product in mind?
+            </span>
+
+            <h2>
+              Let's build something
+              <strong>people want to use.</strong>
+            </h2>
+
+            <p>
+              Tell us what you're trying to build, improve or replace.
+              We'll help turn the requirement into a clear product and
+              engineering plan.
+            </p>
+
+          </div>
+
+          <a
+            routerLink="/contact"
+            class="cta-button"
+          >
+
+            <span>
+              Start a Project
+            </span>
+
+            <span class="cta-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+
+          </a>
 
         </div>
 
@@ -388,6 +1112,10 @@
 
     </main>
 
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
     <app-footer></app-footer>
 
   </div>

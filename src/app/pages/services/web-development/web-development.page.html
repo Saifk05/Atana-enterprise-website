@@ -1,23 +1,27 @@
-<ion-content [fullscreen]="true">
-
+<ion-content [fullscreen]="true" class="service-detail-content">
   <div class="service-detail-page">
 
     <section class="service-hero">
-
       <app-header></app-header>
+
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
 
       <div class="container service-hero-grid">
 
         <div class="hero-copy">
-
-          <span class="eyebrow">
-            Web Development
-          </span>
+          <div class="hero-eyebrow">
+            <span></span>
+            Web Development / Digital Experience
+          </div>
 
           <h1>
             Websites engineered
-            to perform, convert
-            and scale.
+            <span>to perform, convert and scale.</span>
           </h1>
 
           <p>
@@ -27,34 +31,45 @@
           </p>
 
           <div class="hero-actions">
-
-            <a
-              routerLink="/contact"
-              class="primary-button"
-            >
-              Start a Project
+            <a routerLink="/contact" class="primary-button">
+              <span>Start a Project</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <a
-              routerLink="/services"
-              class="secondary-link"
-            >
-              View All Services
-
-              <ion-icon
-                name="arrow-forward-outline"
-              ></ion-icon>
+            <a routerLink="/services" class="secondary-link">
+              <span>View All Services</span>
+              <ion-icon name="arrow-up-outline"></ion-icon>
             </a>
-
           </div>
 
+          <div class="hero-meta">
+            <div>
+              <strong>98</strong>
+              <span>Performance</span>
+            </div>
+
+            <div>
+              <strong>1.2s</strong>
+              <span>Load Time</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Responsive</span>
+            </div>
+          </div>
         </div>
 
         <div class="hero-visual">
 
-          <div class="browser-shell">
+          <div class="visual-label">
+            <span>ATANA / WEB ENGINEERING</span>
+            <small>04 / WEB</small>
+          </div>
 
-            <div class="browser-header">
+          <div class="web-shell">
+
+            <div class="shell-header">
 
               <div class="browser-controls">
                 <span></span>
@@ -63,65 +78,208 @@
               </div>
 
               <div class="browser-address">
-                atana.digital
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <span>atana.digital</span>
+              </div>
+
+              <div class="shell-status">
+                <i></i>
+                LIVE
               </div>
 
             </div>
 
-            <div class="browser-body">
+            <div class="web-workspace">
 
-              <aside class="site-sidebar">
+              <aside class="workspace-sidebar">
 
-                <div class="sidebar-logo">
-                  A
+                <div class="workspace-brand">
+                  <span class="workspace-mark">
+                    <i></i>
+                    <i></i>
+                  </span>
                 </div>
 
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="workspace-navigation">
+                  <span class="active">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                  </span>
+
+                  <span>
+                    <ion-icon name="layers-outline"></ion-icon>
+                  </span>
+
+                  <span>
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </span>
+
+                  <span>
+                    <ion-icon name="analytics-outline"></ion-icon>
+                  </span>
+                </div>
+
+                <div class="workspace-profile"></div>
 
               </aside>
 
-              <div class="site-preview">
+              <div class="workspace-main">
 
-                <div class="preview-nav">
+                <div class="workspace-toolbar">
 
-                  <div class="preview-brand">
-                    ATANA
+                  <div>
+                    <span>Website Preview</span>
+                    <strong>ATANA Digital</strong>
                   </div>
 
-                  <div class="preview-links">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                  <div class="device-switcher">
+                    <span class="active">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                    </span>
+
+                    <span>
+                      <ion-icon name="tablet-portrait-outline"></ion-icon>
+                    </span>
+
+                    <span>
+                      <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </span>
                   </div>
 
                 </div>
 
-                <div class="preview-hero">
+                <div class="website-preview">
 
-                  <span class="preview-eyebrow">
-                    Digital Engineering
-                  </span>
+                  <div class="preview-header">
 
-                  <strong>
-                    Better digital experiences.
-                  </strong>
+                    <div class="preview-logo">
+                      <span></span>
+                      <strong>ATANA</strong>
+                    </div>
 
-                  <p>
-                    Built for speed, clarity and growth.
-                  </p>
+                    <div class="preview-navigation">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
 
-                  <div class="preview-button"></div>
+                    <div class="preview-action"></div>
+
+                  </div>
+
+                  <div class="preview-content">
+
+                    <div class="preview-copy">
+
+                      <small>
+                        DIGITAL ENGINEERING
+                      </small>
+
+                      <strong>
+                        Better digital
+                        <span>experiences.</span>
+                      </strong>
+
+                      <p>
+                        Built for speed, clarity and growth.
+                      </p>
+
+                      <div class="preview-buttons">
+                        <span></span>
+                        <i></i>
+                      </div>
+
+                    </div>
+
+                    <div class="preview-graphic">
+
+                      <div class="graphic-grid"></div>
+
+                      <div class="graphic-orbit orbit-a"></div>
+                      <div class="graphic-orbit orbit-b"></div>
+
+                      <div class="graphic-core">
+                        <span></span>
+                        <i></i>
+                      </div>
+
+                      <div class="graphic-node node-a"></div>
+                      <div class="graphic-node node-b"></div>
+                      <div class="graphic-node node-c"></div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="preview-services">
+                    <div>
+                      <span>01</span>
+                      <strong>Design</strong>
+                    </div>
+
+                    <div>
+                      <span>02</span>
+                      <strong>Engineering</strong>
+                    </div>
+
+                    <div>
+                      <span>03</span>
+                      <strong>Growth</strong>
+                    </div>
+                  </div>
 
                 </div>
 
-                <div class="preview-cards">
+                <div class="workspace-bottom">
 
-                  <div></div>
-                  <div></div>
-                  <div></div>
+                  <div class="performance-panel">
+
+                    <div class="performance-heading">
+                      <span>Core Web Vitals</span>
+                      <small>LIVE</small>
+                    </div>
+
+                    <div class="performance-metrics">
+
+                      <div>
+                        <span>Performance</span>
+                        <strong>98</strong>
+                        <i class="good"></i>
+                      </div>
+
+                      <div>
+                        <span>LCP</span>
+                        <strong>1.2s</strong>
+                        <i class="good"></i>
+                      </div>
+
+                      <div>
+                        <span>CLS</span>
+                        <strong>0.02</strong>
+                        <i class="good"></i>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="deployment-panel">
+
+                    <div class="deployment-top">
+                      <div>
+                        <span>Deployment</span>
+                        <strong>Production</strong>
+                      </div>
+
+                      <ion-icon name="cloud-done-outline"></ion-icon>
+                    </div>
+
+                    <div class="deployment-status">
+                      <i></i>
+                      <span>Successfully deployed</span>
+                    </div>
+
+                  </div>
 
                 </div>
 
@@ -129,41 +287,65 @@
 
             </div>
 
+            <div class="shell-footer">
+
+              <div>
+                <span>Environment</span>
+                <strong>Production</strong>
+              </div>
+
+              <div>
+                <span>Build</span>
+                <strong>Passing</strong>
+              </div>
+
+              <div>
+                <span>Performance</span>
+                <strong>Optimized</strong>
+              </div>
+
+            </div>
+
           </div>
 
-          <div class="performance-card performance-one">
-            <span>Performance</span>
-            <strong>98</strong>
+          <div class="floating-card floating-performance">
+            <span class="floating-icon">
+              <ion-icon name="speedometer-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Performance</small>
+              <strong>98 / 100</strong>
+            </div>
           </div>
 
-          <div class="performance-card performance-two">
-            <span>Load Time</span>
-            <strong>1.2s</strong>
+          <div class="floating-card floating-load">
+            <span class="floating-icon">
+              <ion-icon name="flash-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Load Time</small>
+              <strong>1.2s</strong>
+            </div>
           </div>
 
         </div>
 
       </div>
 
-      <div class="hero-wave">
-
-        <svg
-          viewBox="0 0 1440 180"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="
-              M0,110
-              C220,35 420,120 650,98
-              C850,80 1060,35 1260,64
-              C1350,76 1405,94 1440,105
-              L1440,180
-              L0,180
-              Z
-            "
-          ></path>
-        </svg>
-
+      <div class="hero-bottom">
+        <div class="container hero-bottom-inner">
+          <span>Strategy</span>
+          <i></i>
+          <span>UX Design</span>
+          <i></i>
+          <span>Engineering</span>
+          <i></i>
+          <span>Performance</span>
+          <i></i>
+          <span>Growth</span>
+        </div>
       </div>
 
     </section>
@@ -171,23 +353,24 @@
     <main>
 
       <section class="intro-section">
-
         <div class="container intro-grid">
 
-          <div>
+          <div class="section-index">
+            01 / WEB ENGINEERING
+          </div>
 
+          <div class="intro-heading">
             <span class="section-label">
-              Web engineering
+              Digital experience
             </span>
 
             <h2>
-              Your website should be more than a digital brochure.
+              Your website should do more than
+              <span>look impressive.</span>
             </h2>
-
           </div>
 
           <div class="intro-copy">
-
             <p>
               A modern website should support marketing, sales,
               operations and customer experience while remaining fast,
@@ -195,29 +378,40 @@
             </p>
 
             <p>
-              We combine design and engineering to build websites that
-              look refined, load quickly and support real business goals.
+              We combine strategy, design and engineering to build
+              digital experiences that communicate clearly, perform
+              reliably and support real business goals.
             </p>
-
           </div>
 
         </div>
-
       </section>
 
       <section class="capabilities-section">
-
         <div class="container">
 
           <div class="section-heading">
 
-            <span class="section-label">
-              Capabilities
-            </span>
+            <div class="section-index">
+              02 / CAPABILITIES
+            </div>
 
-            <h2>
-              Everything needed to build a modern web presence.
-            </h2>
+            <div>
+              <span class="section-label">
+                Web capabilities
+              </span>
+
+              <h2>
+                Everything needed for a
+                <span>modern web presence.</span>
+              </h2>
+            </div>
+
+            <p>
+              From corporate websites to complex digital platforms,
+              we combine design, engineering and performance into one
+              connected delivery system.
+            </p>
 
           </div>
 
@@ -225,169 +419,359 @@
 
             <article class="capability-card">
 
-              <span>
-                01
-              </span>
+              <div class="capability-top">
+                <span class="capability-number">01</span>
 
-              <h3>
-                Corporate Websites
-              </h3>
+                <span class="capability-icon">
+                  <ion-icon name="business-outline"></ion-icon>
+                </span>
+              </div>
 
-              <p>
-                Premium websites that communicate your brand, services
-                and value clearly across every device.
-              </p>
+              <div class="capability-content">
+                <span class="capability-type">
+                  Brand experience
+                </span>
 
-            </article>
+                <h3>
+                  Corporate<br />
+                  Websites
+                </h3>
 
-            <article class="capability-card">
+                <p>
+                  Premium websites that communicate your brand,
+                  services and value clearly across every device.
+                </p>
+              </div>
 
-              <span>
-                02
-              </span>
-
-              <h3>
-                Landing Experiences
-              </h3>
-
-              <p>
-                Conversion-focused landing pages designed around
-                campaigns, products and lead generation.
-              </p>
-
-            </article>
-
-            <article class="capability-card">
-
-              <span>
-                03
-              </span>
-
-              <h3>
-                Web Platforms
-              </h3>
-
-              <p>
-                Custom portals, dashboards and digital experiences
-                built for more complex workflows.
-              </p>
+              <div class="capability-bottom">
+                <span>Brand</span>
+                <span>Responsive</span>
+                <span>CMS</span>
+              </div>
 
             </article>
 
             <article class="capability-card">
 
-              <span>
-                04
-              </span>
+              <div class="capability-top">
+                <span class="capability-number">02</span>
 
-              <h3>
-                Performance Optimization
-              </h3>
+                <span class="capability-icon">
+                  <ion-icon name="navigate-outline"></ion-icon>
+                </span>
+              </div>
 
-              <p>
-                Improve speed, responsiveness, accessibility and
-                technical quality across existing websites.
-              </p>
+              <div class="capability-content">
+                <span class="capability-type">
+                  Conversion
+                </span>
+
+                <h3>
+                  Landing<br />
+                  Experiences
+                </h3>
+
+                <p>
+                  Conversion-focused landing experiences designed
+                  around campaigns, products and lead generation.
+                </p>
+              </div>
+
+              <div class="capability-bottom">
+                <span>Campaigns</span>
+                <span>Leads</span>
+                <span>Conversion</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card featured">
+
+              <div class="featured-label">
+                Engineering
+              </div>
+
+              <div class="capability-top">
+                <span class="capability-number">03</span>
+
+                <span class="capability-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="capability-content">
+                <span class="capability-type">
+                  Digital systems
+                </span>
+
+                <h3>
+                  Web<br />
+                  Platforms
+                </h3>
+
+                <p>
+                  Custom portals, dashboards and digital experiences
+                  engineered for complex business workflows.
+                </p>
+              </div>
+
+              <div class="capability-bottom">
+                <span>Portals</span>
+                <span>Dashboards</span>
+                <span>Platforms</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card">
+
+              <div class="capability-top">
+                <span class="capability-number">04</span>
+
+                <span class="capability-icon">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="capability-content">
+                <span class="capability-type">
+                  Performance
+                </span>
+
+                <h3>
+                  Performance<br />
+                  Optimization
+                </h3>
+
+                <p>
+                  Improve speed, responsiveness, accessibility and
+                  technical quality across existing websites.
+                </p>
+              </div>
+
+              <div class="capability-bottom">
+                <span>Speed</span>
+                <span>Core Vitals</span>
+                <span>Accessibility</span>
+              </div>
 
             </article>
 
           </div>
 
         </div>
-
       </section>
 
       <section class="experience-section">
 
-        <div class="container experience-grid">
+        <div class="experience-grid-background"></div>
+        <div class="experience-glow"></div>
+
+        <div class="container experience-layout">
 
           <div class="experience-copy">
 
+            <div class="dark-index">
+              03 / EXPERIENCE ARCHITECTURE
+            </div>
+
             <span class="dark-label">
-              Built for experience
+              Built as one system
             </span>
 
             <h2>
-              Design, engineering and performance in one system.
+              Design, engineering and
+              <span>performance together.</span>
             </h2>
 
             <p>
-              Strong web experiences come from treating design,
-              development and performance as connected disciplines.
+              Strong web experiences come from treating user
+              experience, visual design, engineering and performance
+              as connected disciplines rather than separate phases.
             </p>
+
+            <a routerLink="/contact" class="experience-link">
+              <span>Discuss your website</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
 
           </div>
 
-          <div class="experience-stack">
+          <div class="experience-system">
 
-            <div class="experience-item">
-
+            <div class="experience-system-header">
               <span>
-                01
+                ATANA / WEB EXPERIENCE SYSTEM
               </span>
 
               <div>
-                <strong>
-                  User Experience
-                </strong>
+                <i></i>
+                ACTIVE
+              </div>
+            </div>
 
-                <p>
-                  Clear journeys, navigation and content structure.
-                </p>
+            <div class="experience-system-body">
+
+              <div class="experience-primary">
+
+                <div class="experience-node">
+
+                  <div class="node-index">
+                    01
+                  </div>
+
+                  <span class="node-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                  </span>
+
+                  <div class="node-copy">
+                    <small>Experience</small>
+                    <strong>User Experience</strong>
+                    <span>Journeys / Structure</span>
+                  </div>
+
+                </div>
+
+                <div class="experience-connector">
+                  <span></span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+                <div class="experience-node active">
+
+                  <div class="node-index">
+                    02
+                  </div>
+
+                  <span class="node-icon">
+                    <ion-icon name="color-palette-outline"></ion-icon>
+                  </span>
+
+                  <div class="node-copy">
+                    <small>Interface</small>
+                    <strong>Visual Design</strong>
+                    <span>Brand / UI System</span>
+                  </div>
+
+                </div>
+
+                <div class="experience-connector">
+                  <span></span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+                <div class="experience-node">
+
+                  <div class="node-index">
+                    03
+                  </div>
+
+                  <span class="node-icon">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                  </span>
+
+                  <div class="node-copy">
+                    <small>Build</small>
+                    <strong>Engineering</strong>
+                    <span>Frontend / APIs</span>
+                  </div>
+
+                </div>
+
+                <div class="experience-connector">
+                  <span></span>
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div>
+
+                <div class="experience-node">
+
+                  <div class="node-index">
+                    04
+                  </div>
+
+                  <span class="node-icon">
+                    <ion-icon name="speedometer-outline"></ion-icon>
+                  </span>
+
+                  <div class="node-copy">
+                    <small>Quality</small>
+                    <strong>Performance</strong>
+                    <span>Speed / Reliability</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="experience-flow">
+                <span>DISCOVER</span>
+                <i></i>
+                <span>DESIGN</span>
+                <i></i>
+                <span>BUILD</span>
+                <i></i>
+                <span>OPTIMIZE</span>
+              </div>
+
+              <div class="experience-quality">
+
+                <div>
+                  <span class="quality-icon">
+                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                  </span>
+
+                  <div>
+                    <small>Responsive</small>
+                    <strong>Every Screen</strong>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="quality-icon">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                  </span>
+
+                  <div>
+                    <small>Accessible</small>
+                    <strong>Inclusive UX</strong>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="quality-icon">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                  </span>
+
+                  <div>
+                    <small>Reliable</small>
+                    <strong>Production Ready</strong>
+                  </div>
+                </div>
+
               </div>
 
             </div>
 
-            <div class="experience-item">
-
-              <span>
-                02
-              </span>
+            <div class="experience-system-footer">
 
               <div>
-                <strong>
-                  Visual Design
-                </strong>
-
-                <p>
-                  Premium interfaces aligned with your brand.
-                </p>
+                <span>Experience</span>
+                <strong>User First</strong>
               </div>
 
-            </div>
-
-            <div class="experience-item">
-
-              <span>
-                03
-              </span>
-
               <div>
-                <strong>
-                  Engineering
-                </strong>
-
-                <p>
-                  Maintainable frontend architecture and clean code.
-                </p>
+                <span>Engineering</span>
+                <strong>Maintainable</strong>
               </div>
 
-            </div>
-
-            <div class="experience-item">
-
-              <span>
-                04
-              </span>
+              <div>
+                <span>Performance</span>
+                <strong>Optimized</strong>
+              </div>
 
               <div>
-                <strong>
-                  Performance
-                </strong>
-
-                <p>
-                  Fast loading, responsive interaction and optimization.
-                </p>
+                <span>Delivery</span>
+                <strong>Production Ready</strong>
               </div>
 
             </div>
@@ -399,137 +783,476 @@
       </section>
 
       <section class="technology-section">
-
         <div class="container">
 
-          <div class="section-heading">
+          <div class="technology-heading">
 
-            <span class="section-label">
-              Technology
-            </span>
+            <div class="section-index">
+              04 / TECHNOLOGY
+            </div>
 
-            <h2>
-              Modern technology without unnecessary complexity.
-            </h2>
+            <div>
+              <span class="section-label">
+                Modern engineering
+              </span>
+
+              <h2>
+                Modern technology without
+                <span>unnecessary complexity.</span>
+              </h2>
+            </div>
+
+            <p>
+              We select technologies around maintainability,
+              performance, integration requirements and the long-term
+              needs of the platform.
+            </p>
 
           </div>
 
           <div class="technology-grid">
 
-            <div class="technology-item">
-              <span>Frontend</span>
-              <strong>Angular</strong>
-            </div>
+            <article class="technology-card">
 
-            <div class="technology-item">
-              <span>Mobile / UI</span>
-              <strong>Ionic</strong>
-            </div>
+              <div class="technology-top">
+                <span>01 / FRONTEND</span>
 
-            <div class="technology-item">
-              <span>Backend</span>
-              <strong>Node.js</strong>
-            </div>
+                <span class="technology-icon">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                </span>
+              </div>
 
-            <div class="technology-item">
-              <span>Enterprise</span>
-              <strong>Java</strong>
-            </div>
+              <div class="technology-content">
+                <small>Frontend Engineering</small>
+                <strong>Angular</strong>
+                <p>
+                  Structured frontend applications and
+                  scalable component systems.
+                </p>
+              </div>
 
-            <div class="technology-item">
-              <span>Integration</span>
-              <strong>REST / GraphQL</strong>
-            </div>
+              <div class="technology-status">
+                <i></i>
+                Production Ready
+              </div>
 
-            <div class="technology-item">
-              <span>Cloud</span>
-              <strong>AWS / Azure</strong>
-            </div>
+            </article>
+
+            <article class="technology-card">
+
+              <div class="technology-top">
+                <span>02 / UI</span>
+
+                <span class="technology-icon">
+                  <ion-icon name="phone-portrait-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="technology-content">
+                <small>Interface Platform</small>
+                <strong>Ionic</strong>
+                <p>
+                  Responsive interfaces across modern
+                  web and application experiences.
+                </p>
+              </div>
+
+              <div class="technology-status">
+                <i></i>
+                Responsive
+              </div>
+
+            </article>
+
+            <article class="technology-card featured">
+
+              <div class="technology-featured-label">
+                Full Stack
+              </div>
+
+              <div class="technology-top">
+                <span>03 / BACKEND</span>
+
+                <span class="technology-icon">
+                  <ion-icon name="server-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="technology-content">
+                <small>Backend Engineering</small>
+                <strong>Node.js</strong>
+                <p>
+                  Fast APIs, application services and
+                  integration-ready backend systems.
+                </p>
+              </div>
+
+              <div class="technology-status">
+                <i></i>
+                API Ready
+              </div>
+
+            </article>
+
+            <article class="technology-card">
+
+              <div class="technology-top">
+                <span>04 / ENTERPRISE</span>
+
+                <span class="technology-icon">
+                  <ion-icon name="business-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="technology-content">
+                <small>Enterprise Engineering</small>
+                <strong>Java</strong>
+                <p>
+                  Reliable enterprise services and
+                  business-critical backend systems.
+                </p>
+              </div>
+
+              <div class="technology-status">
+                <i></i>
+                Enterprise
+              </div>
+
+            </article>
+
+            <article class="technology-card">
+
+              <div class="technology-top">
+                <span>05 / INTEGRATION</span>
+
+                <span class="technology-icon">
+                  <ion-icon name="git-network-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="technology-content">
+                <small>System Integration</small>
+                <strong>REST / GraphQL</strong>
+                <p>
+                  Reliable data exchange between
+                  websites and business systems.
+                </p>
+              </div>
+
+              <div class="technology-status">
+                <i></i>
+                Connected
+              </div>
+
+            </article>
+
+            <article class="technology-card">
+
+              <div class="technology-top">
+                <span>06 / CLOUD</span>
+
+                <span class="technology-icon">
+                  <ion-icon name="cloud-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="technology-content">
+                <small>Cloud Infrastructure</small>
+                <strong>AWS / Azure</strong>
+                <p>
+                  Scalable hosting, deployment and
+                  production infrastructure.
+                </p>
+              </div>
+
+              <div class="technology-status">
+                <i></i>
+                Scalable
+              </div>
+
+            </article>
 
           </div>
 
         </div>
-
       </section>
 
       <section class="outcomes-section">
-
         <div class="container">
 
-          <div class="section-heading">
+          <div class="outcomes-heading">
 
-            <span class="section-label">
-              Business outcomes
-            </span>
+            <div class="section-index">
+              05 / BUSINESS OUTCOMES
+            </div>
 
-            <h2>
-              Better web experiences should deliver better results.
-            </h2>
+            <div>
+              <span class="section-label">
+                Digital impact
+              </span>
+
+              <h2>
+                Better web experiences should
+                <span>deliver better results.</span>
+              </h2>
+            </div>
+
+            <p>
+              The goal is not simply a better-looking website.
+              We build digital experiences around performance,
+              conversion, credibility and long-term growth.
+            </p>
 
           </div>
 
           <div class="outcomes-grid">
 
-            <article>
+            <article class="outcome-card">
 
-              <span>
+              <div class="outcome-top">
+                <span>01</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="outcome-content">
+                <span>Performance</span>
+
+                <h3>
+                  Faster<br />
+                  Experiences
+                </h3>
+
+                <p>
+                  Reduce load times and improve responsiveness
+                  across devices and connections.
+                </p>
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+                <span>02</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="navigate-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="outcome-content">
+                <span>Conversion</span>
+
+                <h3>
+                  Higher<br />
+                  Conversion
+                </h3>
+
+                <p>
+                  Build clearer journeys that move users
+                  naturally from interest to action.
+                </p>
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+                <span>03</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="diamond-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="outcome-content">
+                <span>Credibility</span>
+
+                <h3>
+                  Stronger<br />
+                  Brand
+                </h3>
+
+                <p>
+                  Present your business with greater
+                  clarity, consistency and credibility.
+                </p>
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+                <span>04</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="outcome-content">
+                <span>Scale</span>
+
+                <h3>
+                  Easier<br />
+                  Growth
+                </h3>
+
+                <p>
+                  Build a digital platform that can evolve
+                  as your services and business expand.
+                </p>
+              </div>
+
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="container">
+
+          <div class="process-heading">
+
+            <div class="section-index">
+              06 / DELIVERY PROCESS
+            </div>
+
+            <div>
+              <span class="section-label">
+                How we build
+              </span>
+
+              <h2>
+                From structure
+                <span>to launch.</span>
+              </h2>
+            </div>
+
+            <p>
+              We move from business context and information
+              architecture through design, engineering and launch
+              with performance considered throughout the process.
+            </p>
+
+          </div>
+
+          <div class="process-flow">
+
+            <article class="process-step">
+
+              <span class="process-number">
                 01
               </span>
 
-              <strong>
-                Faster Experiences
-              </strong>
+              <div class="process-icon">
+                <ion-icon name="compass-outline"></ion-icon>
+              </div>
+
+              <h3>Discover</h3>
 
               <p>
-                Reduce load times and improve responsiveness.
+                Understand the audience, goals and
+                website requirements.
               </p>
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 02
               </span>
 
-              <strong>
-                Higher Conversion
-              </strong>
+              <div class="process-icon">
+                <ion-icon name="git-network-outline"></ion-icon>
+              </div>
+
+              <h3>Structure</h3>
 
               <p>
-                Build clearer journeys from interest to action.
+                Define pages, content hierarchy
+                and user journeys.
               </p>
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 03
               </span>
 
-              <strong>
-                Stronger Brand
-              </strong>
+              <div class="process-icon">
+                <ion-icon name="color-palette-outline"></ion-icon>
+              </div>
+
+              <h3>Design</h3>
 
               <p>
-                Present your business with greater clarity and credibility.
+                Create a consistent and responsive
+                interface system.
               </p>
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
+            <article class="process-step">
+
+              <span class="process-number">
                 04
               </span>
 
-              <strong>
-                Easier Growth
-              </strong>
+              <div class="process-icon">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+
+              <h3>Develop</h3>
 
               <p>
-                Build a platform that is easier to expand over time.
+                Build, integrate and optimize
+                the website.
+              </p>
+
+            </article>
+
+            <div class="process-connector">
+              <span></span>
+            </div>
+
+            <article class="process-step">
+
+              <span class="process-number">
+                05
+              </span>
+
+              <div class="process-icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+
+              <h3>Launch</h3>
+
+              <p>
+                Test, deploy and continuously
+                improve performance.
               </p>
 
             </article>
@@ -537,104 +1260,49 @@
           </div>
 
         </div>
-
       </section>
 
-      <section class="process-section">
+      <section class="service-cta">
 
-        <div class="container">
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
 
-          <span class="section-label">
-            Delivery process
-          </span>
+        <div class="container service-cta-inner">
 
-          <h2>
-            From structure to launch.
-          </h2>
+          <div class="cta-index">
+            07 / START
+          </div>
 
-          <div class="process-grid">
+          <div class="cta-copy">
 
-            <article>
+            <span>
+              Building something new?
+            </span>
 
-              <span>
-                01
-              </span>
+            <h2>
+              Build a website engineered
+              <strong>for performance and growth.</strong>
+            </h2>
 
-              <h3>
-                Discover
-              </h3>
-
-              <p>
-                Understand the audience, goals and website requirements.
-              </p>
-
-            </article>
-
-            <article>
-
-              <span>
-                02
-              </span>
-
-              <h3>
-                Structure
-              </h3>
-
-              <p>
-                Define pages, content hierarchy and user journeys.
-              </p>
-
-            </article>
-
-            <article>
-
-              <span>
-                03
-              </span>
-
-              <h3>
-                Design
-              </h3>
-
-              <p>
-                Create a consistent responsive interface system.
-              </p>
-
-            </article>
-
-            <article>
-
-              <span>
-                04
-              </span>
-
-              <h3>
-                Develop
-              </h3>
-
-              <p>
-                Build, integrate and optimize the website.
-              </p>
-
-            </article>
-
-            <article>
-
-              <span>
-                05
-              </span>
-
-              <h3>
-                Launch
-              </h3>
-
-              <p>
-                Test, deploy and continuously improve performance.
-              </p>
-
-            </article>
+            <p>
+              Tell us what your website needs to achieve.
+              We'll help turn the strategy, experience and
+              technology into a digital platform built to perform.
+            </p>
 
           </div>
+
+          <a routerLink="/contact" class="cta-button">
+
+            <span>
+              Start a Project
+            </span>
+
+            <span class="cta-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+
+          </a>
 
         </div>
 
@@ -645,5 +1313,4 @@
     <app-footer></app-footer>
 
   </div>
-
 </ion-content>

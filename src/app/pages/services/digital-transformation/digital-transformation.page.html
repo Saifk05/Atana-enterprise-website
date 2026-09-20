@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="service-detail-content">
 
   <div class="service-detail-page">
 
@@ -6,17 +6,25 @@
 
       <app-header></app-header>
 
+      <div class="hero-background">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+      </div>
+
       <div class="container service-hero-grid">
 
         <div class="hero-copy">
 
-          <span class="eyebrow">
-            Digital Transformation
-          </span>
+          <div class="hero-eyebrow">
+            <span></span>
+            Digital Transformation / Modernization
+          </div>
 
           <h1>
             Modernize the way
-            your business operates.
+            <span>your business operates.</span>
           </h1>
 
           <p>
@@ -27,23 +35,34 @@
 
           <div class="hero-actions">
 
-            <a
-              routerLink="/contact"
-              class="primary-button"
-            >
-              Start a Project
+            <a routerLink="/contact" class="primary-button">
+              <span>Start a Project</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
-            <a
-              routerLink="/services"
-              class="secondary-link"
-            >
-              View All Services
-
-              <ion-icon
-                name="arrow-forward-outline"
-              ></ion-icon>
+            <a routerLink="/services" class="secondary-link">
+              <span>View All Services</span>
+              <ion-icon name="arrow-up-outline"></ion-icon>
             </a>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>Process</strong>
+              <span>Modernization</span>
+            </div>
+
+            <div>
+              <strong>System</strong>
+              <span>Integration</span>
+            </div>
+
+            <div>
+              <strong>Scale</strong>
+              <span>Transformation</span>
+            </div>
 
           </div>
 
@@ -51,111 +70,230 @@
 
         <div class="hero-visual">
 
+          <div class="visual-label">
+            <span>ATANA / TRANSFORMATION SYSTEM</span>
+            <small>02 / DX</small>
+          </div>
+
           <div class="transformation-shell">
 
             <div class="shell-header">
 
-              <span class="shell-dot"></span>
-
-              <span>
-                Transformation Overview
-              </span>
-
-            </div>
-
-            <div class="transformation-flow">
-
-              <div class="system-block old-system">
-
-                <span>
-                  Current
+              <div class="shell-brand">
+                <span class="shell-mark">
+                  <i></i>
+                  <i></i>
                 </span>
 
-                <strong>
-                  Manual Operations
-                </strong>
-
-                <small>
-                  Disconnected tools
-                </small>
-
+                <div>
+                  <strong>Transformation Overview</strong>
+                  <small>Operational modernization</small>
+                </div>
               </div>
 
-              <div class="flow-arrow">
-                <ion-icon
-                  name="arrow-forward-outline"
-                ></ion-icon>
-              </div>
-
-              <div class="system-block platform-system">
-
-                <span>
-                  Connected
-                </span>
-
-                <strong>
-                  Digital Platform
-                </strong>
-
-                <small>
-                  Unified workflows
-                </small>
-
-              </div>
-
-              <div class="flow-arrow">
-                <ion-icon
-                  name="arrow-forward-outline"
-                ></ion-icon>
-              </div>
-
-              <div class="system-block outcome-system">
-
-                <span>
-                  Outcome
-                </span>
-
-                <strong>
-                  Scalable Operations
-                </strong>
-
-                <small>
-                  Better visibility
-                </small>
-
+              <div class="shell-status">
+                <i></i>
+                ACTIVE
               </div>
 
             </div>
 
-            <div class="transformation-metrics">
+            <div class="transformation-body">
+
+              <div class="transformation-title">
+
+                <div>
+                  <span>Transformation Path</span>
+                  <strong>From fragmented to connected</strong>
+                </div>
+
+                <small>
+                  CURRENT → FUTURE
+                </small>
+
+              </div>
+
+              <div class="transformation-flow">
+
+                <div class="system-block old-system">
+
+                  <div class="block-top">
+                    <span class="block-number">01</span>
+
+                    <span class="block-icon">
+                      <ion-icon name="layers-outline"></ion-icon>
+                    </span>
+                  </div>
+
+                  <div class="block-content">
+                    <small>Current State</small>
+                    <strong>Manual Operations</strong>
+                    <span>Disconnected tools</span>
+                  </div>
+
+                  <div class="block-status">
+                    <i></i>
+                    Fragmented
+                  </div>
+
+                </div>
+
+                <div class="flow-arrow">
+
+                  <span class="arrow-line">
+                    <i></i>
+                  </span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+
+                </div>
+
+                <div class="system-block platform-system">
+
+                  <div class="block-top">
+                    <span class="block-number">02</span>
+
+                    <span class="block-icon">
+                      <ion-icon name="git-network-outline"></ion-icon>
+                    </span>
+                  </div>
+
+                  <div class="block-content">
+                    <small>Transformation</small>
+                    <strong>Connected Platform</strong>
+                    <span>Unified workflows</span>
+                  </div>
+
+                  <div class="block-status">
+                    <i></i>
+                    Connected
+                  </div>
+
+                </div>
+
+                <div class="flow-arrow">
+
+                  <span class="arrow-line">
+                    <i></i>
+                  </span>
+
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
+
+                </div>
+
+                <div class="system-block outcome-system">
+
+                  <div class="block-top">
+                    <span class="block-number">03</span>
+
+                    <span class="block-icon">
+                      <ion-icon name="trending-up-outline"></ion-icon>
+                    </span>
+                  </div>
+
+                  <div class="block-content">
+                    <small>Future State</small>
+                    <strong>Scalable Operations</strong>
+                    <span>Better visibility</span>
+                  </div>
+
+                  <div class="block-status">
+                    <i></i>
+                    Optimized
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="transformation-metrics">
+
+                <div class="transformation-metric">
+
+                  <div class="metric-heading">
+                    <span>Manual Work</span>
+                    <ion-icon name="arrow-down-outline"></ion-icon>
+                  </div>
+
+                  <strong>-42%</strong>
+
+                  <small>Reduced operational effort</small>
+
+                </div>
+
+                <div class="transformation-metric">
+
+                  <div class="metric-heading">
+                    <span>Processing Time</span>
+                    <ion-icon name="flash-outline"></ion-icon>
+                  </div>
+
+                  <strong>-35%</strong>
+
+                  <small>Faster business workflows</small>
+
+                </div>
+
+                <div class="transformation-metric">
+
+                  <div class="metric-heading">
+                    <span>Visibility</span>
+                    <ion-icon name="analytics-outline"></ion-icon>
+                  </div>
+
+                  <strong>+60%</strong>
+
+                  <small>Clearer operational insight</small>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="shell-footer">
 
               <div>
-                <span>
-                  Manual Work
-                </span>
-                <strong>
-                  -42%
-                </strong>
+                <span>Workflows</span>
+                <strong>Connected</strong>
               </div>
 
               <div>
-                <span>
-                  Processing Time
-                </span>
-                <strong>
-                  -35%
-                </strong>
+                <span>Systems</span>
+                <strong>Integrated</strong>
               </div>
 
               <div>
-                <span>
-                  Visibility
-                </span>
-                <strong>
-                  +60%
-                </strong>
+                <span>Operations</span>
+                <strong>Scalable</strong>
               </div>
 
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-process">
+
+            <span class="floating-icon">
+              <ion-icon name="git-merge-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Processes</small>
+              <strong>Unified</strong>
+            </div>
+
+          </div>
+
+          <div class="floating-card floating-data">
+
+            <span class="floating-icon">
+              <ion-icon name="analytics-outline"></ion-icon>
+            </span>
+
+            <div>
+              <small>Visibility</small>
+              <strong>Real-time</strong>
             </div>
 
           </div>
@@ -164,24 +302,25 @@
 
       </div>
 
-      <div class="hero-wave">
+      <div class="hero-bottom">
 
-        <svg
-          viewBox="0 0 1440 180"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="
-              M0,110
-              C220,35 420,120 650,98
-              C850,80 1060,35 1260,64
-              C1350,76 1405,94 1440,105
-              L1440,180
-              L0,180
-              Z
-            "
-          ></path>
-        </svg>
+        <div class="container hero-bottom-inner">
+
+          <span>Modernize</span>
+          <i></i>
+
+          <span>Connect</span>
+          <i></i>
+
+          <span>Automate</span>
+          <i></i>
+
+          <span>Integrate</span>
+          <i></i>
+
+          <span>Scale</span>
+
+        </div>
 
       </div>
 
@@ -193,15 +332,19 @@
 
         <div class="container intro-grid">
 
-          <div>
+          <div class="section-index">
+            01 / TRANSFORMATION
+          </div>
+
+          <div class="intro-heading">
 
             <span class="section-label">
-              Transformation
+              Business modernization
             </span>
 
             <h2>
               Turn fragmented operations
-              into connected systems.
+              into <span>connected systems.</span>
             </h2>
 
           </div>
@@ -232,13 +375,28 @@
 
           <div class="section-heading">
 
-            <span class="section-label">
-              Capabilities
-            </span>
+            <div class="section-index">
+              02 / CAPABILITIES
+            </div>
 
-            <h2>
-              Modernization from process to platform.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                Transformation capabilities
+              </span>
+
+              <h2>
+                Modernization from process
+                <span>to platform.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              We modernize the workflows, systems and digital foundations
+              behind your business without losing sight of day-to-day
+              operations.
+            </p>
 
           </div>
 
@@ -246,69 +404,157 @@
 
             <article class="capability-card">
 
-              <span>
-                01
-              </span>
+              <div class="capability-top">
 
-              <h3>
-                Process Modernization
-              </h3>
+                <span class="capability-number">01</span>
 
-              <p>
-                Redesign manual and repetitive workflows
-                into structured digital processes.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="git-merge-outline"></ion-icon>
+                </span>
 
-            </article>
+              </div>
 
-            <article class="capability-card">
+              <div class="capability-content">
 
-              <span>
-                02
-              </span>
+                <span class="capability-type">
+                  Workflow
+                </span>
 
-              <h3>
-                Legacy Transformation
-              </h3>
+                <h3>
+                  Process<br />
+                  Modernization
+                </h3>
 
-              <p>
-                Replace or modernize outdated systems without
-                disrupting critical business operations.
-              </p>
+                <p>
+                  Redesign manual and repetitive workflows
+                  into structured digital processes.
+                </p>
 
-            </article>
+              </div>
 
-            <article class="capability-card">
-
-              <span>
-                03
-              </span>
-
-              <h3>
-                Digital Operations
-              </h3>
-
-              <p>
-                Build connected operational systems for teams,
-                approvals, reporting and service delivery.
-              </p>
+              <div class="capability-bottom">
+                <span>Workflow</span>
+                <span>Automation</span>
+                <span>Efficiency</span>
+              </div>
 
             </article>
 
             <article class="capability-card">
 
-              <span>
-                04
-              </span>
+              <div class="capability-top">
 
-              <h3>
-                System Architecture
-              </h3>
+                <span class="capability-number">02</span>
 
-              <p>
-                Create scalable foundations across applications,
-                APIs, data and enterprise platforms.
-              </p>
+                <span class="capability-icon">
+                  <ion-icon name="sync-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Modernization
+                </span>
+
+                <h3>
+                  Legacy<br />
+                  Transformation
+                </h3>
+
+                <p>
+                  Replace or modernize outdated systems without
+                  disrupting critical business operations.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Legacy</span>
+                <span>Migration</span>
+                <span>Modernization</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card">
+
+              <div class="capability-top">
+
+                <span class="capability-number">03</span>
+
+                <span class="capability-icon">
+                  <ion-icon name="analytics-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Operations
+                </span>
+
+                <h3>
+                  Digital<br />
+                  Operations
+                </h3>
+
+                <p>
+                  Build connected operational systems for teams,
+                  approvals, reporting and service delivery.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Teams</span>
+                <span>Reporting</span>
+                <span>Visibility</span>
+              </div>
+
+            </article>
+
+            <article class="capability-card featured">
+
+              <div class="featured-label">
+                Foundation
+              </div>
+
+              <div class="capability-top">
+
+                <span class="capability-number">04</span>
+
+                <span class="capability-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="capability-content">
+
+                <span class="capability-type">
+                  Architecture
+                </span>
+
+                <h3>
+                  System<br />
+                  Architecture
+                </h3>
+
+                <p>
+                  Create scalable foundations across applications,
+                  APIs, data and enterprise platforms.
+                </p>
+
+              </div>
+
+              <div class="capability-bottom">
+                <span>Applications</span>
+                <span>APIs</span>
+                <span>Data</span>
+              </div>
 
             </article>
 
@@ -320,17 +566,24 @@
 
       <section class="system-section">
 
-        <div class="container system-grid">
+        <div class="system-grid-background"></div>
+        <div class="system-glow"></div>
+
+        <div class="container system-layout">
 
           <div class="system-copy">
 
+            <div class="dark-index">
+              03 / TRANSFORMATION ARCHITECTURE
+            </div>
+
             <span class="dark-label">
-              Transformation architecture
+              Connected by design
             </span>
 
             <h2>
               Connect the systems
-              behind the business.
+              <span>behind the business.</span>
             </h2>
 
             <p>
@@ -339,61 +592,161 @@
               platforms with new digital capabilities.
             </p>
 
+            <a
+              routerLink="/services/automation-integration"
+              class="system-link"
+            >
+              <span>Explore integrations</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+
           </div>
 
-          <div class="system-flow">
+          <div class="architecture">
 
-            <div class="flow-item">
-
-              <strong>
-                People
-              </strong>
+            <div class="architecture-header">
 
               <span>
-                Teams / Customers
+                ATANA / TRANSFORMATION ARCHITECTURE
               </span>
+
+              <div>
+                <i></i>
+                CONNECTED
+              </div>
 
             </div>
 
-            <div class="flow-line"></div>
+            <div class="architecture-canvas">
 
-            <div class="flow-item">
+              <div class="architecture-flow">
 
-              <strong>
-                Processes
-              </strong>
+                <div class="architecture-node people-node">
 
-              <span>
-                Workflows / Rules
-              </span>
+                  <span class="architecture-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                  </span>
+
+                  <div>
+                    <small>Experience</small>
+                    <strong>People</strong>
+                    <span>Teams / Customers</span>
+                  </div>
+
+                </div>
+
+                <div class="architecture-connector">
+                  <span></span>
+                </div>
+
+                <div class="architecture-node process-node">
+
+                  <span class="architecture-icon">
+                    <ion-icon name="git-merge-outline"></ion-icon>
+                  </span>
+
+                  <div>
+                    <small>Operations</small>
+                    <strong>Processes</strong>
+                    <span>Workflows / Rules</span>
+                  </div>
+
+                </div>
+
+                <div class="architecture-connector">
+                  <span></span>
+                </div>
+
+                <div class="architecture-node platform-node">
+
+                  <span class="architecture-icon">
+                    <ion-icon name="server-outline"></ion-icon>
+                  </span>
+
+                  <div>
+                    <small>Technology</small>
+                    <strong>Platforms</strong>
+                    <span>Apps / ERP / CRM</span>
+                  </div>
+
+                </div>
+
+                <div class="architecture-connector">
+                  <span></span>
+                </div>
+
+                <div class="architecture-node data-node">
+
+                  <span class="architecture-icon">
+                    <ion-icon name="analytics-outline"></ion-icon>
+                  </span>
+
+                  <div>
+                    <small>Intelligence</small>
+                    <strong>Data</strong>
+                    <span>Insight / Reporting</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="support-node support-cloud">
+
+                <ion-icon name="cloud-outline"></ion-icon>
+
+                <div>
+                  <small>Infrastructure</small>
+                  <strong>Cloud</strong>
+                </div>
+
+              </div>
+
+              <div class="support-node support-security">
+
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+
+                <div>
+                  <small>Foundation</small>
+                  <strong>Security</strong>
+                </div>
+
+              </div>
+
+              <div class="support-node support-api">
+
+                <ion-icon name="git-network-outline"></ion-icon>
+
+                <div>
+                  <small>Connection</small>
+                  <strong>APIs</strong>
+                </div>
+
+              </div>
 
             </div>
 
-            <div class="flow-line"></div>
+            <div class="architecture-footer">
 
-            <div class="flow-item">
+              <div>
+                <span>People</span>
+                <strong>Enabled</strong>
+              </div>
 
-              <strong>
-                Platforms
-              </strong>
+              <div>
+                <span>Processes</span>
+                <strong>Connected</strong>
+              </div>
 
-              <span>
-                Apps / ERP / CRM
-              </span>
+              <div>
+                <span>Platforms</span>
+                <strong>Integrated</strong>
+              </div>
 
-            </div>
-
-            <div class="flow-line"></div>
-
-            <div class="flow-item">
-
-              <strong>
-                Data
-              </strong>
-
-              <span>
-                Insight / Reporting
-              </span>
+              <div>
+                <span>Data</span>
+                <strong>Visible</strong>
+              </div>
 
             </div>
 
@@ -407,66 +760,152 @@
 
         <div class="container">
 
-          <div class="section-heading">
+          <div class="outcomes-heading">
 
-            <span class="section-label">
-              Business outcomes
-            </span>
+            <div class="section-index">
+              04 / BUSINESS OUTCOMES
+            </div>
 
-            <h2>
-              Transformation should produce
-              measurable improvement.
-            </h2>
+            <div>
+
+              <span class="section-label">
+                Measurable improvement
+              </span>
+
+              <h2>
+                Transformation should produce
+                <span>real business outcomes.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Technology matters when it reduces operational friction,
+              improves visibility and gives the business a stronger
+              foundation for growth.
+            </p>
 
           </div>
 
           <div class="outcomes-grid">
 
-            <article>
+            <article class="outcome-card">
 
-              <strong>
-                Faster Operations
-              </strong>
+              <div class="outcome-top">
 
-              <p>
-                Reduce delays, handoffs and repetitive work.
-              </p>
+                <span>01</span>
 
-            </article>
+                <span class="outcome-icon">
+                  <ion-icon name="flash-outline"></ion-icon>
+                </span>
 
-            <article>
+              </div>
 
-              <strong>
-                Better Visibility
-              </strong>
+              <div class="outcome-content">
 
-              <p>
-                Give teams clearer access to operational data.
-              </p>
+                <span>Efficiency</span>
 
-            </article>
+                <h3>
+                  Faster<br />
+                  Operations
+                </h3>
 
-            <article>
+                <p>
+                  Reduce delays, handoffs and repetitive work across
+                  day-to-day business processes.
+                </p>
 
-              <strong>
-                Lower Complexity
-              </strong>
-
-              <p>
-                Reduce fragmented tools and duplicate processes.
-              </p>
+              </div>
 
             </article>
 
-            <article>
+            <article class="outcome-card">
 
-              <strong>
-                Scalable Systems
-              </strong>
+              <div class="outcome-top">
 
-              <p>
-                Build foundations that can support business growth.
-              </p>
+                <span>02</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>Insight</span>
+
+                <h3>
+                  Better<br />
+                  Visibility
+                </h3>
+
+                <p>
+                  Give teams clearer access to operational information
+                  and business performance.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+
+                <span>03</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="contract-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>Simplification</span>
+
+                <h3>
+                  Lower<br />
+                  Complexity
+                </h3>
+
+                <p>
+                  Reduce fragmented tools, duplicate processes and
+                  unnecessary operational dependencies.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="outcome-card">
+
+              <div class="outcome-top">
+
+                <span>04</span>
+
+                <span class="outcome-icon">
+                  <ion-icon name="trending-up-outline"></ion-icon>
+                </span>
+
+              </div>
+
+              <div class="outcome-content">
+
+                <span>Growth</span>
+
+                <h3>
+                  Scalable<br />
+                  Systems
+                </h3>
+
+                <p>
+                  Build digital foundations capable of supporting
+                  more users, processes and future growth.
+                </p>
+
+              </div>
 
             </article>
 
@@ -480,26 +919,44 @@
 
         <div class="container">
 
-          <span class="section-label">
-            Transformation process
-          </span>
+          <div class="process-heading">
 
-          <h2>
-            Change with structure,
-            not disruption.
-          </h2>
+            <div class="section-index">
+              05 / TRANSFORMATION PROCESS
+            </div>
 
-          <div class="process-grid">
+            <div>
 
-            <article>
-
-              <span>
-                01
+              <span class="section-label">
+                How we transform
               </span>
 
-              <h3>
-                Assess
-              </h3>
+              <h2>
+                Change with structure,
+                <span>not disruption.</span>
+              </h2>
+
+            </div>
+
+            <p>
+              Transformation is delivered in controlled stages so
+              critical operations keep moving while new processes
+              and systems are introduced.
+            </p>
+
+          </div>
+
+          <div class="process-flow">
+
+            <article class="process-step">
+
+              <span class="process-number">01</span>
+
+              <div class="process-icon">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+
+              <h3>Assess</h3>
 
               <p>
                 Map systems, workflows and operational pain points.
@@ -507,15 +964,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
-                02
-              </span>
+            <article class="process-step">
 
-              <h3>
-                Prioritize
-              </h3>
+              <span class="process-number">02</span>
+
+              <div class="process-icon">
+                <ion-icon name="options-outline"></ion-icon>
+              </div>
+
+              <h3>Prioritize</h3>
 
               <p>
                 Identify the changes with the highest business impact.
@@ -523,15 +984,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
-                03
-              </span>
+            <article class="process-step">
 
-              <h3>
-                Architect
-              </h3>
+              <span class="process-number">03</span>
+
+              <div class="process-icon">
+                <ion-icon name="git-network-outline"></ion-icon>
+              </div>
+
+              <h3>Architect</h3>
 
               <p>
                 Design the future-state processes and technology.
@@ -539,15 +1004,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
-                04
-              </span>
+            <article class="process-step">
 
-              <h3>
-                Implement
-              </h3>
+              <span class="process-number">04</span>
+
+              <div class="process-icon">
+                <ion-icon name="construct-outline"></ion-icon>
+              </div>
+
+              <h3>Implement</h3>
 
               <p>
                 Build and integrate systems in controlled stages.
@@ -555,15 +1024,19 @@
 
             </article>
 
-            <article>
+            <div class="process-connector">
+              <span></span>
+            </div>
 
-              <span>
-                05
-              </span>
+            <article class="process-step">
 
-              <h3>
-                Optimize
-              </h3>
+              <span class="process-number">05</span>
+
+              <div class="process-icon">
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </div>
+
+              <h3>Optimize</h3>
 
               <p>
                 Measure performance and continuously improve.
@@ -572,6 +1045,50 @@
             </article>
 
           </div>
+
+        </div>
+
+      </section>
+
+      <section class="service-cta">
+
+        <div class="cta-grid-background"></div>
+        <div class="cta-glow"></div>
+
+        <div class="container service-cta-inner">
+
+          <div class="cta-index">
+            06 / START
+          </div>
+
+          <div class="cta-copy">
+
+            <span>
+              Ready to modernize?
+            </span>
+
+            <h2>
+              Turn operational friction into
+              <strong>digital advantage.</strong>
+            </h2>
+
+            <p>
+              Tell us where your current processes and systems are
+              slowing the business down. We'll help define a practical
+              path from the current state to a connected digital operation.
+            </p>
+
+          </div>
+
+          <a routerLink="/contact" class="cta-button">
+
+            <span>Start a Project</span>
+
+            <span class="cta-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </span>
+
+          </a>
 
         </div>
 
