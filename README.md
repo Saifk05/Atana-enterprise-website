@@ -1,6 +1,6 @@
-# ATANA Enterprise Website
+# Atnav Enterprise Website
 
-A modern enterprise website for **ATANA**, a digital technology and consulting company focused on building scalable digital products, modernizing business operations, connecting systems, and accelerating digital growth.
+A modern enterprise website for **Atnav**, a digital technology and consulting company focused on building scalable digital products, modernizing business operations, connecting systems, and accelerating digital growth.
 
 The application is built with **Angular, Ionic, TypeScript, and SCSS** using a modular frontend architecture, lazy-loaded feature routes, standalone Angular pages, reusable shared components, and responsive layouts.
 
@@ -35,7 +35,7 @@ The application is built with **Angular, Ionic, TypeScript, and SCSS** using a m
 
 ## Overview
 
-ATANA is an enterprise digital technology and consulting website designed to communicate the company's technical capabilities, services, delivery approach, and business value.
+Atnav is an enterprise digital technology and consulting website designed to communicate the company's technical capabilities, services, delivery approach, and business value.
 
 The platform is structured around six primary service areas:
 
@@ -238,7 +238,7 @@ Each service is independently structured so its implementation can evolve withou
 ## Project Structure
 
 ```text
-atana-website/
+Atnav-website/
 │
 ├── src/
 │   │
@@ -501,7 +501,7 @@ src/app/shared/components/header/
 
 The header is responsible for:
 
-- ATANA branding
+- Atnav branding
 - Primary navigation
 - Service navigation
 - Contact navigation
@@ -547,7 +547,7 @@ The header and footer should remain shared components rather than being duplicat
 
 ## Design System
 
-ATANA follows a minimal enterprise visual language.
+Atnav follows a minimal enterprise visual language.
 
 The design is intentionally restrained and focuses on:
 
@@ -684,13 +684,13 @@ git --version
 Clone the repository:
 
 ```bash
-git clone https://github.com/Saifk05/Atana-enterprise-website.git
+git clone https://github.com/Saifk05/Atnav-enterprise-website.git
 ```
 
 Navigate into the project:
 
 ```bash
-cd Atana-enterprise-website
+cd Atnav-enterprise-website
 ```
 
 Install dependencies:
@@ -936,7 +936,7 @@ Each service page should contain its own:
 - Delivery process
 - Responsive behavior
 
-Service pages should follow the same ATANA design system without becoming exact visual duplicates.
+Service pages should follow the same Atnav design system without becoming exact visual duplicates.
 
 ---
 
@@ -997,7 +997,7 @@ Avoid unnecessary deeply nested markup.
 ### SCSS
 
 - Keep page styles inside the page's SCSS file.
-- Maintain the shared ATANA color system.
+- Maintain the shared Atnav color system.
 - Prefer CSS Grid and Flexbox.
 - Keep responsive styles close to component styles.
 - Avoid unnecessary `!important`.
@@ -1286,7 +1286,7 @@ Mobile testing should include both Android and iOS viewport behavior.
 Repository:
 
 ```text
-https://github.com/Saifk05/Atana-enterprise-website
+https://github.com/Saifk05/Atnav-enterprise-website
 ```
 
 Primary branch:
@@ -1298,20 +1298,20 @@ main
 Project:
 
 ```text
-ATANA Enterprise Website
+Atnav Enterprise Website
 ```
 
 ---
 
 ## License
 
-This project is currently maintained as the ATANA enterprise website.
+This project is currently maintained as the Atnav enterprise website.
 
 Unless a separate license is added to the repository, the source code should be treated as proprietary project code.
 
 ---
 
-## ATANA
+## Atnav
 
 **Enterprise digital systems built for modern business.**
 

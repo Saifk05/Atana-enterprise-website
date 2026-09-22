@@ -10,71 +10,71 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 :root {
-  --atana-bg: #ffffff;
-  --atana-bg-soft: #f7f9fc;
-  --atana-bg-panel: #f2f5f8;
+  --Atnav-bg: #ffffff;
+  --Atnav-bg-soft: #f7f9fc;
+  --Atnav-bg-panel: #f2f5f8;
 
-  --atana-surface: #ffffff;
-  --atana-surface-soft: #fafbfc;
-  --atana-surface-elevated: #ffffff;
+  --Atnav-surface: #ffffff;
+  --Atnav-surface-soft: #fafbfc;
+  --Atnav-surface-elevated: #ffffff;
 
-  --atana-text: #1d2939;
-  --atana-text-strong: #081a2c;
-  --atana-text-muted: #667085;
-  --atana-text-soft: #98a2b3;
+  --Atnav-text: #1d2939;
+  --Atnav-text-strong: #081a2c;
+  --Atnav-text-muted: #667085;
+  --Atnav-text-soft: #98a2b3;
 
-  --atana-border: #d7dde5;
-  --atana-border-soft: #eaecf0;
-  --atana-border-strong: #c5ccd6;
+  --Atnav-border: #d7dde5;
+  --Atnav-border-soft: #eaecf0;
+  --Atnav-border-strong: #c5ccd6;
 
-  --atana-primary: #2563eb;
-  --atana-primary-hover: #1d4ed8;
-  --atana-primary-soft: #eff6ff;
-  --atana-primary-border: #bfdbfe;
+  --Atnav-primary: #2563eb;
+  --Atnav-primary-hover: #1d4ed8;
+  --Atnav-primary-soft: #eff6ff;
+  --Atnav-primary-border: #bfdbfe;
 
-  --atana-success: #16a34a;
-  --atana-success-soft: #f0fdf4;
-  --atana-success-border: #bbf7d0;
+  --Atnav-success: #16a34a;
+  --Atnav-success-soft: #f0fdf4;
+  --Atnav-success-border: #bbf7d0;
 
-  --atana-warning: #f59e0b;
-  --atana-danger: #ef4444;
+  --Atnav-warning: #f59e0b;
+  --Atnav-danger: #ef4444;
 
-  --atana-navy: #081a2c;
-  --atana-navy-hover: #10283f;
+  --Atnav-navy: #081a2c;
+  --Atnav-navy-hover: #10283f;
 
-  --atana-cta-bg: #081a2c;
-  --atana-cta-text: #ffffff;
-  --atana-cta-hover: #10283f;
+  --Atnav-cta-bg: #081a2c;
+  --Atnav-cta-text: #ffffff;
+  --Atnav-cta-hover: #10283f;
 
-  --atana-white: #ffffff;
+  --Atnav-white: #ffffff;
 
-  --atana-shadow-xs:
+  --Atnav-shadow-xs:
     0 1px 2px rgba(16, 24, 40, 0.04);
 
-  --atana-shadow-sm:
+  --Atnav-shadow-sm:
     0 2px 6px rgba(16, 24, 40, 0.06);
 
-  --atana-shadow-md:
+  --Atnav-shadow-md:
     0 10px 30px rgba(16, 24, 40, 0.08);
 
-  --atana-shadow-lg:
+  --Atnav-shadow-lg:
     0 24px 60px rgba(16, 24, 40, 0.12);
 
-  --atana-radius-xs: 6px;
-  --atana-radius-sm: 8px;
-  --atana-radius-md: 12px;
-  --atana-radius-lg: 16px;
-  --atana-radius-xl: 20px;
+  --Atnav-radius-xs: 6px;
+  --Atnav-radius-sm: 8px;
+  --Atnav-radius-md: 12px;
+  --Atnav-radius-lg: 16px;
+  --Atnav-radius-xl: 20px;
 
-  --atana-container: 1240px;
+  --Atnav-container: 1240px;
 
-  --atana-section-sm: 72px;
-  --atana-section-md: 96px;
-  --atana-section-lg: 120px;
+  --Atnav-section-sm: 72px;
+  --Atnav-section-md: 96px;
+  --Atnav-section-lg: 120px;
 
-  --atana-header-height: 84px;
+  --Atnav-header-height: 84px;
 
-  --atana-transition:
+  --Atnav-transition:
     180ms cubic-bezier(0.2, 0, 0, 1);
 
   --workflow-bg: #fbfcfe;
@@ -85,9 +85,9 @@
   --workflow-line-active: #2563eb;
   --workflow-dot: #2563eb;
 
-  --ion-background-color: var(--atana-bg);
-  --ion-text-color: var(--atana-text);
-  --ion-color-primary: var(--atana-primary);
+  --ion-background-color: var(--Atnav-bg);
+  --ion-text-color: var(--Atnav-text);
+  --ion-color-primary: var(--Atnav-primary);
 }
 
 html {
@@ -96,7 +96,7 @@ html {
 
   scroll-behavior: smooth;
 
-  background: var(--atana-bg);
+  background: var(--Atnav-bg);
 }
 
 body {
@@ -105,8 +105,8 @@ body {
 
   margin: 0;
 
-  background: var(--atana-bg);
-  color: var(--atana-text);
+  background: var(--Atnav-bg);
+  color: var(--Atnav-text);
 
   font-family:
     Inter,
@@ -154,19 +154,19 @@ svg {
 }
 
 ion-app {
-  background: var(--atana-bg);
-  color: var(--atana-text);
+  background: var(--Atnav-bg);
+  color: var(--Atnav-text);
 }
 
 ion-content {
-  --background: var(--atana-bg);
-  --color: var(--atana-text);
+  --background: var(--Atnav-bg);
+  --color: var(--Atnav-text);
 }
 
 .container,
 .app-container {
   width: min(
-    var(--atana-container),
+    var(--Atnav-container),
     calc(100% - 64px)
   );
 
@@ -174,54 +174,54 @@ ion-content {
 }
 
 .section {
-  padding-block: var(--atana-section-lg);
+  padding-block: var(--Atnav-section-lg);
 }
 
 .section-md {
-  padding-block: var(--atana-section-md);
+  padding-block: var(--Atnav-section-md);
 }
 
 .section-sm {
-  padding-block: var(--atana-section-sm);
+  padding-block: var(--Atnav-section-sm);
 }
 
 .bg-default {
-  background: var(--atana-bg);
+  background: var(--Atnav-bg);
 }
 
 .bg-soft {
-  background: var(--atana-bg-soft);
+  background: var(--Atnav-bg-soft);
 }
 
 .bg-panel {
-  background: var(--atana-bg-panel);
+  background: var(--Atnav-bg-panel);
 }
 
 .bg-dark {
-  background: var(--atana-navy);
+  background: var(--Atnav-navy);
   color: #ffffff;
 }
 
 .text-primary {
-  color: var(--atana-text);
+  color: var(--Atnav-text);
 }
 
 .text-strong {
-  color: var(--atana-text-strong);
+  color: var(--Atnav-text-strong);
 }
 
 .text-muted {
-  color: var(--atana-text-muted);
+  color: var(--Atnav-text-muted);
 }
 
 .text-accent {
-  color: var(--atana-primary);
+  color: var(--Atnav-primary);
 }
 
 .eyebrow {
   margin: 0 0 18px;
 
-  color: var(--atana-text-muted);
+  color: var(--Atnav-text-muted);
 
   font-size: 11px;
   line-height: 1.4;
@@ -235,7 +235,7 @@ ion-content {
 .hero-title {
   margin: 0;
 
-  color: var(--atana-text-strong);
+  color: var(--Atnav-text-strong);
 
   font-size: clamp(48px, 5vw, 72px);
   line-height: 0.99;
@@ -248,7 +248,7 @@ ion-content {
 .section-title {
   margin: 0;
 
-  color: var(--atana-text-strong);
+  color: var(--Atnav-text-strong);
 
   font-size: clamp(36px, 4vw, 52px);
   line-height: 1.04;
@@ -263,7 +263,7 @@ ion-content {
 
   margin: 20px 0 0;
 
-  color: var(--atana-text-muted);
+  color: var(--Atnav-text-muted);
 
   font-size: 17px;
   line-height: 1.7;
@@ -281,7 +281,7 @@ ion-content {
   padding-inline: 18px;
 
   border: 1px solid transparent;
-  border-radius: var(--atana-radius-sm);
+  border-radius: var(--Atnav-radius-sm);
 
   font-size: 14px;
   font-weight: 650;
@@ -289,76 +289,76 @@ ion-content {
   cursor: pointer;
 
   transition:
-    background var(--atana-transition),
-    color var(--atana-transition),
-    border-color var(--atana-transition),
-    transform var(--atana-transition),
-    box-shadow var(--atana-transition);
+    background var(--Atnav-transition),
+    color var(--Atnav-transition),
+    border-color var(--Atnav-transition),
+    transform var(--Atnav-transition),
+    box-shadow var(--Atnav-transition);
 }
 
 .btn-primary {
-  background: var(--atana-cta-bg);
-  color: var(--atana-cta-text);
+  background: var(--Atnav-cta-bg);
+  color: var(--Atnav-cta-text);
 
-  border-color: var(--atana-cta-bg);
+  border-color: var(--Atnav-cta-bg);
 }
 
 .btn-primary:hover {
-  background: var(--atana-cta-hover);
-  border-color: var(--atana-cta-hover);
+  background: var(--Atnav-cta-hover);
+  border-color: var(--Atnav-cta-hover);
 
   transform: translateY(-1px);
 
-  box-shadow: var(--atana-shadow-md);
+  box-shadow: var(--Atnav-shadow-md);
 }
 
 .btn-accent {
-  background: var(--atana-primary);
+  background: var(--Atnav-primary);
   color: #ffffff;
 
-  border-color: var(--atana-primary);
+  border-color: var(--Atnav-primary);
 }
 
 .btn-accent:hover {
-  background: var(--atana-primary-hover);
-  border-color: var(--atana-primary-hover);
+  background: var(--Atnav-primary-hover);
+  border-color: var(--Atnav-primary-hover);
 
   transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background: var(--atana-surface);
-  color: var(--atana-text-strong);
+  background: var(--Atnav-surface);
+  color: var(--Atnav-text-strong);
 
-  border-color: var(--atana-border);
+  border-color: var(--Atnav-border);
 }
 
 .btn-secondary:hover {
-  background: var(--atana-bg-soft);
-  border-color: var(--atana-border-strong);
+  background: var(--Atnav-bg-soft);
+  border-color: var(--Atnav-border-strong);
 }
 
 .surface {
-  background: var(--atana-surface);
+  background: var(--Atnav-surface);
 
-  border: 1px solid var(--atana-border-soft);
-  border-radius: var(--atana-radius-md);
+  border: 1px solid var(--Atnav-border-soft);
+  border-radius: var(--Atnav-radius-md);
 
-  box-shadow: var(--atana-shadow-xs);
+  box-shadow: var(--Atnav-shadow-xs);
 }
 
 .panel {
-  background: var(--atana-bg-panel);
+  background: var(--Atnav-bg-panel);
 
-  border: 1px solid var(--atana-border-soft);
-  border-radius: var(--atana-radius-lg);
+  border: 1px solid var(--Atnav-border-soft);
+  border-radius: var(--Atnav-radius-lg);
 }
 
 .divider {
   width: 100%;
   height: 1px;
 
-  background: var(--atana-border-soft);
+  background: var(--Atnav-border-soft);
 }
 
 .status-success {
@@ -369,10 +369,10 @@ ion-content {
 
   padding: 4px 8px;
 
-  color: var(--atana-success);
-  background: var(--atana-success-soft);
+  color: var(--Atnav-success);
+  background: var(--Atnav-success-soft);
 
-  border: 1px solid var(--atana-success-border);
+  border: 1px solid var(--Atnav-success-border);
   border-radius: 999px;
 
   font-size: 10px;
@@ -387,7 +387,7 @@ ion-content {
 
   flex-shrink: 0;
 
-  background: var(--atana-success);
+  background: var(--Atnav-success);
 
   border-radius: 50%;
 }
@@ -408,8 +408,8 @@ ion-content {
 
   background-size: 18px 18px;
 
-  border: 1px solid var(--atana-border-soft);
-  border-radius: var(--atana-radius-lg);
+  border: 1px solid var(--Atnav-border-soft);
+  border-radius: var(--Atnav-radius-lg);
 }
 
 .workflow-node {
@@ -429,7 +429,7 @@ ion-content {
   border: 1px solid var(--workflow-node-border);
   border-radius: 8px;
 
-  box-shadow: var(--atana-shadow-sm);
+  box-shadow: var(--Atnav-shadow-sm);
 }
 
 .workflow-node-icon {
@@ -442,11 +442,11 @@ ion-content {
   align-items: center;
   justify-content: center;
 
-  color: var(--atana-text-muted);
+  color: var(--Atnav-text-muted);
 
-  background: var(--atana-bg-soft);
+  background: var(--Atnav-bg-soft);
 
-  border: 1px solid var(--atana-border-soft);
+  border: 1px solid var(--Atnav-border-soft);
   border-radius: 7px;
 }
 
@@ -460,14 +460,14 @@ ion-content {
 }
 
 .workflow-node-title {
-  color: var(--atana-text-strong);
+  color: var(--Atnav-text-strong);
 
   font-size: 12px;
   font-weight: 650;
 }
 
 .workflow-node-description {
-  color: var(--atana-text-muted);
+  color: var(--Atnav-text-muted);
 
   font-size: 9px;
 }
@@ -531,7 +531,7 @@ ion-content {
 
   gap: 7px;
 
-  color: var(--atana-text-muted);
+  color: var(--Atnav-text-muted);
 
   font-size: 9px;
   font-weight: 600;
@@ -550,7 +550,7 @@ ion-content {
   border: 1px solid var(--workflow-node-border);
   border-radius: 50%;
 
-  box-shadow: var(--atana-shadow-xs);
+  box-shadow: var(--Atnav-shadow-xs);
 }
 
 .flow-line {
@@ -570,9 +570,9 @@ ion-content {
   background: var(--workflow-node);
 
   border: 1px solid var(--workflow-node-border);
-  border-radius: var(--atana-radius-sm);
+  border-radius: var(--Atnav-radius-sm);
 
-  box-shadow: var(--atana-shadow-sm);
+  box-shadow: var(--Atnav-shadow-sm);
 }
 
 html,
@@ -593,20 +593,20 @@ ion-content::part(scroll)::-webkit-scrollbar {
 
 @media (max-width: 1200px) {
   :root {
-    --atana-container: 1120px;
+    --Atnav-container: 1120px;
   }
 }
 
 @media (max-width: 1024px) {
   :root {
-    --atana-section-lg: 96px;
-    --atana-section-md: 80px;
+    --Atnav-section-lg: 96px;
+    --Atnav-section-md: 80px;
   }
 
   .container,
   .app-container {
     width: min(
-      var(--atana-container),
+      var(--Atnav-container),
       calc(100% - 40px)
     );
   }
@@ -618,9 +618,9 @@ ion-content::part(scroll)::-webkit-scrollbar {
 
 @media (max-width: 768px) {
   :root {
-    --atana-section-sm: 56px;
-    --atana-section-md: 68px;
-    --atana-section-lg: 80px;
+    --Atnav-section-sm: 56px;
+    --Atnav-section-md: 68px;
+    --Atnav-section-lg: 80px;
   }
 
   .container,
