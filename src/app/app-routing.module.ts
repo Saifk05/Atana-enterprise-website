@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-
 import {
   PreloadAllModules,
   RouterModule,
@@ -8,19 +7,22 @@ import {
 
 const routes: Routes = [
 
+  // HOME - main website URL: https://www.atnav.in/
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
-
-  {
-    path: 'home',
     loadChildren: () =>
       import('./pages/home/home.module')
         .then(m => m.HomePageModule)
   },
 
+  // Redirect old /home URL to /
+  {
+    path: 'home',
+    redirectTo: '',
+    pathMatch: 'full'
+  },
+
+  // SERVICES
   {
     path: 'services',
     loadChildren: () =>
@@ -28,6 +30,7 @@ const routes: Routes = [
         .then(m => m.ServicesOverviewPageModule)
   },
 
+  // APP DEVELOPMENT
   {
     path: 'services/app-development',
     loadChildren: () =>
@@ -35,6 +38,7 @@ const routes: Routes = [
         .then(m => m.AppDevelopmentPageModule)
   },
 
+  // DIGITAL TRANSFORMATION
   {
     path: 'services/digital-transformation',
     loadChildren: () =>
@@ -42,6 +46,7 @@ const routes: Routes = [
         .then(m => m.DigitalTransformationPageModule)
   },
 
+  // AUTOMATION & INTEGRATION
   {
     path: 'services/automation-integration',
     loadChildren: () =>
@@ -49,6 +54,7 @@ const routes: Routes = [
         .then(m => m.AutomationIntegrationPageModule)
   },
 
+  // WEB DEVELOPMENT
   {
     path: 'services/web-development',
     loadChildren: () =>
@@ -56,6 +62,7 @@ const routes: Routes = [
         .then(m => m.WebDevelopmentPageModule)
   },
 
+  // SEO
   {
     path: 'services/seo',
     loadChildren: () =>
@@ -63,6 +70,7 @@ const routes: Routes = [
         .then(m => m.SeoPageModule)
   },
 
+  // DIGITAL GROWTH
   {
     path: 'services/digital-growth',
     loadChildren: () =>
@@ -70,6 +78,7 @@ const routes: Routes = [
         .then(m => m.DigitalGrowthPageModule)
   },
 
+  // WORK / CASE STUDIES
   {
     path: 'work',
     loadChildren: () =>
@@ -77,6 +86,7 @@ const routes: Routes = [
         .then(m => m.CaseStudiesPageModule)
   },
 
+  // PROCESS
   {
     path: 'process',
     loadChildren: () =>
@@ -84,6 +94,7 @@ const routes: Routes = [
         .then(m => m.ProcessPageModule)
   },
 
+  // ABOUT
   {
     path: 'about',
     loadChildren: () =>
@@ -91,6 +102,7 @@ const routes: Routes = [
         .then(m => m.AboutPageModule)
   },
 
+  // CONTACT
   {
     path: 'contact',
     loadChildren: () =>
@@ -98,9 +110,10 @@ const routes: Routes = [
         .then(m => m.ContactPageModule)
   },
 
+  // UNKNOWN ROUTES -> HOME
   {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: ''
   }
 
 ];
