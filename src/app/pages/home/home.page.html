@@ -1,339 +1,467 @@
 <ion-content [fullscreen]="true" class="home-content">
   <div class="home-page">
-
-    <!-- HERO -->
     <section class="hero-section">
       <app-header></app-header>
-
-      <div class="hero-decoration">
-        <div class="hero-grid-pattern"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
+      <div class="hero-pattern pattern-left" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
       </div>
 
       <div class="container hero-container">
-
         <div class="hero-copy">
-          <div class="hero-eyebrow"><span></span>Digital Engineering · Automation · Growth</div>
-
-          <h1>Digital systems<br />that make<br /><span>businesses move.</span></h1>
-
-          <p>We design, engineer and automate digital operations that help modern businesses work smarter, move faster and scale with confidence.</p>
+          <span class="section-kicker">DIGITAL TECHNOLOGY · AUTOMATION · GROWTH</span>
+          <h1>We Help Businesses <span>Build, Automate</span> &amp; Grow.</h1>
+          <p class="hero-description">ATNAV provides app development, web development, digital transformation, business automation, system integration, SEO and digital growth solutions for businesses ready to move forward.</p>
 
           <div class="hero-actions">
-            <a routerLink="/contact" class="primary-button"><span>Start a Project</span><ion-icon name="arrow-forward-outline"></ion-icon></a>
-            <a routerLink="/work" class="secondary-link">Explore our work <ion-icon name="arrow-up-outline"></ion-icon></a>
-          </div>
+            <a routerLink="/contact" class="primary-button" aria-label="Start a project with ATNAV">
+              <span>Start a Project</span>
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
 
-          <div class="hero-metrics">
-            <div class="metric"><strong>50<span>+</span></strong><small>Projects delivered</small></div>
-            <div class="metric"><strong>30<span>+</span></strong><small>Happy clients</small></div>
-            <div class="metric"><strong>3<span>×</span></strong><small>Average growth</small></div>
+            <a routerLink="/services" class="text-button" aria-label="Explore ATNAV services">
+              Explore Services
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
           </div>
         </div>
 
-        <div class="hero-visual-area">
-          <div class="visual-label label-top"><span>01</span>Connected technology</div>
+        <div class="hero-visual">
+          <div class="hero-shape hero-shape-large">
+            <img src="assets/hero-technology.png" alt="ATNAV app development and digital technology solutions" />
+          </div>
 
-          <div class="visual-shell">
-            <div class="visual-shell-top"><span>Atnav / DIGITAL SYSTEM</span><div><i></i><i></i><i></i></div></div>
-            <div class="visual-content">
-              <img src="assets/hero-technology.png" alt="Atnav digital technology systems" />
+          <div class="hero-shape hero-shape-small top">
+            <img src="assets/team.jpg" alt="ATNAV digital technology and development team" />
+          </div>
+
+          <div class="hero-shape hero-shape-small bottom">
+            <img src="assets/automation-workflow.png" alt="Business automation and system integration services" />
+          </div>
+
+          <div class="hero-dots" aria-hidden="true">
+            <i></i><i></i><i></i>
+            <i></i><i></i><i></i>
+            <i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="container intro-container">
+        <span class="section-label">About ATNAV</span>
+
+        <div class="intro-grid">
+          <h2>More Than a <span>Digital Technology Company.</span></h2>
+
+          <div class="intro-copy">
+            <p>We help businesses turn ideas, manual processes and disconnected systems into useful digital products and connected technology.</p>
+
+            <a routerLink="/about" class="learn-link">
+              Learn About ATNAV
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-showcase">
+      <div class="container">
+        <div class="about-images">
+          <div class="about-main-image">
+            <img src="assets/team.jpg" alt="ATNAV team building digital business solutions" />
+          </div>
+
+          <div class="about-side-images">
+            <div>
+              <img src="assets/hero-technology.png" alt="Custom software and application development" />
+            </div>
+
+            <div>
+              <img src="assets/automation-workflow.png" alt="Digital transformation and business automation" />
             </div>
           </div>
-
-          <div class="system-status">
-            <div class="status-icon"><ion-icon name="flash-outline"></ion-icon></div>
-            <div><span>System status</span><strong><i></i> Automation active</strong></div>
-          </div>
-
-          <div class="visual-index"><span>ENGINEER</span><span>AUTOMATE</span><span>GROW</span></div>
         </div>
 
-      </div>
+        <div class="about-columns">
+          <article>
+            <span class="about-number">01</span>
+            <h3>Who We Are</h3>
+            <p>ATNAV is a digital technology company focused on designing and developing practical digital solutions for modern businesses.</p>
 
-      <div class="hero-scroll"><span>Scroll to explore</span><i></i></div>
-    </section>
+            <a routerLink="/about" class="learn-link">
+              Learn More
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </article>
 
-    <!-- INTRO -->
-    <section class="intro-section">
-      <div class="container intro-grid">
-        <div class="intro-index">01 / WHAT WE DO</div>
-        <div class="intro-copy">
-          <h2>Technology built around<br /><span>how your business works.</span></h2>
-          <p>We bring product thinking, engineering and automation together to create digital systems that solve operational problems and unlock growth.</p>
+          <article>
+            <span class="about-number">02</span>
+            <h3>What We Do</h3>
+            <p>We combine software development, automation, integration, digital transformation, SEO and growth strategies to help businesses improve how they operate and reach customers.</p>
+
+            <a routerLink="/services" class="learn-link">
+              Our Services
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
     <section class="services-section" id="services">
       <div class="container">
-        <div class="services-list">
+        <div class="section-heading centered">
+          <span class="section-label">Our Services</span>
+          <h2>Digital Solutions Built <span>for Business Growth.</span></h2>
+          <p>From custom applications to automation and search visibility, ATNAV provides technology services designed around real business requirements.</p>
+        </div>
 
-          <a routerLink="/services/app-development" class="service-row">
-            <span class="service-number">01</span>
-            <div class="service-icon"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-            <div class="service-name"><span>Application</span><strong>Engineering</strong></div>
-            <p>Enterprise web and mobile applications designed around real operations and real users.</p>
-            <div class="service-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+        <div class="services-grid">
+          <a routerLink="/services/app-development" class="service-card">
+            <div class="service-card-top">
+              <span>01</span>
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <h3>App <strong>Development</strong></h3>
+            <p>Custom web and mobile applications designed for usability, performance and scalable business operations.</p>
+            <div class="service-link">
+              Explore Service
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
           </a>
 
-          <a routerLink="/services/digital-transformation" class="service-row">
-            <span class="service-number">02</span>
-            <div class="service-icon"><ion-icon name="layers-outline"></ion-icon></div>
-            <div class="service-name"><span>Digital</span><strong>Transformation</strong></div>
-            <p>Modernize disconnected processes, systems and operations with scalable digital technology.</p>
-            <div class="service-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <a routerLink="/services/web-development" class="service-card">
+            <div class="service-card-top">
+              <span>02</span>
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
+            <h3>Web <strong>Development</strong></h3>
+            <p>Fast, responsive and SEO-friendly websites and web platforms designed to turn visitors into customers.</p>
+            <div class="service-link">
+              Explore Service
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
           </a>
 
-          <a routerLink="/services/automation-integration" class="service-row featured">
-            <span class="service-number">03</span>
-            <div class="service-icon"><ion-icon name="git-network-outline"></ion-icon></div>
-            <div class="service-name"><span>Automation &</span><strong>Integration</strong></div>
-            <p>Connect platforms, automate repetitive work and create intelligent workflows across your business.</p>
-            <div class="service-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <a routerLink="/services/digital-transformation" class="service-card featured">
+            <div class="service-card-top">
+              <span>03</span>
+              <ion-icon name="layers-outline"></ion-icon>
+            </div>
+            <h3>Digital <strong>Transformation</strong></h3>
+            <p>Modernize manual processes and disconnected operations using scalable digital platforms and smarter workflows.</p>
+            <div class="service-link">
+              Explore Service
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
           </a>
 
-          <a routerLink="/services/web-development" class="service-row">
-            <span class="service-number">04</span>
-            <div class="service-icon"><ion-icon name="code-slash-outline"></ion-icon></div>
-            <div class="service-name"><span>Web & Digital</span><strong>Experiences</strong></div>
-            <p>High-performance websites and digital platforms engineered for usability, speed and growth.</p>
-            <div class="service-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <a routerLink="/services/automation-integration" class="service-card">
+            <div class="service-card-top">
+              <span>04</span>
+              <ion-icon name="git-network-outline"></ion-icon>
+            </div>
+            <h3>Automation &amp; <strong>Integration</strong></h3>
+            <p>Connect APIs, business applications and data while automating repetitive workflows across your organization.</p>
+            <div class="service-link">
+              Explore Service
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
           </a>
 
-          <a routerLink="/services/seo" class="service-row">
-            <span class="service-number">05</span>
-            <div class="service-icon"><ion-icon name="search-outline"></ion-icon></div>
-            <div class="service-name"><span>Search &</span><strong>Visibility</strong></div>
-            <p>Technical SEO and search strategies focused on visibility, qualified traffic and measurable outcomes.</p>
-            <div class="service-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <a routerLink="/services/seo" class="service-card">
+            <div class="service-card-top">
+              <span>05</span>
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
+            <h3>SEO &amp; <strong>Search Visibility</strong></h3>
+            <p>Technical SEO, on-page optimization and search strategies designed to improve visibility and attract relevant organic traffic.</p>
+            <div class="service-link">
+              Explore Service
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
           </a>
 
-          <a routerLink="/services/digital-growth" class="service-row">
-            <span class="service-number">06</span>
-            <div class="service-icon"><ion-icon name="trending-up-outline"></ion-icon></div>
-            <div class="service-name"><span>Digital</span><strong>Growth</strong></div>
-            <p>Lead generation, marketing systems and digital campaigns designed to accelerate business growth.</p>
-            <div class="service-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <a routerLink="/services/digital-growth" class="service-card">
+            <div class="service-card-top">
+              <span>06</span>
+              <ion-icon name="trending-up-outline"></ion-icon>
+            </div>
+            <h3>Digital <strong>Growth</strong></h3>
+            <p>Digital marketing, lead generation and growth systems designed to help businesses reach and convert more customers.</p>
+            <div class="service-link">
+              Explore Service
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
           </a>
-
         </div>
       </div>
     </section>
 
-    <!-- TRANSFORMATION -->
-    <section class="transformation-section">
-      <div class="transformation-grid-bg"></div>
+    <section class="idea-cta-section">
+      <div class="container idea-cta-container">
+        <div class="idea-cta-copy">
+          <span class="section-label">Have an Idea?</span>
 
+          <h2>
+            Got an Idea But
+            <span>No Tech Team?</span>
+          </h2>
+
+          <h3>You're not alone — many business owners get stuck right here.</h3>
+
+          <p>We're a team of engineers and digital experts who turn your idea into a real, working website, mobile app or digital solution — built around your business and designed to help you grow.</p>
+
+          <p class="idea-supporting-text">From idea to launch — websites, mobile apps, automation and digital growth solutions to help your business work smarter and get noticed.</p>
+
+          <a routerLink="/contact" class="idea-cta-button">
+            <span>Get a Free Consultation</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="idea-cta-visual">
+          <div class="idea-card idea-card-main">
+            <span class="idea-card-label">Your Idea</span>
+            <h4>Have something you want to build?</h4>
+
+            <div class="idea-flow">
+              <div>
+                <ion-icon name="bulb-outline"></ion-icon>
+                <span>Idea</span>
+              </div>
+
+              <ion-icon class="flow-arrow" name="arrow-forward-outline"></ion-icon>
+
+              <div>
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <span>Build</span>
+              </div>
+
+              <ion-icon class="flow-arrow" name="arrow-forward-outline"></ion-icon>
+
+              <div>
+                <ion-icon name="rocket-outline"></ion-icon>
+                <span>Launch</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="idea-mini-card idea-mini-card-top">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+            <div>
+              <strong>Mobile Apps</strong>
+              <span>Built for your idea</span>
+            </div>
+          </div>
+
+          <div class="idea-mini-card idea-mini-card-bottom">
+            <ion-icon name="globe-outline"></ion-icon>
+            <div>
+              <strong>Web Solutions</strong>
+              <span>Designed to grow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="local-section">
+      <div class="container local-grid">
+        <div class="local-heading">
+          <span class="section-label">Technology · Automation · Growth</span>
+
+          <h2>
+            Digital Solutions
+            <span>Built to Move Businesses Forward.</span>
+          </h2>
+        </div>
+
+        <div class="local-copy">
+          <p>ATNAV works with businesses looking for web development, app development, business automation, digital transformation, SEO and digital marketing solutions across India.</p>
+
+          <p>Whether you need a business website, custom software, API integration, workflow automation or stronger online visibility, we build solutions around your goals and operations.</p>
+
+          <a routerLink="/contact" class="learn-link">
+            Discuss Your Requirement
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section">
       <div class="container">
-        <div class="dark-section-header">
-          <div class="dark-index">02 / TRANSFORMATION</div>
-          <div>
-            <span class="dark-eyebrow">Connected operations</span>
-            <h2>From disconnected work<br />to <span>connected systems.</span></h2>
-          </div>
+        <div class="section-heading centered">
+          <span class="section-label">Why ATNAV</span>
+          <h2>Technology With a <span>Business Purpose.</span></h2>
         </div>
 
-        <div class="transformation-layout">
-
-          <div class="transformation-copy">
-            <p>Replace fragmented tools, repetitive manual work and disconnected data with intelligent workflows designed around how your business actually operates.</p>
-
-            <div class="comparison">
-              <div class="comparison-column">
-                <div class="comparison-title"><span>Before</span><small>Fragmented</small></div>
-                <div class="comparison-item"><i></i>Email handoffs</div>
-                <div class="comparison-item"><i></i>Excel tracking</div>
-                <div class="comparison-item"><i></i>Manual data entry</div>
-                <div class="comparison-item"><i></i>Disconnected systems</div>
-              </div>
-
-              <div class="comparison-arrow"><ion-icon name="arrow-forward-outline"></ion-icon></div>
-
-              <div class="comparison-column after">
-                <div class="comparison-title"><span>After</span><small>Connected</small></div>
-                <div class="comparison-item"><i></i>Digital portals</div>
-                <div class="comparison-item"><i></i>Automated workflows</div>
-                <div class="comparison-item"><i></i>CRM / ERP integration</div>
-                <div class="comparison-item"><i></i>Real-time analytics</div>
-              </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="why-icon">
+              <ion-icon name="bulb-outline"></ion-icon>
             </div>
+            <h3>Business-First Thinking</h3>
+            <p>We begin with your business problem before deciding which technology should solve it.</p>
+          </article>
 
-            <a routerLink="/services/digital-transformation" class="dark-link">Explore Digital Transformation <ion-icon name="arrow-forward-outline"></ion-icon></a>
-          </div>
-
-          <div class="transformation-visual">
-            <div class="visual-number">02</div>
-            <img src="assets/automation-workflow.png" alt="Atnav connected business automation workflow" />
-
-            <div class="workflow-status">
-              <span class="pulse"></span>
-              <div><small>Workflow status</small><strong>Systems connected</strong></div>
-              <ion-icon name="checkmark-outline"></ion-icon>
+          <article class="why-card">
+            <div class="why-icon">
+              <ion-icon name="code-slash-outline"></ion-icon>
             </div>
+            <h3>Practical Engineering</h3>
+            <p>We build maintainable digital products designed around real users, workflows and operational requirements.</p>
+          </article>
 
-            <div class="workflow-stat"><small>Efficiency</small><strong>+128%</strong><span>↑ Operational improvement</span></div>
-          </div>
+          <article class="why-card">
+            <div class="why-icon">
+              <ion-icon name="git-network-outline"></ion-icon>
+            </div>
+            <h3>Connected Systems</h3>
+            <p>Applications, APIs, data and workflows are connected to reduce repetitive work and disconnected processes.</p>
+          </article>
 
+          <article class="why-card">
+            <div class="why-icon">
+              <ion-icon name="trending-up-outline"></ion-icon>
+            </div>
+            <h3>Built for Growth</h3>
+            <p>Technology and digital strategies are structured to evolve as your business requirements grow.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
+    <section class="solutions-section">
+      <div class="container solutions-grid">
+        <div class="solutions-copy">
+          <span class="section-label">Connected Digital Operations</span>
+          <h2>From Manual Work <span>to Connected Systems.</span></h2>
+          <p>Digital transformation is more than introducing new software. We help businesses connect people, processes, applications and data into simpler digital workflows.</p>
+
+          <a routerLink="/services/digital-transformation" class="primary-button">
+            <span>Explore Digital Transformation</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="solutions-panel">
+          <div class="solution-row">
+            <span>01</span>
+            <div>
+              <strong>Manual Processes</strong>
+              <small>to automated workflows</small>
+            </div>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+
+          <div class="solution-row">
+            <span>02</span>
+            <div>
+              <strong>Disconnected Tools</strong>
+              <small>to integrated systems</small>
+            </div>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+
+          <div class="solution-row">
+            <span>03</span>
+            <div>
+              <strong>Scattered Data</strong>
+              <small>to connected information</small>
+            </div>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+
+          <div class="solution-row">
+            <span>04</span>
+            <div>
+              <strong>Limited Visibility</strong>
+              <small>to measurable digital operations</small>
+            </div>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="process-section">
       <div class="container">
-
-        <div class="process-header">
-          <div class="section-index">03 / PROCESS</div>
+        <div class="process-heading">
           <div>
-            <span class="section-eyebrow">How we work</span>
-            <h2>From idea<br /><span>to impact.</span></h2>
+            <span class="section-label">How We Work</span>
+            <h2>From Idea <span>to Digital Solution.</span></h2>
           </div>
-          <p>A clear engineering process that moves from understanding the problem to building, launching and continuously improving the solution.</p>
+
+          <p>A straightforward process for understanding your requirement, designing the right solution and bringing it to life.</p>
         </div>
 
-        <div class="process-flow">
-
-          <div class="process-step">
+        <div class="process-grid">
+          <article>
             <span>01</span>
-            <div class="process-dot"><ion-icon name="search-outline"></ion-icon></div>
+            <div class="process-icon">
+              <ion-icon name="search-outline"></ion-icon>
+            </div>
             <h3>Discover</h3>
-            <p>Understand the business, users and problem.</p>
-          </div>
+            <p>Understand your business, users and requirements.</p>
+          </article>
 
-          <div class="process-line"></div>
-
-          <div class="process-step">
+          <article>
             <span>02</span>
-            <div class="process-dot"><ion-icon name="git-network-outline"></ion-icon></div>
-            <h3>Architect</h3>
-            <p>Define the right system and technical foundation.</p>
-          </div>
-
-          <div class="process-line"></div>
-
-          <div class="process-step">
-            <span>03</span>
-            <div class="process-dot"><ion-icon name="color-palette-outline"></ion-icon></div>
+            <div class="process-icon">
+              <ion-icon name="color-palette-outline"></ion-icon>
+            </div>
             <h3>Design</h3>
-            <p>Create intuitive experiences around real workflows.</p>
-          </div>
+            <p>Plan the user experience, workflows and solution.</p>
+          </article>
 
-          <div class="process-line"></div>
-
-          <div class="process-step">
-            <span>04</span>
-            <div class="process-dot"><ion-icon name="code-slash-outline"></ion-icon></div>
+          <article>
+            <span>03</span>
+            <div class="process-icon">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </div>
             <h3>Build</h3>
-            <p>Engineer scalable and reliable digital products.</p>
-          </div>
+            <p>Develop reliable applications and digital systems.</p>
+          </article>
 
-          <div class="process-line"></div>
-
-          <div class="process-step">
-            <span>05</span>
-            <div class="process-dot"><ion-icon name="layers-outline"></ion-icon></div>
-            <h3>Integrate</h3>
-            <p>Connect systems, data and automated workflows.</p>
-          </div>
-
-          <div class="process-line"></div>
-
-          <div class="process-step">
-            <span>06</span>
-            <div class="process-dot"><ion-icon name="rocket-outline"></ion-icon></div>
-            <h3>Launch</h3>
-            <p>Deploy with confidence, quality and performance.</p>
-          </div>
-
-          <div class="process-line"></div>
-
-          <div class="process-step">
-            <span>07</span>
-            <div class="process-dot"><ion-icon name="trending-up-outline"></ion-icon></div>
-            <h3>Optimize</h3>
-            <p>Measure results and continuously improve.</p>
-          </div>
-
+          <article>
+            <span>04</span>
+            <div class="process-icon">
+              <ion-icon name="rocket-outline"></ion-icon>
+            </div>
+            <h3>Launch &amp; Grow</h3>
+            <p>Deploy, measure and continuously improve the solution.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- PHILOSOPHY -->
-    <section class="philosophy-section">
-      <div class="container philosophy-grid">
-
-        <div class="philosophy-label">
-          <span>04 / OUR APPROACH</span>
-        </div>
-
-        <div class="philosophy-copy">
-          <span class="section-eyebrow">Built differently</span>
-          <h2>We don't just<br />build software.</h2>
-          <p class="large-text">We build systems that improve <span>how businesses work.</span></p>
-        </div>
-
-        <div class="philosophy-points">
-          <div><span>01</span><strong>Business first</strong><p>Technology decisions start with understanding the business problem.</p></div>
-          <div><span>02</span><strong>Systems thinking</strong><p>We connect products, people, processes and data instead of building in isolation.</p></div>
-          <div><span>03</span><strong>Built to scale</strong><p>Architecture and experiences designed to evolve as your business grows.</p></div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about-section">
-      <div class="container about-grid">
-
-        <div class="about-image">
-          <img src="assets/team.jpg" alt="Atnav technology team" />
-          <div class="about-image-overlay"></div>
-          <div class="image-caption"><span>Atnav</span><strong>Technology · People · Progress</strong></div>
-        </div>
-
-        <div class="about-copy">
-          <span class="section-eyebrow">About Atnav</span>
-          <h2>Engineers.<br />Strategists.<br /><span>Problem solvers.</span></h2>
-          <p>We combine business thinking, product design, engineering and automation to solve complex operational problems and create meaningful digital progress.</p>
-
-          <div class="about-stat-row">
-            <div><strong>50+</strong><span>Projects</span></div>
-            <div><strong>30+</strong><span>Clients</span></div>
-            <div><strong>100%</strong><span>Focused on impact</span></div>
-          </div>
-
-          <a routerLink="/about" class="about-link">Meet Atnav <span><ion-icon name="arrow-forward-outline"></ion-icon></span></a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
     <section class="final-cta">
-      <div class="cta-grid"></div>
-      <div class="cta-glow"></div>
+      <div class="cta-decoration" aria-hidden="true"></div>
 
       <div class="container final-cta-inner">
-        <div class="cta-index">05 / START</div>
-
-        <div class="cta-copy">
-          <span>Have something in mind?</span>
-          <h2>Let's build something<br /><strong>that moves business.</strong></h2>
-          <p>Tell us what you're trying to solve. We'll help turn the idea into a scalable digital system.</p>
+        <div>
+          <span class="cta-label">Ready to Get Started?</span>
+          <h2>Let's Build Something <span>Useful for Your Business.</span></h2>
+          <p>Tell us what you're trying to build, improve or automate. We'll help you identify the right digital approach.</p>
         </div>
 
         <a routerLink="/contact" class="cta-button">
           <span>Start a Project</span>
-          <div><ion-icon name="arrow-forward-outline"></ion-icon></div>
+          <div>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
         </a>
       </div>
     </section>
 
     <app-footer></app-footer>
-
   </div>
 </ion-content>

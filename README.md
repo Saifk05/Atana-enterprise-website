@@ -377,7 +377,7 @@ import { SharedModule } from '../../../shared/shared.module';
   selector: 'app-digital-growth',
   templateUrl: './digital-growth.page.html',
   styleUrls: ['./digital-growth.page.scss'],
-  standalone: true,
+  standalone: false,
   imports: [
     CommonModule,
     RouterModule,
@@ -795,7 +795,7 @@ import { SharedModule } from '../../shared/shared.module';
   selector: 'app-example',
   templateUrl: './example.page.html',
   styleUrls: ['./example.page.scss'],
-  standalone: true,
+  standalone: false,
   imports: [
     CommonModule,
     RouterModule,

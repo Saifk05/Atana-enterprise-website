@@ -1,782 +1,442 @@
 <ion-content [fullscreen]="true" class="process-content">
-
   <div class="process-page">
 
-    <section class="process-hero">
+<section class="process-hero">
+  <app-header></app-header>
 
-      <app-header></app-header>
+  <div class="hero-background">
+    <div class="hero-grid-pattern"></div>
+    <div class="hero-orbit orbit-one"></div>
+    <div class="hero-orbit orbit-two"></div>
+  </div>
 
-      <div class="hero-background">
-        <div class="hero-grid-pattern"></div>
-        <div class="hero-glow"></div>
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
+  <div class="container process-hero-grid">
+
+    <div class="hero-copy">
+      <div class="hero-eyebrow">
+        <span></span>
+        HOW ATNAV HELPS
       </div>
 
-      <div class="container process-hero-grid">
-
-        <div class="hero-copy">
-
-          <div class="hero-eyebrow">
-            <span></span>
-            OUR PROCESS / DELIVERY SYSTEM
-          </div>
-
-          <h1>
-            From business problem
-            <span>to working system.</span>
-          </h1>
-
-          <p>
-            We combine strategy, design, engineering and implementation
-            into one structured delivery process built around measurable
-            business outcomes.
-          </p>
-
-          <div class="hero-actions">
-
-            <a routerLink="/contact" class="primary-button">
-              <span>Start a Project</span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
-
-            <a href="#delivery-process" class="secondary-link">
-              Explore Our Process
-              <ion-icon name="arrow-down-outline"></ion-icon>
-            </a>
-
-          </div>
-
-          <div class="hero-meta">
-
-            <div>
-              <strong>08</strong>
-              <span>Delivery Stages</span>
-            </div>
-
-            <div>
-              <strong>04</strong>
-              <span>Connected Disciplines</span>
-            </div>
-
-            <div>
-              <strong>01</strong>
-              <span>Delivery System</span>
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="hero-visual">
-
-          <div class="visual-label">
-            Atnav / DELIVERY SYSTEM
-            <small>02 / PROCESS</small>
-          </div>
-
-          <div class="process-shell">
-
-            <div class="shell-header">
-
-              <div class="shell-brand">
-
-                <span class="shell-mark">
-                  <i></i>
-                  <i></i>
-                </span>
-
-                <div>
-                  <small>Atnav</small>
-                  <strong>Delivery System</strong>
-                </div>
-
-              </div>
-
-              <div class="shell-status">
-                <i></i>
-                SYSTEM / ACTIVE
-              </div>
-
-            </div>
-
-            <div class="shell-body">
-
-              <div class="shell-heading">
-
-                <div>
-                  <span>PROJECT DELIVERY</span>
-                  <strong>
-                    From uncertainty
-                    <em>to measurable impact.</em>
-                  </strong>
-                </div>
-
-                <div class="delivery-status">
-                  <i></i>
-                  END-TO-END
-                </div>
-
-              </div>
-
-              <div class="delivery-system">
-
-                <div class="delivery-line"></div>
-
-                <div class="delivery-stage stage-discover">
-
-                  <span class="delivery-number">01</span>
-
-                  <div class="delivery-icon">
-                    <ion-icon name="search-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>UNDERSTAND</small>
-                    <strong>Discover</strong>
-                    <span>Business context</span>
-                  </div>
-
-                </div>
-
-                <div class="delivery-stage stage-define">
-
-                  <span class="delivery-number">02</span>
-
-                  <div class="delivery-icon">
-                    <ion-icon name="compass-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>DIRECTION</small>
-                    <strong>Define</strong>
-                    <span>Priorities & scope</span>
-                  </div>
-
-                </div>
-
-                <div class="delivery-stage stage-build active">
-
-                  <span class="delivery-number">03</span>
-
-                  <div class="delivery-icon">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>CREATE</small>
-                    <strong>Build</strong>
-                    <span>Design & engineering</span>
-                  </div>
-
-                </div>
-
-                <div class="delivery-stage stage-launch">
-
-                  <span class="delivery-number">04</span>
-
-                  <div class="delivery-icon">
-                    <ion-icon name="rocket-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>DELIVER</small>
-                    <strong>Launch</strong>
-                    <span>Production system</span>
-                  </div>
-
-                </div>
-
-                <div class="delivery-stage stage-optimize">
-
-                  <span class="delivery-number">05</span>
-
-                  <div class="delivery-icon">
-                    <ion-icon name="trending-up-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>IMPROVE</small>
-                    <strong>Optimize</strong>
-                    <span>Measure & evolve</span>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="shell-metrics">
-
-                <div>
-                  <span>STRATEGY</span>
-                  <strong>Clear</strong>
-                  <small>Business direction</small>
-                </div>
-
-                <div>
-                  <span>DELIVERY</span>
-                  <strong>Iterative</strong>
-                  <small>Continuous validation</small>
-                </div>
-
-                <div>
-                  <span>OUTCOME</span>
-                  <strong>Measurable</strong>
-                  <small>Business impact</small>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="shell-footer">
-
-              <div>
-                <i></i>
-                <span>Business</span>
-                <strong>Aligned</strong>
-              </div>
-
-              <div>
-                <i></i>
-                <span>Engineering</span>
-                <strong>Connected</strong>
-              </div>
-
-              <div>
-                <i></i>
-                <span>Delivery</span>
-                <strong>Production-ready</strong>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="floating-card floating-strategy">
-
-            <div class="floating-icon">
-              <ion-icon name="compass-outline"></ion-icon>
-            </div>
-
-            <div>
-              <small>Direction</small>
-              <strong>Strategy Aligned</strong>
-            </div>
-
-          </div>
-
-          <div class="floating-card floating-delivery">
-
-            <div class="floating-icon">
-              <ion-icon name="git-branch-outline"></ion-icon>
-            </div>
-
-            <div>
-              <small>Execution</small>
-              <strong>Connected Delivery</strong>
-            </div>
-
-          </div>
-
-        </div>
-
+      <h1>
+        We make your business
+        <span>easier to run and grow.</span>
+      </h1>
+
+      <p>
+        Whether you need more customers, a better website, an app,
+        a CRM or less manual work, we build digital solutions around
+        the way your business actually works.
+      </p>
+
+      <div class="hero-actions">
+        <a routerLink="/contact" class="primary-button">
+          <span>Tell Us What You Need</span>
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+
+        <a href="#business-change" class="secondary-link">
+          See How We Help
+          <ion-icon name="arrow-down-outline"></ion-icon>
+        </a>
       </div>
 
-      <div class="hero-bottom">
-
-        <div class="container hero-bottom-inner">
-          <span>Discover</span>
-          <i></i>
-          <span>Define</span>
-          <i></i>
-          <span>Architect</span>
-          <i></i>
-          <span>Design</span>
-          <i></i>
-          <span>Build</span>
-          <i></i>
-          <span>Launch</span>
-          <i></i>
-          <span>Optimize</span>
+      <div class="hero-points">
+        <div>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <span>Less manual work</span>
         </div>
 
+        <div>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <span>Better customer experience</span>
+        </div>
+
+        <div>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+          <span>More organised business</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-image-frame">
+        <img
+          src="assets/images/how-atnav-helps.png"
+          alt="Business team working together on digital solutions"
+        />
+
+        <div class="hero-image-overlay"></div>
+
+        <div class="hero-image-caption">
+          <span>ATNAV</span>
+          <strong>Technology built around your business.</strong>
+        </div>
       </div>
 
-    </section>
+      <div class="hero-floating-card hero-floating-top">
+        <div class="floating-icon">
+          <ion-icon name="people-outline"></ion-icon>
+        </div>
+        <div>
+          <span>YOUR BUSINESS</span>
+          <strong>Understand first</strong>
+        </div>
+      </div>
 
+      <div class="hero-floating-card hero-floating-bottom">
+        <div class="floating-icon">
+          <ion-icon name="trending-up-outline"></ion-icon>
+        </div>
+        <div>
+          <span>THE RESULT</span>
+          <strong>Simpler. Connected. Ready to grow.</strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <main>
 
-      <section class="process-intro">
-
-        <div class="container intro-grid">
+      <section id="business-change" class="value-intro">
+        <div class="container value-intro-grid">
 
           <div class="section-index">
-            01 / HOW WE WORK
+            01 / WHAT WE CHANGE
           </div>
 
-          <div class="intro-heading">
-
-            <span class="section-label">
-              DELIVERY PHILOSOPHY
-            </span>
+          <div class="value-heading">
+            <span class="section-label">TECHNOLOGY WITH A PURPOSE</span>
 
             <h2>
-              Structure where it matters.
-              <span>Flexibility where it helps.</span>
+              We don't start with technology.
+              <span>We start with your problem.</span>
             </h2>
-
           </div>
 
-          <div class="intro-copy">
-
+          <div class="value-copy">
             <p>
-              Every project starts with understanding the business
-              problem before deciding what should be designed or built.
+              You don't need an app just because apps are popular.
+              You don't need a CRM just because other companies use one.
             </p>
 
             <p>
-              Our process creates enough structure to keep strategy,
-              design and engineering aligned while remaining flexible
-              enough to respond to new information throughout delivery.
+              We first understand what is slowing your business down.
+              Then we decide what digital solution can actually make it better.
             </p>
-
           </div>
 
         </div>
-
       </section>
 
 
-      <section id="delivery-process" class="delivery-section">
-
+      <section class="business-value-section">
         <div class="container">
 
-          <div class="delivery-heading">
+          <div class="business-value-heading">
 
             <div class="section-index">
-              02 / DELIVERY FRAMEWORK
+              02 / BUSINESS VALUE
             </div>
 
-            <div class="delivery-heading-copy">
-
-              <span class="section-label">
-                FROM IDEA TO IMPACT
-              </span>
+            <div>
+              <span class="section-label">WHAT CAN CHANGE?</span>
 
               <h2>
-                One connected journey
-                <span>from problem to production.</span>
+                See what digital solutions
+                <span>can do for your business.</span>
               </h2>
-
             </div>
 
             <p>
-              Each stage reduces uncertainty and moves the project
-              closer to a reliable, scalable business outcome.
+              Different businesses have different problems.
+              We help you choose the solution that creates real value.
             </p>
 
           </div>
 
 
-          <div class="delivery-timeline">
+          <div class="value-grid">
 
-            <article class="timeline-step">
+            <article class="value-card">
 
-              <div class="timeline-marker">
-                <span>01</span>
+              <div class="value-card-number">01</div>
+
+              <div class="value-icon">
+                <ion-icon name="search-outline"></ion-icon>
               </div>
 
-              <div class="timeline-content">
+              <span class="value-type">SEO & DIGITAL GROWTH</span>
 
-                <div class="timeline-icon">
-                  <ion-icon name="search-outline"></ion-icon>
-                </div>
+              <h3>
+                Help more customers
+                <span>find your business.</span>
+              </h3>
 
-                <div class="timeline-main">
+              <div class="before-after">
 
-                  <span class="step-type">
-                    UNDERSTAND
-                  </span>
-
-                  <h3>Discover</h3>
-
+                <div class="before">
+                  <small>BEFORE</small>
                   <p>
-                    Understand the business, users, existing systems,
-                    constraints and the problem worth solving.
+                    People search for what you offer,
+                    but your business is difficult to find.
                   </p>
-
                 </div>
 
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>Business</small>
-                    <small>Users</small>
-                    <small>Systems</small>
-                    <small>Constraints</small>
-                  </div>
-
+                <div class="change-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
 
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Business Context</strong>
+                <div class="after">
+                  <small>AFTER</small>
+                  <p>
+                    Your business has a stronger online presence
+                    and more relevant people can discover you.
+                  </p>
                 </div>
 
+              </div>
+
+              <div class="value-result">
+                <ion-icon name="trending-up-outline"></ion-icon>
+                <span>More visibility. More opportunities.</span>
               </div>
 
             </article>
 
 
-            <article class="timeline-step">
+            <article class="value-card">
 
-              <div class="timeline-marker">
-                <span>02</span>
+              <div class="value-card-number">02</div>
+
+              <div class="value-icon">
+                <ion-icon name="globe-outline"></ion-icon>
               </div>
 
-              <div class="timeline-content">
+              <span class="value-type">WEBSITE</span>
 
-                <div class="timeline-icon">
-                  <ion-icon name="compass-outline"></ion-icon>
-                </div>
+              <h3>
+                Turn your website into
+                <span>a better first impression.</span>
+              </h3>
 
-                <div class="timeline-main">
+              <div class="before-after">
 
-                  <span class="step-type">
-                    DIRECTION
-                  </span>
-
-                  <h3>Define</h3>
-
+                <div class="before">
+                  <small>BEFORE</small>
                   <p>
-                    Turn discovery into clear requirements,
-                    priorities, success measures and project scope.
+                    Customers don't clearly understand
+                    your business, services or how to contact you.
                   </p>
-
                 </div>
 
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>Requirements</small>
-                    <small>Priorities</small>
-                    <small>Scope</small>
-                    <small>Success</small>
-                  </div>
-
+                <div class="change-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
 
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Delivery Roadmap</strong>
+                <div class="after">
+                  <small>AFTER</small>
+                  <p>
+                    Customers quickly understand what you do,
+                    trust your business and know what to do next.
+                  </p>
                 </div>
 
+              </div>
+
+              <div class="value-result">
+                <ion-icon name="people-outline"></ion-icon>
+                <span>Clearer message. Better customer journey.</span>
               </div>
 
             </article>
 
 
-            <article class="timeline-step">
+            <article class="value-card">
 
-              <div class="timeline-marker">
-                <span>03</span>
+              <div class="value-card-number">03</div>
+
+              <div class="value-icon">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
               </div>
 
-              <div class="timeline-content">
+              <span class="value-type">APP DEVELOPMENT</span>
 
-                <div class="timeline-icon">
-                  <ion-icon name="git-network-outline"></ion-icon>
-                </div>
+              <h3>
+                Make it easier for customers
+                <span>and your team.</span>
+              </h3>
 
-                <div class="timeline-main">
+              <div class="before-after">
 
-                  <span class="step-type">
-                    FOUNDATION
-                  </span>
-
-                  <h3>Architect</h3>
-
+                <div class="before">
+                  <small>BEFORE</small>
                   <p>
-                    Define the technical foundation, system boundaries,
-                    integrations, data flows and platform structure.
+                    Customers or staff depend on calls,
+                    messages and repeated manual steps.
                   </p>
-
                 </div>
 
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>Architecture</small>
-                    <small>Data</small>
-                    <small>APIs</small>
-                    <small>Platforms</small>
-                  </div>
-
+                <div class="change-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
 
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Solution Architecture</strong>
+                <div class="after">
+                  <small>AFTER</small>
+                  <p>
+                    One app gives people a simpler way
+                    to access the services and information they need.
+                  </p>
                 </div>
 
+              </div>
+
+              <div class="value-result">
+                <ion-icon name="happy-outline"></ion-icon>
+                <span>Easier experience. Less manual work.</span>
               </div>
 
             </article>
 
 
-            <article class="timeline-step">
+            <article class="value-card">
 
-              <div class="timeline-marker">
-                <span>04</span>
+              <div class="value-card-number">04</div>
+
+              <div class="value-icon">
+                <ion-icon name="people-circle-outline"></ion-icon>
               </div>
 
-              <div class="timeline-content">
+              <span class="value-type">CRM & BUSINESS SOFTWARE</span>
 
-                <div class="timeline-icon">
-                  <ion-icon name="color-palette-outline"></ion-icon>
-                </div>
+              <h3>
+                Keep customers and work
+                <span>in one place.</span>
+              </h3>
 
-                <div class="timeline-main">
+              <div class="before-after">
 
-                  <span class="step-type">
-                    EXPERIENCE
-                  </span>
-
-                  <h3>Design</h3>
-
+                <div class="before">
+                  <small>BEFORE</small>
                   <p>
-                    Translate requirements into clear journeys,
-                    interfaces and digital experiences built around users.
+                    Leads, customer details and follow-ups
+                    are spread across Excel, WhatsApp and notebooks.
                   </p>
-
                 </div>
 
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>Journeys</small>
-                    <small>UX</small>
-                    <small>Interface</small>
-                    <small>Validation</small>
-                  </div>
-
+                <div class="change-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
 
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Product Experience</strong>
+                <div class="after">
+                  <small>AFTER</small>
+                  <p>
+                    Your team can manage customers,
+                    follow-ups and daily work from one system.
+                  </p>
                 </div>
 
+              </div>
+
+              <div class="value-result">
+                <ion-icon name="checkmark-done-outline"></ion-icon>
+                <span>More organised. Fewer missed follow-ups.</span>
               </div>
 
             </article>
 
 
-            <article class="timeline-step featured">
+            <article class="value-card">
 
-              <div class="timeline-marker">
-                <span>05</span>
+              <div class="value-card-number">05</div>
+
+              <div class="value-icon">
+                <ion-icon name="flash-outline"></ion-icon>
               </div>
 
-              <div class="timeline-content">
+              <span class="value-type">AUTOMATION</span>
 
-                <div class="timeline-icon">
-                  <ion-icon name="code-slash-outline"></ion-icon>
-                </div>
+              <h3>
+                Stop repeating work
+                <span>that software can handle.</span>
+              </h3>
 
-                <div class="timeline-main">
+              <div class="before-after">
 
-                  <span class="step-type">
-                    ENGINEERING
-                  </span>
-
-                  <h3>Build</h3>
-
+                <div class="before">
+                  <small>BEFORE</small>
                   <p>
-                    Engineer the product in structured iterations
-                    with continuous validation and technical review.
+                    Your team spends time sending updates,
+                    copying information and repeating the same tasks.
                   </p>
-
                 </div>
 
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>Frontend</small>
-                    <small>Backend</small>
-                    <small>Quality</small>
-                    <small>Iteration</small>
-                  </div>
-
+                <div class="change-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
 
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Working Product</strong>
+                <div class="after">
+                  <small>AFTER</small>
+                  <p>
+                    Repetitive steps happen automatically
+                    while your team focuses on important work.
+                  </p>
                 </div>
 
+              </div>
+
+              <div class="value-result">
+                <ion-icon name="time-outline"></ion-icon>
+                <span>Save time. Reduce repetitive work.</span>
               </div>
 
             </article>
 
 
-            <article class="timeline-step">
+            <article class="value-card">
 
-              <div class="timeline-marker">
-                <span>06</span>
+              <div class="value-card-number">06</div>
+
+              <div class="value-icon">
+                <ion-icon name="git-network-outline"></ion-icon>
               </div>
 
-              <div class="timeline-content">
+              <span class="value-type">SYSTEM INTEGRATION</span>
 
-                <div class="timeline-icon">
-                  <ion-icon name="git-branch-outline"></ion-icon>
-                </div>
+              <h3>
+                Make your systems
+                <span>work together.</span>
+              </h3>
 
-                <div class="timeline-main">
+              <div class="before-after">
 
-                  <span class="step-type">
-                    CONNECTIVITY
-                  </span>
-
-                  <h3>Integrate</h3>
-
+                <div class="before">
+                  <small>BEFORE</small>
                   <p>
-                    Connect applications, APIs, platforms and data
-                    so the solution works within the wider business.
+                    Information has to be manually moved
+                    between different software and systems.
                   </p>
-
                 </div>
 
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>APIs</small>
-                    <small>Platforms</small>
-                    <small>Data</small>
-                    <small>Automation</small>
-                  </div>
-
+                <div class="change-arrow">
+                  <ion-icon name="arrow-forward-outline"></ion-icon>
                 </div>
 
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Connected System</strong>
-                </div>
-
-              </div>
-
-            </article>
-
-
-            <article class="timeline-step">
-
-              <div class="timeline-marker">
-                <span>07</span>
-              </div>
-
-              <div class="timeline-content">
-
-                <div class="timeline-icon">
-                  <ion-icon name="rocket-outline"></ion-icon>
-                </div>
-
-                <div class="timeline-main">
-
-                  <span class="step-type">
-                    PRODUCTION
-                  </span>
-
-                  <h3>Launch</h3>
-
+                <div class="after">
+                  <small>AFTER</small>
                   <p>
-                    Validate, deploy and transition the solution
-                    into production with a controlled release.
+                    Your systems share information automatically
+                    and work as one connected process.
                   </p>
-
-                </div>
-
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>Testing</small>
-                    <small>Release</small>
-                    <small>Deployment</small>
-                    <small>Transition</small>
-                  </div>
-
-                </div>
-
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Production Release</strong>
                 </div>
 
               </div>
 
-            </article>
-
-
-            <article class="timeline-step">
-
-              <div class="timeline-marker">
-                <span>08</span>
-              </div>
-
-              <div class="timeline-content">
-
-                <div class="timeline-icon">
-                  <ion-icon name="trending-up-outline"></ion-icon>
-                </div>
-
-                <div class="timeline-main">
-
-                  <span class="step-type">
-                    EVOLUTION
-                  </span>
-
-                  <h3>Optimize</h3>
-
-                  <p>
-                    Measure real-world performance, improve the
-                    experience and evolve the system as needs change.
-                  </p>
-
-                </div>
-
-                <div class="step-focus">
-
-                  <span>FOCUS</span>
-
-                  <div>
-                    <small>Measure</small>
-                    <small>Learn</small>
-                    <small>Improve</small>
-                    <small>Scale</small>
-                  </div>
-
-                </div>
-
-                <div class="step-output">
-                  <span>OUTPUT</span>
-                  <strong>Continuous Improvement</strong>
-                </div>
-
+              <div class="value-result">
+                <ion-icon name="sync-outline"></ion-icon>
+                <span>Connected systems. Smoother work.</span>
               </div>
 
             </article>
@@ -784,349 +444,271 @@
           </div>
 
         </div>
-
       </section>
 
 
-      <section class="architecture-section">
+      <section class="example-section">
 
-        <div class="architecture-grid-background"></div>
-        <div class="architecture-glow"></div>
+        <div class="container example-layout">
 
-        <div class="container architecture-layout">
-
-          <div class="architecture-copy">
+          <div class="example-copy">
 
             <div class="dark-index">
-              03 / DELIVERY ARCHITECTURE
+              03 / SIMPLE EXAMPLE
             </div>
 
             <span class="dark-label">
-              ONE DELIVERY SYSTEM
+              CRM / CUSTOMER MANAGEMENT
             </span>
 
             <h2>
-              Strategy stays connected
-              <span>to execution.</span>
+              What does this look like
+              <span>in a real business?</span>
             </h2>
 
             <p>
-              We bring business thinking, product experience,
-              technology and operations into the same delivery
-              process so important decisions are not made in isolation.
+              Imagine your sales team receives customer enquiries
+              from calls, WhatsApp, your website and social media.
             </p>
 
-            <a routerLink="/contact" class="architecture-link">
-              Discuss Your Project
+            <p>
+              Without one system, follow-ups can be difficult to track.
+              A CRM brings the customer journey into one place.
+            </p>
+
+            <a routerLink="/contact" class="example-link">
+              Talk About Your Business
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </a>
 
           </div>
 
 
-          <div class="architecture-system">
+          <div class="example-flow">
 
-            <div class="architecture-system-header">
+            <div class="example-flow-header">
+              <span>WITHOUT CRM</span>
+              <span>WITH ATNAV CRM</span>
+            </div>
 
-              <span>
-                Atnav / DELIVERY ARCHITECTURE
-              </span>
+            <div class="example-before">
 
-              <div>
-                <i></i>
-                CONNECTED
+              <div class="example-node">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>WhatsApp</span>
+              </div>
+
+              <div class="example-node">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>Calls</span>
+              </div>
+
+              <div class="example-node">
+                <ion-icon name="grid-outline"></ion-icon>
+                <span>Excel</span>
+              </div>
+
+              <div class="example-node">
+                <ion-icon name="document-text-outline"></ion-icon>
+                <span>Notes</span>
               </div>
 
             </div>
 
-            <div class="architecture-system-body">
+            <div class="example-center">
 
-              <div class="architecture-primary">
-
-                <div class="architecture-node">
-
-                  <span>01</span>
-
-                  <div class="architecture-icon">
-                    <ion-icon name="compass-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>DIRECTION</small>
-                    <strong>Strategy</strong>
-                    <p>Goals / priorities / outcomes</p>
-                  </div>
-
-                  <div class="architecture-state">
-                    Direction
-                  </div>
-
-                </div>
-
-                <div class="architecture-connector">
-                  <span></span>
-                  <ion-icon name="arrow-down-outline"></ion-icon>
-                </div>
-
-
-                <div class="architecture-node">
-
-                  <span>02</span>
-
-                  <div class="architecture-icon">
-                    <ion-icon name="people-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>ADOPTION</small>
-                    <strong>Experience</strong>
-                    <p>Users / journeys / interfaces</p>
-                  </div>
-
-                  <div class="architecture-state">
-                    Adoption
-                  </div>
-
-                </div>
-
-                <div class="architecture-connector">
-                  <span></span>
-                  <ion-icon name="arrow-down-outline"></ion-icon>
-                </div>
-
-
-                <div class="architecture-node active">
-
-                  <span>03</span>
-
-                  <div class="architecture-icon">
-                    <ion-icon name="code-slash-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>CAPABILITY</small>
-                    <strong>Technology</strong>
-                    <p>Applications / APIs / platforms</p>
-                  </div>
-
-                  <div class="architecture-state">
-                    Capability
-                  </div>
-
-                </div>
-
-                <div class="architecture-connector">
-                  <span></span>
-                  <ion-icon name="arrow-down-outline"></ion-icon>
-                </div>
-
-
-                <div class="architecture-node">
-
-                  <span>04</span>
-
-                  <div class="architecture-icon">
-                    <ion-icon name="settings-outline"></ion-icon>
-                  </div>
-
-                  <div>
-                    <small>IMPACT</small>
-                    <strong>Operations</strong>
-                    <p>Processes / teams / performance</p>
-                  </div>
-
-                  <div class="architecture-state">
-                    Impact
-                  </div>
-
-                </div>
-
+              <div class="example-arrow">
+                <ion-icon name="arrow-down-outline"></ion-icon>
               </div>
 
-              <div class="architecture-flow">
+              <div class="crm-center">
+                <div class="crm-icon">
+                  <ion-icon name="people-outline"></ion-icon>
+                </div>
 
-                <span>BUSINESS</span>
-                <i></i>
-                <span>EXPERIENCE</span>
-                <i></i>
-                <span>ENGINEERING</span>
-                <i></i>
-                <span>OPERATIONS</span>
+                <span>ONE CRM</span>
+                <strong>Everything in one place</strong>
+              </div>
 
+              <div class="example-arrow">
+                <ion-icon name="arrow-down-outline"></ion-icon>
               </div>
 
             </div>
 
-            <div class="architecture-system-footer">
+            <div class="example-after">
 
               <div>
-                <span>Direction</span>
-                <strong>Aligned</strong>
-              </div>
-
-              <div>
-                <span>Experience</span>
-                <strong>User-centered</strong>
-              </div>
-
-              <div>
-                <span>Engineering</span>
-                <strong>Maintainable</strong>
-              </div>
-
-              <div>
-                <span>Outcome</span>
-                <strong>Measurable</strong>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-      <section class="collaboration-section">
-
-        <div class="container">
-
-          <div class="collaboration-heading">
-
-            <div class="section-index">
-              04 / COLLABORATION
-            </div>
-
-            <div>
-
-              <span class="section-label">
-                WORKING TOGETHER
-              </span>
-
-              <h2>
-                Clear collaboration
-                <span>throughout delivery.</span>
-              </h2>
-
-            </div>
-
-            <p>
-              Good delivery depends on shared context, fast feedback
-              and clear decisions across business and technical teams.
-            </p>
-
-          </div>
-
-
-          <div class="collaboration-grid">
-
-            <article>
-
-              <div class="collaboration-top">
-
                 <span>01</span>
-
-                <div class="collaboration-icon">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
+                <strong>Lead Comes In</strong>
               </div>
 
-              <div class="collaboration-content">
+              <i></i>
 
-                <small>VISIBILITY</small>
-
-                <h3>
-                  Shared
-                  Visibility
-                </h3>
-
-                <p>
-                  Clear priorities, progress and decisions throughout
-                  the project so stakeholders always understand where
-                  delivery stands.
-                </p>
-
-              </div>
-
-              <div class="collaboration-status">
-                <i></i>
-                Transparent Delivery
-              </div>
-
-            </article>
-
-
-            <article class="featured">
-
-              <div class="collaboration-top">
-
+              <div>
                 <span>02</span>
-
-                <div class="collaboration-icon">
-                  <ion-icon name="checkmark-done-outline"></ion-icon>
-                </div>
-
+                <strong>Follow Up</strong>
               </div>
 
-              <div class="collaboration-content">
+              <i></i>
 
-                <small>VALIDATION</small>
-
-                <h3>
-                  Regular
-                  Validation
-                </h3>
-
-                <p>
-                  Work is reviewed throughout delivery rather than
-                  waiting until the end to discover misalignment.
-                </p>
-
+              <div>
+                <span>03</span>
+                <strong>Customer</strong>
               </div>
 
-              <div class="collaboration-status">
-                <i></i>
-                Continuous Feedback
+              <i></i>
+
+              <div>
+                <span>04</span>
+                <strong>Track & Manage</strong>
               </div>
 
+            </div>
+
+            <div class="example-result">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+
+              <div>
+                <span>BUSINESS VALUE</span>
+                <strong>
+                  Your team knows who to contact,
+                  what happened and what comes next.
+                </strong>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section class="simple-process-section">
+
+        <div class="container">
+
+          <div class="simple-process-heading">
+
+            <div class="section-index">
+              04 / HOW WE WORK
+            </div>
+
+            <div>
+              <span class="section-label">
+                SIMPLE FROM START TO FINISH
+              </span>
+
+              <h2>
+                You tell us the problem.
+                <span>We help you solve it.</span>
+              </h2>
+            </div>
+
+            <p>
+              You don't need to know what technology you need.
+              Start by telling us what you want to improve.
+            </p>
+
+          </div>
+
+
+          <div class="simple-process-grid">
+
+            <article>
+              <span class="process-number">01</span>
+
+              <div class="process-icon">
+                <ion-icon name="chatbubbles-outline"></ion-icon>
+              </div>
+
+              <h3>Tell us what's not working.</h3>
+
+              <p>
+                We listen to how your business works today,
+                what takes too much time and what you want to improve.
+              </p>
             </article>
 
 
             <article>
+              <span class="process-number">02</span>
 
-              <div class="collaboration-top">
-
-                <span>03</span>
-
-                <div class="collaboration-icon">
-                  <ion-icon name="chatbubbles-outline"></ion-icon>
-                </div>
-
+              <div class="process-icon">
+                <ion-icon name="bulb-outline"></ion-icon>
               </div>
 
-              <div class="collaboration-content">
+              <h3>We find the right solution.</h3>
 
-                <small>COMMUNICATION</small>
+              <p>
+                We identify whether you need a website, app,
+                CRM, automation, integration or digital growth.
+              </p>
+            </article>
 
-                <h3>
-                  Direct
-                  Communication
-                </h3>
 
-                <p>
-                  Business and technical conversations stay connected
-                  so decisions can be made with the right context.
-                </p>
+            <article>
+              <span class="process-number">03</span>
 
+              <div class="process-icon">
+                <ion-icon name="map-outline"></ion-icon>
               </div>
 
-              <div class="collaboration-status">
-                <i></i>
-                Connected Teams
+              <h3>We show you the plan.</h3>
+
+              <p>
+                We explain what we'll build, how it will work
+                and how it should help your business.
+              </p>
+            </article>
+
+
+            <article>
+              <span class="process-number">04</span>
+
+              <div class="process-icon">
+                <ion-icon name="construct-outline"></ion-icon>
               </div>
 
+              <h3>We build it with you.</h3>
+
+              <p>
+                You see progress and share feedback
+                while we build and test the solution.
+              </p>
+            </article>
+
+
+            <article>
+              <span class="process-number">05</span>
+
+              <div class="process-icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+
+              <h3>We help you go live.</h3>
+
+              <p>
+                We launch the solution and help your team
+                start using it in the real business.
+              </p>
+            </article>
+
+
+            <article>
+              <span class="process-number">06</span>
+
+              <div class="process-icon">
+                <ion-icon name="trending-up-outline"></ion-icon>
+              </div>
+
+              <h3>We improve as you grow.</h3>
+
+              <p>
+                Your solution can evolve as your customers,
+                team and business needs change.
+              </p>
             </article>
 
           </div>
@@ -1136,164 +718,85 @@
       </section>
 
 
-      <section class="principles-section">
+      <section class="why-atnav-section">
 
-        <div class="container">
+        <div class="container why-atnav-layout">
 
-          <div class="principles-heading">
+          <div class="why-atnav-copy">
 
-            <div class="section-index">
-              05 / PRINCIPLES
+            <div class="dark-index">
+              05 / WHY ATNAV
             </div>
 
-            <div>
+            <span class="dark-label">
+              BUSINESS FIRST
+            </span>
 
-              <span class="section-label">
-                DELIVERY PRINCIPLES
-              </span>
-
-              <h2>
-                Principles for making
-                <span>better decisions.</span>
-              </h2>
-
-            </div>
+            <h2>
+              Technology should make
+              <span>business simpler.</span>
+            </h2>
 
             <p>
-              Our process is structured, but the principles behind
-              the decisions matter more than following a rigid methodology.
+              Our job is not to impress you with technical words.
+              Our job is to understand the problem and build something
+              useful for your customers and your team.
             </p>
 
           </div>
 
 
-          <div class="principles-list">
+          <div class="why-atnav-list">
 
             <article>
+              <span>01</span>
 
-              <span class="principle-number">
-                01
-              </span>
-
-              <div class="principle-icon">
-                <ion-icon name="business-outline"></ion-icon>
+              <div>
+                <h3>We understand before we build.</h3>
+                <p>
+                  We first learn how your business works
+                  and what actually needs to change.
+                </p>
               </div>
-
-              <div class="principle-content">
-
-                <small>OBJECTIVE</small>
-
-                <h3>
-                  Business first.
-                </h3>
-
-              </div>
-
-              <p>
-                Technology decisions should support a clear
-                business objective.
-              </p>
-
-              <div class="principle-state">
-                ALIGN
-              </div>
-
             </article>
 
 
             <article>
+              <span>02</span>
 
-              <span class="principle-number">
-                02
-              </span>
-
-              <div class="principle-icon">
-                <ion-icon name="contract-outline"></ion-icon>
+              <div>
+                <h3>We keep things simple.</h3>
+                <p>
+                  You get clear explanations and practical solutions
+                  without unnecessary complexity.
+                </p>
               </div>
-
-              <div class="principle-content">
-
-                <small>SIMPLICITY</small>
-
-                <h3>
-                  Reduce complexity.
-                </h3>
-
-              </div>
-
-              <p>
-                Good systems make work simpler rather than
-                introducing unnecessary layers.
-              </p>
-
-              <div class="principle-state">
-                SIMPLIFY
-              </div>
-
-            </article>
-
-
-            <article class="active">
-
-              <span class="principle-number">
-                03
-              </span>
-
-              <div class="principle-icon">
-                <ion-icon name="git-branch-outline"></ion-icon>
-              </div>
-
-              <div class="principle-content">
-
-                <small>EVOLUTION</small>
-
-                <h3>
-                  Build for change.
-                </h3>
-
-              </div>
-
-              <p>
-                Products and platforms should be able to evolve
-                as the business grows.
-              </p>
-
-              <div class="principle-state">
-                EVOLVE
-              </div>
-
             </article>
 
 
             <article>
+              <span>03</span>
 
-              <span class="principle-number">
-                04
-              </span>
-
-              <div class="principle-icon">
-                <ion-icon name="analytics-outline"></ion-icon>
+              <div>
+                <h3>We connect the bigger picture.</h3>
+                <p>
+                  Website, apps, CRM, automation and systems
+                  can work together instead of becoming separate tools.
+                </p>
               </div>
+            </article>
 
-              <div class="principle-content">
 
-                <small>IMPACT</small>
+            <article>
+              <span>04</span>
 
-                <h3>
-                  Measure outcomes.
-                </h3>
-
+              <div>
+                <h3>We build around your business.</h3>
+                <p>
+                  The solution should fit the way your team and
+                  customers actually work.
+                </p>
               </div>
-
-              <p>
-                Delivery is successful when the system creates
-                measurable improvement.
-              </p>
-
-              <div class="principle-state">
-                MEASURE
-              </div>
-
             </article>
 
           </div>
@@ -1311,37 +814,34 @@
         <div class="container process-cta-inner">
 
           <div class="cta-index">
-            06 / START
+            06 / LET'S TALK
           </div>
 
           <div class="cta-copy">
 
             <span>
-              HAVE A PROJECT IN MIND?
+              NOT SURE WHAT YOU NEED?
             </span>
 
             <h2>
-              Turn the problem into
-              <strong>a working system.</strong>
+              Start with the problem.
+              <strong>We'll help with the solution.</strong>
             </h2>
 
             <p>
-              Bring us the business problem. We will help define,
-              architect, design and engineer the system around it.
+              Tell us what's taking too much time,
+              where customers are struggling or what you want to grow.
+              We'll help you understand what can be improved.
             </p>
 
           </div>
 
           <a routerLink="/contact" class="cta-button">
-
-            <span>
-              Start a Project
-            </span>
+            <span>Tell Us Your Problem</span>
 
             <span class="cta-arrow">
               <ion-icon name="arrow-forward-outline"></ion-icon>
             </span>
-
           </a>
 
         </div>
@@ -1353,5 +853,4 @@
     <app-footer></app-footer>
 
   </div>
-
 </ion-content>
