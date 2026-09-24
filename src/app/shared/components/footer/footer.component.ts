@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
   standalone: false,
 })
-export class FooterComponent  implements OnInit {
+export class FooterComponent {
 
-  constructor() { }
+  private readonly whatsappNumber = '919187145628';
 
-  ngOnInit() {}
+  private readonly whatsappMessage =
+    `Hi Atnav,
 
+I'm interested in your services and would like to discuss my project.
+
+Thank you!`;
+
+  openWhatsApp(): void {
+    const message = encodeURIComponent(this.whatsappMessage);
+    const url = `https://wa.me/${this.whatsappNumber}?text=${message}`;
+
+    window.open(url, '_blank', 'noopener,noreferrer');
+  }
 }

@@ -265,6 +265,21 @@
   object-fit:contain;
 }
 
+
+
+.footer-contact-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .footer-bottom-center {
   display: flex;
   align-items: center;

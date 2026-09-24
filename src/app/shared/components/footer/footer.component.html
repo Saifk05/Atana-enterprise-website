@@ -3,9 +3,6 @@
   <div class="footer-glow"></div>
   <div class="footer-grid-bg"></div>
 
-  <!-- =========================================================
-       MAIN FOOTER
-  ========================================================== -->
   <div class="container footer-main">
 
     <!-- BRAND -->
@@ -16,42 +13,50 @@
         class="footer-logo"
         aria-label="ATNAV Home"
       >
-<span class="footer-mark">
-  <img
-    src="assets/icon/favicon.png"
-    alt="ATNAV"
-  />
-</span>
+        <span class="footer-mark">
+          <img
+            src="assets/icon/favicon.png"
+            alt="ATNAV"
+          />
+        </span>
 
-<span class="footer-brand-name">
-  ATNAV
-</span>
-
+        <span class="footer-brand-name">
+          ATNAV
+        </span>
       </a>
-        <p>
-          ATNAV is a digital technology company helping businesses build,
-          automate and grow through web development, app development,
-          custom software, digital transformation, business automation,
-          API and system integration, SEO and digital growth solutions.
-          We work with businesses in Hubli-Dharwad and across India to
-          create practical digital solutions built around their goals,
-          operations and customers.
-        </p>
 
-      <a
-        href="mailto:info@atnav.in"
-        class="footer-contact-link"
-      >
-        <span class="contact-dot"></span>
-        info@atnav.in
-      </a>
+      <p>
+        ATNAV helps businesses build, automate and grow with websites,
+        apps, custom software, automation and digital solutions.
+        Based in Hubli-Dharwad, working with businesses across India.
+      </p>
+
+      <div class="footer-contact-group">
+
+        <a
+          href="mailto:info@atnav.in"
+          class="footer-contact-link"
+          aria-label="Email ATNAV"
+        >
+          <span class="contact-dot"></span>
+          <span>info@atnav.in</span>
+        </a>
+
+        <a
+          href="tel:+919187145628"
+          class="footer-contact-link"
+          aria-label="Call ATNAV"
+        >
+          <span class="contact-dot"></span>
+          <span>+91 91871 45628</span>
+        </a>
+
+      </div>
 
     </div>
 
 
-    <!-- =========================================================
-         SERVICES
-    ========================================================== -->
+    <!-- SERVICES -->
     <div class="footer-column">
 
       <span class="footer-column-title">
@@ -91,9 +96,7 @@
     </div>
 
 
-    <!-- =========================================================
-         COMPANY
-    ========================================================== -->
+    <!-- COMPANY -->
     <div class="footer-column">
 
       <span class="footer-column-title">
@@ -123,9 +126,7 @@
     </div>
 
 
-    <!-- =========================================================
-         CONNECT
-    ========================================================== -->
+    <!-- CONNECT -->
     <div class="footer-column">
 
       <span class="footer-column-title">
@@ -136,27 +137,31 @@
         href="https://www.linkedin.com"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Visit ATNAV on LinkedIn"
       >
         <span>LinkedIn</span>
         <ion-icon name="arrow-up-outline"></ion-icon>
       </a>
 
       <a
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/atnav.tech/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Follow ATNAV on Instagram"
       >
         <span>Instagram</span>
         <ion-icon name="arrow-up-outline"></ion-icon>
       </a>
 
       <a
-        href="https://github.com"
-        target="_blank"
-        rel="noopener noreferrer"
+        role="button"
+        tabindex="0"
+        (click)="openWhatsApp()"
+        (keydown.enter)="openWhatsApp()"
+        aria-label="Chat with ATNAV on WhatsApp"
       >
-        <span>GitHub</span>
-        <ion-icon name="arrow-up-outline"></ion-icon>
+        <span>WhatsApp</span>
+        <ion-icon name="logo-whatsapp"></ion-icon>
       </a>
 
     </div>
@@ -164,19 +169,13 @@
   </div>
 
 
-  <!-- =========================================================
-       FOOTER DIVIDER
-  ========================================================== -->
+  <!-- DIVIDER -->
   <div class="container">
-
     <div class="footer-divider"></div>
-
   </div>
 
 
-  <!-- =========================================================
-       BOTTOM FOOTER
-  ========================================================== -->
+  <!-- BOTTOM -->
   <div class="container footer-bottom">
 
     <div class="footer-bottom-left">
