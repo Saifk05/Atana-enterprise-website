@@ -46,26 +46,41 @@ export class WebDevelopmentPage implements OnInit {
       provider: { '@id': 'https://www.atnav.in/#organization' },
       areaServed: [
         { '@type': 'City', name: 'Bengaluru' },
+        { '@type': 'City', name: 'Belagavi' },
+        { '@type': 'City', name: 'Hubballi' },
+        { '@type': 'City', name: 'Dharwad' },
+        { '@type': 'City', name: 'Mysuru' },
+        { '@type': 'City', name: 'Mangaluru' },
+        { '@type': 'City', name: 'Shivamogga' },
+        { '@type': 'City', name: 'Davanagere' },
+        { '@type': 'City', name: 'Ballari' },
+        { '@type': 'City', name: 'Kalaburagi' },
         { '@type': 'State', name: 'Karnataka' },
         { '@type': 'Country', name: 'India' }
       ],
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: 'Web Development Services',
-        areaServed: [
-          { '@type': 'City', name: 'Bengaluru' },
-          { '@type': 'City', name: 'Belagavi' },
-          { '@type': 'City', name: 'Hubballi' },
-          { '@type': 'City', name: 'Dharwad' },
-          { '@type': 'City', name: 'Mysuru' },
-          { '@type': 'City', name: 'Mangaluru' },
-          { '@type': 'City', name: 'Shivamogga' },
-          { '@type': 'City', name: 'Davanagere' },
-          { '@type': 'City', name: 'Ballari' },
-          { '@type': 'City', name: 'Kalaburagi' },
-          { '@type': 'State', name: 'Karnataka' },
-          { '@type': 'Country', name: 'India' }
-        ],
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Website Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom Website Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'E-commerce Website Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Responsive Website Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Landing Page Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom Web Application Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Progressive Web App Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Redesign' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Maintenance' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Performance Optimization' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Website Speed Optimization' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'API Integration' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Payment Gateway Integration' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'CRM Integration' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Software Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Admin Dashboard Development' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Web Portal Development' } }
+        ]
       }
     };
 
