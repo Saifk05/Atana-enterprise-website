@@ -2,14 +2,20 @@ import {
   Component,
   CUSTOM_ELEMENTS_SCHEMA,
   OnInit,
-  OnDestroy
+  OnDestroy,
+  Inject
 } from '@angular/core';
 
-import { CommonModule } from '@angular/common';
+import {
+  CommonModule,
+  DOCUMENT
+} from '@angular/common';
+
 import { RouterModule } from '@angular/router';
-import { Meta, Title } from '@angular/platform-browser';
-import { DOCUMENT } from '@angular/common';
-import { Inject } from '@angular/core';
+import {
+  Meta,
+  Title
+} from '@angular/platform-browser';
 
 import { SharedModule } from '../../../shared/shared.module';
 
@@ -29,45 +35,91 @@ import { SharedModule } from '../../../shared/shared.module';
 })
 export class WebDevelopmentPage implements OnInit, OnDestroy {
 
+  // =====================================================
+  // SEO CONFIGURATION
+  // =====================================================
+
   private readonly canonicalUrl =
     'https://www.atnav.in/services/web-development';
+
+  private readonly pageTitle =
+    'Web Development Company | Website Development Services | ATNAV';
+
+  private readonly pageDescription =
+    'ATNAV provides professional web development services for businesses, including business websites, e-commerce websites, custom web applications, website redesign and performance optimization.';
+
 
   constructor(
     private readonly title: Title,
     private readonly meta: Meta,
-    @Inject(DOCUMENT) private readonly document: Document
+    @Inject(DOCUMENT)
+    private readonly document: Document
   ) {}
 
+
+  // =====================================================
+  // PAGE INITIALIZATION
+  // =====================================================
+
   ngOnInit(): void {
+    this.setupSeo();
+  }
+
+
+  // =====================================================
+  // SEO
+  // =====================================================
+
+  private setupSeo(): void {
 
     // Page title
     this.title.setTitle(
-      'Web Development Company in Dharwad & Hubballi | ATNAV'
+      this.pageTitle
     );
 
-    // Meta description
+
+    // -----------------------------------------------------
+    // PRIMARY META
+    // -----------------------------------------------------
+
     this.meta.updateTag({
       name: 'description',
-      content:
-        'ATNAV provides web development services in Dharwad and Hubballi, including business websites, web applications, portals, responsive design and performance optimization.'
+      content: this.pageDescription
     });
 
-    // Robots
     this.meta.updateTag({
       name: 'robots',
       content: 'index, follow'
     });
 
-    // Open Graph
+    this.meta.updateTag({
+      name: 'googlebot',
+      content: 'index, follow'
+    });
+
+
+    // -----------------------------------------------------
+    // OPEN GRAPH
+    // -----------------------------------------------------
+
+    this.meta.updateTag({
+      property: 'og:type',
+      content: 'website'
+    });
+
+    this.meta.updateTag({
+      property: 'og:site_name',
+      content: 'ATNAV'
+    });
+
     this.meta.updateTag({
       property: 'og:title',
-      content: 'Web Development Company in Dharwad & Hubballi | ATNAV'
+      content: this.pageTitle
     });
 
     this.meta.updateTag({
       property: 'og:description',
-      content:
-        'Professional web development services for websites, web applications, business portals and digital platforms in Dharwad, Hubballi and across India.'
+      content: this.pageDescription
     });
 
     this.meta.updateTag({
@@ -76,61 +128,105 @@ export class WebDevelopmentPage implements OnInit, OnDestroy {
     });
 
     this.meta.updateTag({
-      property: 'og:type',
-      content: 'website'
+      property: 'og:image',
+      content:
+        'https://www.atnav.in/assets/brand/atnav-og.jpg'
     });
 
-    // Twitter
+    this.meta.updateTag({
+      property: 'og:image:alt',
+      content:
+        'ATNAV Web Development Services'
+    });
+
+
+    // -----------------------------------------------------
+    // TWITTER / X
+    // -----------------------------------------------------
+
+    this.meta.updateTag({
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    });
+
     this.meta.updateTag({
       name: 'twitter:title',
-      content: 'Web Development Company in Dharwad & Hubballi | ATNAV'
+      content: this.pageTitle
     });
 
     this.meta.updateTag({
       name: 'twitter:description',
-      content:
-        'Web development services for modern websites, web applications, portals and digital platforms.'
+      content: this.pageDescription
     });
 
-    // Canonical
+    this.meta.updateTag({
+      name: 'twitter:image',
+      content:
+        'https://www.atnav.in/assets/brand/atnav-og.jpg'
+    });
+
+
+    // -----------------------------------------------------
+    // CANONICAL
+    // -----------------------------------------------------
+
     this.setCanonicalUrl();
   }
 
+
+  // =====================================================
+  // CANONICAL URL
+  // =====================================================
+
   private setCanonicalUrl(): void {
 
-    const existingCanonical =
-      this.document.querySelector(
-        'link[rel="canonical"]'
-      ) as HTMLLinkElement | null;
+    let canonical =
+      this.document
+        .querySelector<HTMLLinkElement>(
+          'link[rel="canonical"]'
+        );
 
-    if (existingCanonical) {
-      existingCanonical.href = this.canonicalUrl;
-      return;
+    if (!canonical) {
+
+      canonical =
+        this.document.createElement(
+          'link'
+        );
+
+      canonical.setAttribute(
+        'rel',
+        'canonical'
+      );
+
+      this.document.head.appendChild(
+        canonical
+      );
     }
 
-    const canonical =
-      this.document.createElement('link');
-
-    canonical.setAttribute('rel', 'canonical');
     canonical.setAttribute(
       'href',
       this.canonicalUrl
     );
-
-    this.document.head.appendChild(canonical);
   }
+
+
+  // =====================================================
+  // CLEANUP
+  // =====================================================
 
   ngOnDestroy(): void {
 
-    // Restore homepage canonical so this service URL
-    // does not remain when Angular navigates to another page.
     const canonical =
-      this.document.querySelector(
-        'link[rel="canonical"]'
-      ) as HTMLLinkElement | null;
+      this.document
+        .querySelector<HTMLLinkElement>(
+          'link[rel="canonical"]'
+        );
 
     if (canonical) {
-      canonical.href = 'https://www.atnav.in/';
+      canonical.setAttribute(
+        'href',
+        'https://www.atnav.in/'
+      );
     }
   }
 }
