@@ -12,6 +12,7 @@ import {
 } from '@angular/common';
 
 import { RouterModule } from '@angular/router';
+
 import {
   Meta,
   Title
@@ -58,29 +59,24 @@ export class WebDevelopmentPage implements OnInit, OnDestroy {
 
 
   // =====================================================
-  // PAGE INITIALIZATION
+  // INITIALIZATION
   // =====================================================
 
   ngOnInit(): void {
     this.setupSeo();
+    this.setupStructuredData();
   }
 
 
   // =====================================================
-  // SEO
+  // SEO META
   // =====================================================
 
   private setupSeo(): void {
 
-    // Page title
-    this.title.setTitle(
-      this.pageTitle
-    );
+    this.title.setTitle(this.pageTitle);
 
-
-    // -----------------------------------------------------
-    // PRIMARY META
-    // -----------------------------------------------------
+    // Primary SEO
 
     this.meta.updateTag({
       name: 'description',
@@ -98,9 +94,7 @@ export class WebDevelopmentPage implements OnInit, OnDestroy {
     });
 
 
-    // -----------------------------------------------------
-    // OPEN GRAPH
-    // -----------------------------------------------------
+    // Open Graph
 
     this.meta.updateTag({
       property: 'og:type',
@@ -140,9 +134,7 @@ export class WebDevelopmentPage implements OnInit, OnDestroy {
     });
 
 
-    // -----------------------------------------------------
-    // TWITTER / X
-    // -----------------------------------------------------
+    // Twitter / X
 
     this.meta.updateTag({
       name: 'twitter:card',
@@ -166,41 +158,34 @@ export class WebDevelopmentPage implements OnInit, OnDestroy {
     });
 
 
-    // -----------------------------------------------------
-    // CANONICAL
-    // -----------------------------------------------------
+    // Canonical
 
     this.setCanonicalUrl();
   }
 
 
   // =====================================================
-  // CANONICAL URL
+  // CANONICAL
   // =====================================================
 
   private setCanonicalUrl(): void {
 
     let canonical =
-      this.document
-        .querySelector<HTMLLinkElement>(
-          'link[rel="canonical"]'
-        );
+      this.document.querySelector<HTMLLinkElement>(
+        'link[rel="canonical"]'
+      );
 
     if (!canonical) {
 
       canonical =
-        this.document.createElement(
-          'link'
-        );
+        this.document.createElement('link');
 
       canonical.setAttribute(
         'rel',
         'canonical'
       );
 
-      this.document.head.appendChild(
-        canonical
-      );
+      this.document.head.appendChild(canonical);
     }
 
     canonical.setAttribute(
@@ -211,16 +196,215 @@ export class WebDevelopmentPage implements OnInit, OnDestroy {
 
 
   // =====================================================
+  // STRUCTURED DATA
+  // =====================================================
+
+  private setupStructuredData(): void {
+
+    // Remove an old copy if Angular returns to this route
+    this.removeStructuredData();
+
+
+    // -----------------------------------------------------
+    // WEB PAGE SCHEMA
+    // -----------------------------------------------------
+
+    const webPageSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+
+      '@id':
+        `${this.canonicalUrl}#webpage`,
+
+      url:
+        this.canonicalUrl,
+
+      name:
+        this.pageTitle,
+
+      description:
+        this.pageDescription,
+
+      isPartOf: {
+        '@id':
+          'https://www.atnav.in/#website'
+      },
+
+      about: {
+        '@id':
+          `${this.canonicalUrl}#service`
+      },
+
+      inLanguage:
+        'en-IN'
+    };
+
+
+    // -----------------------------------------------------
+    // SERVICE SCHEMA
+    // -----------------------------------------------------
+
+    const serviceSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+
+      '@id':
+        `${this.canonicalUrl}#service`,
+
+      name:
+        'Web Development Services',
+
+      serviceType:
+        'Web Development',
+
+      url:
+        this.canonicalUrl,
+
+      description:
+        this.pageDescription,
+
+      provider: {
+        '@id':
+          'https://www.atnav.in/#organization'
+      },
+
+      areaServed: [
+        {
+          '@type': 'City',
+          name: 'Bengaluru'
+        },
+        {
+          '@type': 'State',
+          name: 'Karnataka'
+        },
+        {
+          '@type': 'Country',
+          name: 'India'
+        }
+      ],
+
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+
+        name:
+          'Web Development Services',
+
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Business Website Development'
+            }
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'E-commerce Website Development'
+            }
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Landing Page Development'
+            }
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Custom Web Application Development'
+            }
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Website Redesign'
+            }
+          },
+          {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: 'Website Maintenance'
+            }
+          }
+        ]
+      }
+    };
+
+
+    this.addStructuredData(
+      'web-development-webpage-schema',
+      webPageSchema
+    );
+
+    this.addStructuredData(
+      'web-development-service-schema',
+      serviceSchema
+    );
+  }
+
+
+  // =====================================================
+  // ADD JSON-LD
+  // =====================================================
+
+  private addStructuredData(
+    id: string,
+    schema: object
+  ): void {
+
+    const script =
+      this.document.createElement('script');
+
+    script.type =
+      'application/ld+json';
+
+    script.id = id;
+
+    script.text =
+      JSON.stringify(schema);
+
+    this.document.head.appendChild(script);
+  }
+
+
+  // =====================================================
+  // REMOVE JSON-LD
+  // =====================================================
+
+  private removeStructuredData(): void {
+
+    this.document
+      .getElementById(
+        'web-development-webpage-schema'
+      )
+      ?.remove();
+
+    this.document
+      .getElementById(
+        'web-development-service-schema'
+      )
+      ?.remove();
+  }
+
+
+  // =====================================================
   // CLEANUP
   // =====================================================
 
   ngOnDestroy(): void {
 
+    this.removeStructuredData();
+
     const canonical =
-      this.document
-        .querySelector<HTMLLinkElement>(
-          'link[rel="canonical"]'
-        );
+      this.document.querySelector<HTMLLinkElement>(
+        'link[rel="canonical"]'
+      );
 
     if (canonical) {
       canonical.setAttribute(
