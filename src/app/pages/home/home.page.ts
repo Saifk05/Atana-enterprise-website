@@ -1,4 +1,14 @@
-import { AfterViewInit, Component, ElementRef, Inject, OnDestroy, PLATFORM_ID } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  HostListener,
+  Inject,
+  OnDestroy,
+  PLATFORM_ID,
+  ViewChild
+} from '@angular/core';
+
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
@@ -8,28 +18,51 @@ import { isPlatformBrowser } from '@angular/common';
   standalone: false
 })
 export class HomePage implements AfterViewInit, OnDestroy {
+
   private observer?: IntersectionObserver;
   private ionContent?: HTMLElement;
 
-  private readonly scrollHandler = (event: Event): void => {
-    const customEvent = event as CustomEvent<{ scrollTop?: number }>;
-    const scrollTop = customEvent.detail?.scrollTop ?? 0;
-    const root = this.elementRef.nativeElement;
-    const heroSection = root.querySelector('.hero-section') as HTMLElement | null;
-    if (!heroSection) return;
+  heroVideoOpen = false;
 
-    heroSection.style.setProperty('--hero-visual-shift', `${Math.min(scrollTop * 0.08, 45)}px`);
-    heroSection.style.setProperty('--hero-copy-shift', `${Math.min(scrollTop * 0.035, 20)}px`);
-    heroSection.style.setProperty('--hero-wave-shift', `${Math.min(scrollTop * 0.03, 18)}px`);
-  };
+  @ViewChild('heroVideo')
+  heroVideo?: ElementRef<HTMLVideoElement>;
 
   constructor(
     private readonly elementRef: ElementRef<HTMLElement>,
     @Inject(PLATFORM_ID) private readonly platformId: object
   ) {}
 
+  private readonly scrollHandler = (event: Event): void => {
+    const customEvent = event as CustomEvent<{ scrollTop?: number }>;
+    const scrollTop = customEvent.detail?.scrollTop ?? 0;
+
+    const root = this.elementRef.nativeElement;
+
+    const heroSection = root.querySelector(
+      '.hero-section'
+    ) as HTMLElement | null;
+
+    if (!heroSection) return;
+
+    heroSection.style.setProperty(
+      '--hero-visual-shift',
+      `${Math.min(scrollTop * 0.08, 45)}px`
+    );
+
+    heroSection.style.setProperty(
+      '--hero-copy-shift',
+      `${Math.min(scrollTop * 0.035, 20)}px`
+    );
+
+    heroSection.style.setProperty(
+      '--hero-wave-shift',
+      `${Math.min(scrollTop * 0.03, 18)}px`
+    );
+  };
+
   ngAfterViewInit(): void {
     if (!isPlatformBrowser(this.platformId)) return;
+
     this.setupHeroAnimation();
     this.setupScrollReveal();
     this.setupParallax();
@@ -37,15 +70,19 @@ export class HomePage implements AfterViewInit, OnDestroy {
 
   private setupHeroAnimation(): void {
     const root = this.elementRef.nativeElement;
+
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        root.querySelector('.hero-section')?.classList.add('hero-ready');
+        root
+          .querySelector('.hero-section')
+          ?.classList.add('hero-ready');
       });
     });
   }
 
   private setupScrollReveal(): void {
     const root = this.elementRef.nativeElement;
+
     const selectors = [
       '.section-heading',
       '.service-card',
@@ -67,8 +104,13 @@ export class HomePage implements AfterViewInit, OnDestroy {
       '.final-cta-inner'
     ];
 
-    const elements = root.querySelectorAll(selectors.join(','));
-    elements.forEach(element => element.classList.add('motion-reveal'));
+    const elements = root.querySelectorAll(
+      selectors.join(',')
+    );
+
+    elements.forEach(element => {
+      element.classList.add('motion-reveal');
+    });
 
     this.setDelays(root, '.service-card', 70);
     this.setDelays(root, '.trust-metric', 80);
@@ -77,40 +119,115 @@ export class HomePage implements AfterViewInit, OnDestroy {
     this.setDelays(root, '.why-card', 80);
     this.setDelays(root, '.process-grid article', 90);
 
-    root.querySelectorAll('.process-connector').forEach((element, index) => {
-      (element as HTMLElement).style.setProperty('--motion-delay', `${120 + index * 90}ms`);
-    });
-
-    this.observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('motion-visible');
-        this.observer?.unobserve(entry.target);
+    root
+      .querySelectorAll('.process-connector')
+      .forEach((element, index) => {
+        (element as HTMLElement).style.setProperty(
+          '--motion-delay',
+          `${120 + index * 90}ms`
+        );
       });
-    }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -50px 0px'
-    });
 
-    elements.forEach(element => this.observer?.observe(element));
+    this.observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+
+          entry.target.classList.add('motion-visible');
+
+          this.observer?.unobserve(entry.target);
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    elements.forEach(element => {
+      this.observer?.observe(element);
+    });
   }
 
-  private setDelays(root: HTMLElement, selector: string, delay: number): void {
-    root.querySelectorAll(selector).forEach((element, index) => {
-      (element as HTMLElement).style.setProperty('--motion-delay', `${index * delay}ms`);
-    });
+  private setDelays(
+    root: HTMLElement,
+    selector: string,
+    delay: number
+  ): void {
+    root
+      .querySelectorAll(selector)
+      .forEach((element, index) => {
+        (element as HTMLElement).style.setProperty(
+          '--motion-delay',
+          `${index * delay}ms`
+        );
+      });
   }
 
   private setupParallax(): void {
-    const content = this.elementRef.nativeElement.querySelector('ion-content');
+    const content =
+      this.elementRef.nativeElement.querySelector(
+        'ion-content'
+      );
+
     if (!content) return;
 
     this.ionContent = content as HTMLElement;
-    this.ionContent.addEventListener('ionScroll', this.scrollHandler);
+
+    this.ionContent.addEventListener(
+      'ionScroll',
+      this.scrollHandler
+    );
+  }
+
+  openHeroVideo(): void {
+    this.heroVideoOpen = true;
+
+    if (!isPlatformBrowser(this.platformId)) return;
+
+    document.body.style.overflow = 'hidden';
+
+    setTimeout(() => {
+      const video = this.heroVideo?.nativeElement;
+
+      if (!video) return;
+
+      video.play().catch(() => {});
+    });
+  }
+
+  closeHeroVideo(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      const video = this.heroVideo?.nativeElement;
+
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
+
+      document.body.style.overflow = '';
+    }
+
+    this.heroVideoOpen = false;
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape(): void {
+    if (this.heroVideoOpen) {
+      this.closeHeroVideo();
+    }
   }
 
   ngOnDestroy(): void {
     this.observer?.disconnect();
-    this.ionContent?.removeEventListener('ionScroll', this.scrollHandler);
+
+    this.ionContent?.removeEventListener(
+      'ionScroll',
+      this.scrollHandler
+    );
+
+    if (isPlatformBrowser(this.platformId)) {
+      document.body.style.overflow = '';
+    }
   }
 }
